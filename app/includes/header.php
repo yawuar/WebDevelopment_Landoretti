@@ -17,9 +17,9 @@
 	);
 
 	$arrLanguage = array(
-		'nl' => 'nl.php',
-		'fr' => 'fr.php',
-		'en' => 'en.php'
+		'nl' => '#',
+		'fr' => '#',
+		'en' => '#'
 	);
 
 ?>
@@ -36,23 +36,33 @@
 </head>
 <body>
 
-	<header>
+	<nav class="navbar navbar-default">
 
 		<div class="container">
 			
-			<h1 class="logo">landoretti</h1>
-
-		</div>
-
-		<div class="top-bar"></div>
-
-		<div class="user-bar">
-
-			<div class="container">
+			<!-- Logo -->
+			<div class="navbar-header">
 				
-				<div class="information">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navigation">
+					
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+					<span class="icon-bar"></span>
+
+				</button>
+
+				<a href="/" class="navbar-brand logo">Landoretti</a>
+
+			</div>
+
+			<!-- Menu Items -->
+			<div class="information">
 				
-					<ul>
+				<div class="collapse navbar-collapse navigation">
+					
+					<ul class="nav navbar-nav">
 
 						<?php foreach($arrUserMenu as $value => $key) { ?>
 
@@ -62,11 +72,7 @@
 
 					</ul>
 
-				</div>
-
-				<div class="searchbar">	
-					
-					<form action="#" method="GET">
+					<form action="#" method="GET" class="navbar-right">
 						
 						<input type="text" name="search" placeholder="Search">
 
@@ -80,13 +86,13 @@
 
 		</div>
 
-		<div class="nav-bar">
-
+		<div class="main-navigation">
+			
 			<div class="container">
-				
-				<div class="main-navigation">
-				
-					<ul>
+
+				<div class="collapse navbar-collapse navigation">
+
+					<ul class="nav navbar-nav">
 
 						<?php foreach($arrNav as $value => $key) { ?>
 
@@ -96,11 +102,7 @@
 
 					</ul>
 
-				</div>
-
-				<div class="language-navigation">
-					
-					<ul>
+					<ul class="nav navbar-nav navbar-right language">
 
 						<?php foreach($arrLanguage as $value => $key) { ?>
 
@@ -112,8 +114,8 @@
 
 				</div>
 
-			</div>
+			</div>			
 
 		</div>
 
-	</header> <!-- nav ending -->
+	</nav><!-- nav ending -->

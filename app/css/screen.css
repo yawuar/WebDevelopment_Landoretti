@@ -1,26 +1,85 @@
+/*
+*
+*	Keep variables of all colors that are used in the design
+*
+*/
 * {
   margin: 0;
   padding: 0; }
 
+/*
+*
+*	Default font = Arial & font-size = 1em
+*
+*/
+body, html {
+  height: 100%; }
+
 body {
   font-family: Arial, sans-serif;
   font-size: 1em;
-  /* 1 */
   -webkit-text-size-adjust: 1em;
   /* 2 */
   -ms-text-size-adjust: 1em;
   /* 2 */ }
 
-header {
+h1 {
+  font-family: 'Helvetica';
+  font-size: 4.5em; }
+
+h2 {
+  font-family: 'Helvetica';
+  font-size: 4em;
+  color: #0a1e75;
+  font-weight: lighter;
+  margin: 0 0 50px 0;
+  text-align: center; }
+
+h3 {
+  font-size: 2.5em;
+  margin: 0; }
+
+h4 {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 0;
+  color: black; }
+
+/*
+*
+*	set the default container width to 2024px
+*
+*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1024px; } }
+
+/*
+*
+*	CSS of the Navigation
+*
+*/
+nav a {
+  text-transform: uppercase; }
+
+nav.navbar-default {
+  position: absolute;
+  top: 0;
   width: 100%;
-  z-index: 99; }
-  header li {
-    list-style: none;
-    display: inline-block; }
-    header li a {
-      text-transform: uppercase; }
-  header .container .logo {
+  background-color: white;
+  border: none;
+  border-top: 4px solid #01a6a0;
+  border-radius: 0;
+  margin: 0; }
+  nav.navbar-default .container .navbar-header .navbar-toggle {
+    border: none; }
+    nav.navbar-default .container .navbar-header .navbar-toggle:hover {
+      background-color: #ededed; }
+    nav.navbar-default .container .navbar-header .navbar-toggle .icon-bar {
+      background-color: #4e4e4e; }
+  nav.navbar-default .container .navbar-header .navbar-brand {
     position: absolute;
+    top: -4px;
     background-image: url("/images/logo.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -28,86 +87,209 @@ header {
     height: 140px;
     text-indent: -99999px;
     margin: 0;
-    box-shadow: 0px 0px 24px 0px rgba(1, 1, 1, 0.19); }
-  header .top-bar {
-    height: 4px;
-    background-color: #01a6a0; }
-  header .user-bar {
-    height: 50px; }
-    header .user-bar .container {
-      padding-left: 170px;
-      height: 100%; }
-      header .user-bar .container .information {
-        float: left; }
-        header .user-bar .container .information ul {
-          margin: 0; }
-          header .user-bar .container .information ul li {
-            font-size: 1.3em;
-            line-height: 50px;
-            margin-right: 20px; }
-            header .user-bar .container .information ul li:nth-child(1):before {
-              content: "";
-              display: block;
-              background: url("/images/icons/watchlist.png") no-repeat;
-              width: 11px;
-              height: 10px;
-              margin: 19px 10px 21px 0;
-              float: left; }
-            header .user-bar .container .information ul li:nth-child(1) a {
-              padding-right: 20px;
-              border-right: 1px solid #0a1e75; }
-            header .user-bar .container .information ul li:nth-child(2):before {
-              content: "";
-              display: block;
-              background: url("/images/icons/profile.png") no-repeat;
-              width: 13px;
-              height: 14px;
-              margin: 17px 10px 19px 0;
-              float: left; }
-            header .user-bar .container .information ul li:nth-child(2) a {
-              padding-right: 20px;
-              border-right: 1px solid #0a1e75; }
-            header .user-bar .container .information ul li a {
-              color: #0a1e75; }
-      header .user-bar .container .searchbar {
-        float: right;
-        height: 100%;
-        display: flex;
-        align-items: center; }
-        header .user-bar .container .searchbar form input[type="text"] {
-          height: 28px;
-          width: 207px;
-          border: 1px solid #ededed;
-          border-radius: 4px; }
-        header .user-bar .container .searchbar form input::placeholder {
-          font-size: 1.5em;
+    box-shadow: 0px 0px 24px 0px rgba(1, 1, 1, 0.19);
+    z-index: 99; }
+  nav.navbar-default .container .information {
+    padding-left: 170px; }
+    @media (max-width: 767px) {
+      nav.navbar-default .container .information {
+        padding-left: 0; }
+        nav.navbar-default .container .information .navigation {
+          padding: 0 10px; }
+          nav.navbar-default .container .information .navigation ul {
+            padding-left: 0;
+            width: 100%; }
+            nav.navbar-default .container .information .navigation ul li {
+              height: 50px; }
+              nav.navbar-default .container .information .navigation ul li a {
+                line-height: 50px;
+                border: none !important; }
+              nav.navbar-default .container .information .navigation ul li:nth-child(1)::before {
+                margin: 20px 10px 20px 0 !important; }
+              nav.navbar-default .container .information .navigation ul li:nth-child(2)::before {
+                margin: 18px 10px 18px 0 !important; }
+              nav.navbar-default .container .information .navigation ul li:last-child {
+                padding-left: 0 !important; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      nav.navbar-default .container .information {
+        padding-left: 100px; } }
+    nav.navbar-default .container .information .navigation {
+      border: none; }
+      @media (max-width: 767px) {
+        nav.navbar-default .container .information .navigation {
+          margin-top: 90px; } }
+      nav.navbar-default .container .information .navigation ul {
+        margin: 15px 0; }
+        @media (max-width: 767px) {
+          nav.navbar-default .container .information .navigation ul {
+            display: inline-block; } }
+        nav.navbar-default .container .information .navigation ul li {
+          font-size: 1.3em; }
+          nav.navbar-default .container .information .navigation ul li:nth-child(1):before {
+            content: "";
+            display: block;
+            background: url("/images/icons/watchlist.png") no-repeat;
+            width: 11px;
+            height: 10px;
+            float: left;
+            margin: 5px 10px 5px 0; }
+          nav.navbar-default .container .information .navigation ul li:nth-child(1) a {
+            border-right: 1px solid #0a1e75;
+            float: left;
+            padding-right: 20px; }
+          nav.navbar-default .container .information .navigation ul li:nth-child(2):before {
+            content: "";
+            display: block;
+            background: url("/images/icons/profile.png") no-repeat;
+            width: 13px;
+            height: 14px;
+            margin: 3px 10px 3px 20px;
+            float: left; }
+          nav.navbar-default .container .information .navigation ul li:nth-child(2) a {
+            border-right: 1px solid #0a1e75;
+            float: left;
+            padding-right: 20px; }
+          nav.navbar-default .container .information .navigation ul li a {
+            padding: 0;
+            color: #0a1e75; }
+          nav.navbar-default .container .information .navigation ul li:last-child {
+            padding-left: 20px; }
+      nav.navbar-default .container .information .navigation form {
+        height: 28px;
+        margin: 11px 0; }
+        nav.navbar-default .container .information .navigation form input {
           padding-left: 20px;
-          color: black; }
-      header .user-bar .container::after {
-        clear: both;
-        display: block;
-        content: ""; }
-  header .nav-bar {
+          font-size: 1.5em; }
+          nav.navbar-default .container .information .navigation form input[type="text"] {
+            height: 28px;
+            width: 207px;
+            border: 1px solid #ededed;
+            border-radius: 4px;
+            color: #1d1d1b; }
+          nav.navbar-default .container .information .navigation form input[type="submit"] {
+            background-color: transparent;
+            border: none;
+            text-indent: -9999px;
+            background: url("/images/icons/search.png") no-repeat;
+            width: 18px;
+            height: 18px;
+            margin-left: 8px; }
+          nav.navbar-default .container .information .navigation form input::-webkit-input-placeholder {
+            color: #1d1d1b;
+            font-style: italic;
+            font-weight: normal;
+            opacity: 1; }
+          nav.navbar-default .container .information .navigation form input:-moz-placeholder {
+            color: #1d1d1b;
+            font-style: italic;
+            font-weight: normal;
+            opacity: 1; }
+          nav.navbar-default .container .information .navigation form input::-moz-placeholder {
+            color: #1d1d1b;
+            font-style: italic;
+            font-weight: normal;
+            opacity: 1; }
+          nav.navbar-default .container .information .navigation form input:-ms-input-placeholder {
+            color: #1d1d1b;
+            font-style: italic;
+            font-weight: normal;
+            opacity: 1; }
+  nav.navbar-default .main-navigation {
     background-color: #eaeaea;
     height: 50px; }
-    header .nav-bar .container {
-      padding-left: 170px; }
-      header .nav-bar .container .main-navigation ul, header .nav-bar .container .language-navigation ul {
+    @media (max-width: 767px) {
+      nav.navbar-default .main-navigation {
+        height: auto; } }
+    nav.navbar-default .main-navigation .container .navigation ul:first-child {
+      padding-left: 170px;
+      margin-top: 0; }
+      @media (max-width: 767px) {
+        nav.navbar-default .main-navigation .container .navigation ul:first-child {
+          padding: 0; }
+          nav.navbar-default .main-navigation .container .navigation ul:first-child li {
+            margin: 0;
+            padding: 0 25px; }
+            nav.navbar-default .main-navigation .container .navigation ul:first-child li:hover {
+              background-color: #d6d6d6; } }
+      @media (min-width: 768px) and (max-width: 991px) {
+        nav.navbar-default .main-navigation .container .navigation ul:first-child {
+          padding-left: 100px; } }
+    nav.navbar-default .main-navigation .container .navigation ul:last-child {
+      font-weight: normal;
+      color: #0a1e75; }
+      @media (max-width: 768px) {
+        nav.navbar-default .main-navigation .container .navigation ul:last-child {
+          padding: 0 25px;
+          text-align: center; }
+          nav.navbar-default .main-navigation .container .navigation ul:last-child li {
+            height: 50px;
+            width: 50px;
+            float: left; }
+            nav.navbar-default .main-navigation .container .navigation ul:last-child li:hover {
+              background-color: #d6d6d6; } }
+      nav.navbar-default .main-navigation .container .navigation ul:last-child li a {
+        font-weight: normal;
+        color: #0a1e75; }
+      nav.navbar-default .main-navigation .container .navigation ul:last-child li.active a {
+        background-color: transparent;
+        font-weight: bold !important; }
+    nav.navbar-default .main-navigation .container .navigation ul li {
+      font-size: 1.5em;
+      font-weight: bold;
+      font-family: "Arial";
+      margin-right: 30px; }
+      @media (max-width: 991px) {
+        nav.navbar-default .main-navigation .container .navigation ul li {
+          font-size: 1.2em;
+          margin-right: 25px; } }
+      nav.navbar-default .main-navigation .container .navigation ul li a {
+        color: #4e4e4e;
+        padding: 0;
         line-height: 50px; }
-      header .nav-bar .container .main-navigation {
-        float: left; }
-        header .nav-bar .container .main-navigation ul li {
-          font-size: 1.500em;
-          line-height: 1.4;
-          font-weight: 600;
-          font-family: "Arial";
-          margin-right: 30px; }
-          header .nav-bar .container .main-navigation ul li a {
-            color: #4e4e4e; }
-      header .nav-bar .container .language-navigation {
-        float: right; }
-        header .nav-bar .container .language-navigation ul li {
-          font-size: 1.3em;
-          margin-left: 20px; }
-          header .nav-bar .container .language-navigation ul li a {
-            color: #0a1e75; }
+
+/*
+*
+*	Home page
+*
+*/
+.background {
+  background: url("/images/background.jpg") no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 100%; }
+
+.how {
+  height: auto;
+  padding: 50px 0; }
+  .how .container .row {
+    text-align: center; }
+    .how .container .row div {
+      padding: 0 60px; }
+      .how .container .row div:nth-child(1) .icon, .how .container .row div:nth-child(2) .icon, .how .container .row div:nth-child(3) .icon {
+        background-size: auto;
+        width: 117px;
+        height: 117px;
+        margin: 0 auto; }
+      .how .container .row div:nth-child(1) .icon {
+        background: url("/images/pen.png") no-repeat; }
+      .how .container .row div:nth-child(2) .icon {
+        background: url("/images/check.png") no-repeat; }
+      .how .container .row div:nth-child(3) .icon {
+        background: url("/images/smile.png") no-repeat; }
+      .how .container .row div h3 {
+        font-size: 2.5em;
+        margin: 35px 0 10px 0; }
+      .how .container .row div p {
+        font-size: 1.5em; }
+
+.popular {
+  background-color: #eaeaea;
+  padding: 50px 0; }
+
+/*
+*
+*	CSS of the Footer
+*
+*/
+footer {
+  height: 620px; }
