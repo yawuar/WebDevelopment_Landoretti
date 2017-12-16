@@ -6,12 +6,14 @@
 
 $green: #01a6a0;
 
+$lightergrey: #e5e5e5;
 $lightgrey: #ededed;
 $grey: #eaeaea;
 $darkgrey: #4e4e4e;
 $darkestgrey: #1d1d1b;
 
 $blue: #0a1e75;
+$lightBlue: #0120a6;
 
 @mixin placeholder {
 	&::-webkit-input-placeholder {@content}
@@ -69,6 +71,10 @@ h4 {
 	color: black;
 }
 
+ul {
+	list-style: none;
+}
+
 /*
 *
 *	set the default container width to 2024px
@@ -79,6 +85,11 @@ h4 {
 	@media (min-width: 1200px) {
 		width: 1024px;
 	}
+
+	@media (max-width: 991px) {
+		width: 100%;
+		//margin: 0 15px;
+	}
 }
 
 /*
@@ -88,6 +99,7 @@ h4 {
 */
 
 nav {
+	z-index: 1;
 	a {
 		text-transform: uppercase;
 	}
@@ -104,6 +116,10 @@ nav {
 		margin: 0;
 
 		.container {
+			padding: 0;
+			@media (max-width: 991px) {
+				padding: 0 15px;
+			}
 			.navbar-header {
 
 				.navbar-toggle {
@@ -128,7 +144,11 @@ nav {
 				    height: 140px;
 
 				    text-indent: -99999px;
-				    margin: 0;
+					margin: 0;
+					
+					@media (max-width: 767px) {
+						margin: 0 0 0 15px;
+					}
 
 				    box-shadow: 0px 0px 24px 0px rgba(1, 1, 1, 0.19);
 				    z-index: 99;
@@ -373,10 +393,53 @@ nav {
 
 .background {
 	background: url('/images/background.jpg') no-repeat;
-	background-size: auto;
+	background-size: cover;
 	width: 100%;
 	height: 100%;
+
+	z-index: 0;
+
+	.carousel {
+		position: absolute;
+		bottom: 100px;
+		width: 100%;
+		height: 190px;
+		@media (max-width: 991px) {
+			padding: 0 15px;
+			height: auto;
+		}
+
+		@media (max-width: 767px) {
+			bottom: 15px;
+		}
+		.container {
+			height: 100%;
+			background-color: $lightBlue;
+			opacity: 0.651;
+			padding: 0;
+
+			display: flex;
+			align-items: center;
+
+			p {
+				font-size: 1.5em;
+				color: white;
+				padding: 0 50px;
+				margin: 0;
+
+				@media (max-width: 991px) {
+					padding: 25px 50px;
+				}
+
+				@media (max-width: 767px) {
+					padding: 15px;
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
 }
+
 
 .how {
 	height: auto;
@@ -387,7 +450,10 @@ nav {
 			text-align: center;
 
 			div {
-				padding: 0 60px;
+				padding: 0 20px;
+				@media (min-width: 991px) {
+					padding: 0 60px;
+				}
 
 				&:nth-child(1), &:nth-child(2), &:nth-child(3) {
 					.icon {
@@ -431,7 +497,52 @@ nav {
 
 .popular {
 	background-color: $grey;
-	padding: 50px 0;
+	padding: 50px 0 100px 0;
+
+	.container {
+		.row {
+			@media (max-width: 991px) {
+				padding: 0 15px;
+			}
+			div {
+				padding: 0;
+				&.col-md-4 {
+					width: calc(100%/1024*314);
+					@media (max-width: 767px) {
+						width: 100%;
+					}
+
+					div {
+						img {
+							width: 100%;
+						}
+						&:first-child {
+							margin-bottom: 7.5px;
+						}
+					}
+				}
+
+				&.col-md-8 {
+					background-color: blue;
+					width: calc(100%/1024*702);
+					margin-left: calc(100%/1024*8);
+
+					@media (max-width: 767px) {
+						width: 100%;
+						margin: 7.5px 0 0 0;
+					}
+
+					img {
+						width: 100%;
+					}
+				}
+
+				div {
+					padding: 0;
+				}
+			}
+		}
+	}
 }
 
 /*
@@ -439,6 +550,88 @@ nav {
 *	CSS of the Footer
 *
 */
+.footer {
+	height: 566px;
+	@media (max-width: 767px) {
+		height: auto;
+	}
+	.line {
+		padding-top: 100px;
+		border-bottom: 1px solid $lightergrey;
+	}
+	.container {
+		padding-top: 40px;
+
+		.row {
+			nav {
+				ul {
+					font-size: 1.4em;
+					margin: 0 0 15px 0;
+					li {
+						line-height: 1.225em;
+						a {
+							text-transform: none;
+							color: $green;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 footer {
-	height: 620px;
+	background: $grey;
+	height: 50px;
+	box-sizing: content-box;
+	border-bottom: 4px solid $green;
+	display: flex;
+	align-items: center;
+	position: relative;
+	.container {
+		height: 100%;
+		.logo {
+			background-image: url('/images/bottomLogo.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 103px;
+			height: 140px;
+
+			position: absolute;
+			bottom: -4px;
+			box-shadow: 0px 0px 24px 0px rgba(1, 1, 1, 0.19);
+		}
+		nav {
+			ul {
+				margin: 0;
+				padding-left: 170px;
+
+				&.language {
+					padding-left: 0;
+					font-size: 1.3em;
+
+					li {
+						a {
+							font-weight: normal;
+							color: $blue;
+							//line-height: 50px;
+						}
+					}
+				}
+
+				&:first-child {
+					li {
+						font-weight: bold;
+						margin-right: 30px;
+						a {
+							font-size: 1.5em;
+							color: $darkgrey;
+							padding: 0;
+							line-height: 50px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
