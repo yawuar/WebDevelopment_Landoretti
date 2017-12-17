@@ -6,8 +6,13 @@
 		$(e.currentTarget).addClass('active');
 	}
 
+	function showOverlay(e) {
+		console.log(e);
+	}
+
 	function bindEvents() {
 		$('ul.language li').click(activateLanguage);
+		$('.popular .overlay').hover(showOverlay);
 	}
 
 	bindEvents();

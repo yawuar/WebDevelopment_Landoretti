@@ -2,6 +2,9 @@
 
 		<div class="carousel">
 				<div class="container">
+					<div class="icon">
+						<span class="inner"></span>
+					</div>
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.</p>
 			</div>
 		</div>
@@ -60,14 +63,26 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 col-md-4">
-				<div class="col-md-12">
+				<div class="col-md-12 overlay">
+					<a href="#">
+						<div class="svg-icon"></div>
+						<div class="transparent"></div>
+					</a>
 					<img src="/images/popular/popular-1.jpg" alt="popular-1">
 				</div>
-				<div class="col-md-12">
+				<div class="col-md-12 overlay">
+					<a href="#">
+						<div class="svg-icon"></div>
+						<div class="transparent"></div>
+					</a>
 					<img src="/images/popular/popular-2.jpg" alt="popular-2">
 				</div>
 			</div>
-			<div class="col-sm-8 col-md-8">
+			<div class="col-sm-8 col-md-8 overlay">
+				<a href="#">
+					<div class="svg-icon"></div>
+					<div class="transparent"></div>
+				</a>
 				<img src="/images/popular/popular-3.jpg" alt="popular-3">
 			</div>
 		</div>
