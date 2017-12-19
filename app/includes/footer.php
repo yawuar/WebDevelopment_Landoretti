@@ -93,7 +93,7 @@
             <div class="col-sm-3 col-md-3">
                 <div class="search">
                     <h4>FIND WHAT YOU NEED.</h4>
-                    <form action="#" method="GET" class="navbar-right">
+                    <form action="#" method="GET" class="navbar-right input-field input-footer">
 						
 						<input type="text" name="search" placeholder="Search">
 
@@ -107,6 +107,14 @@
                         <li>Landoretti ART</li>
                         <li>Straatnaam xxx</li>
                         <li>xxxx, Oostende</li>
+                        <li>+xx (0)x xxx xx xx</li>
+                        <li><a href="#">info@landorettiart.com</a></li>
+                    </ul>
+                    <ul class="social-media">
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">twitter</a></li>
+                        <li><a href="#">youtube</a></li>
+                        <li><a href="#">google</a></li>
                     </ul>
                 </div>
             </div>
