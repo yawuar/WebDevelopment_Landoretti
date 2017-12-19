@@ -25,7 +25,8 @@ body {
 
 h1 {
   font-family: 'Helvetica';
-  font-size: 4.5em; }
+  font-size: 4.5em;
+  margin: 0; }
 
 h2 {
   font-family: 'Helvetica';
@@ -106,6 +107,29 @@ ul {
       font-style: italic;
       font-weight: normal;
       opacity: 1; }
+
+.blue-overlay {
+  background-color: #0120a6;
+  opacity: 0.651; }
+
+.overlay-icon {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  background-color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  z-index: 1; }
+  .overlay-icon .inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #01a6a0;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px; }
 
 /*
 *
@@ -295,28 +319,9 @@ nav {
     .background .carousel .container {
       position: relative;
       height: 100%;
-      background-color: #0120a6;
-      opacity: 0.651;
       padding: 0;
       display: flex;
       align-items: center; }
-      .background .carousel .container .icon {
-        position: absolute;
-        top: -16px;
-        left: -16px;
-        background-color: white;
-        border-radius: 50%;
-        width: 32px;
-        height: 32px; }
-        .background .carousel .container .icon .inner {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          background-color: #01a6a0;
-          border-radius: 50%;
-          width: 18px;
-          height: 18px; }
       .background .carousel .container p {
         font-size: 1.5em;
         color: white;
@@ -441,11 +446,46 @@ nav {
 
 /*
 *
+*	CSS of the ISEARCH page
+*
+*/
+.isearch-bg {
+  background: url("/images/isearch-bg.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  height: 536px;
+  width: 100%; }
+  .isearch-bg .container {
+    padding-top: 104px;
+    height: 100%; }
+    .isearch-bg .container .info {
+      position: relative;
+      height: calc(100%/432*332);
+      margin: 50px 0;
+      width: 314px;
+      color: white; }
+      .isearch-bg .container .info .top {
+        height: calc(100%/332*252);
+        padding: 30px 30px 0 30px; }
+        .isearch-bg .container .info .top h1 {
+          font-family: "Helvetica", sans-serif;
+          font-size: 3em;
+          font-weight: lighter; }
+        .isearch-bg .container .info .top p {
+          margin: 0; }
+      .isearch-bg .container .info .bottom {
+        background-color: white;
+        height: calc(100%/332*80); }
+
+/*
+*
 *	CSS of the Footer
 *
 */
 .footer {
-  height: 566px; }
+  height: 566px;
+  padding: 0 15px; }
   @media (max-width: 767px) {
     .footer {
       height: auto; } }
@@ -454,50 +494,60 @@ nav {
     border-bottom: 1px solid #e5e5e5; }
   .footer .container {
     padding-top: 40px; }
-    .footer .container .row div::after {
-      clear: both;
-      display: block;
-      content: ""; }
-    .footer .container .row div .contact {
-      float: left;
-      margin-top: 30px; }
-      .footer .container .row div .contact ul {
+    .footer .container .row div {
+      padding: 0; }
+      .footer .container .row div::after {
+        clear: both;
+        display: block;
+        content: ""; }
+      .footer .container .row div .contact {
+        float: left;
+        margin-top: 30px; }
+        .footer .container .row div .contact ul {
+          margin: 0; }
+          .footer .container .row div .contact ul li {
+            color: #5c5c5c;
+            font-size: 1.5em; }
+            .footer .container .row div .contact ul li:nth-child(3) {
+              margin-bottom: 30px; }
+            .footer .container .row div .contact ul li a {
+              color: #01a6a0;
+              text-decoration: underline; }
+          .footer .container .row div .contact ul.social-media {
+            margin-top: 25px; }
+            .footer .container .row div .contact ul.social-media li {
+              margin: 0 5px 0 0;
+              float: left; }
+              .footer .container .row div .contact ul.social-media li a {
+                background: url("/images/social-media.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-indent: -10000px;
+                display: inline-block;
+                height: 31px;
+                width: 31px; }
+              .footer .container .row div .contact ul.social-media li:nth-child(2) a {
+                background-position-x: -29px; }
+              .footer .container .row div .contact ul.social-media li:nth-child(3) a {
+                background-position-x: -59px; }
+              .footer .container .row div .contact ul.social-media li:nth-child(4) a {
+                background-position-x: -89px; }
+      .footer .container .row div nav ul {
+        font-size: 1.4em;
+        margin: 0 0 15px 0; }
+        .footer .container .row div nav ul li {
+          line-height: 1.3em; }
+          .footer .container .row div nav ul li a {
+            text-transform: none;
+            color: #01a6a0; }
+    .footer .container.copy {
+      padding-top: 0; }
+      .footer .container.copy p {
+        text-align: right;
+        font-size: 1.2em;
+        color: #777777;
+        line-height: 1.5;
         margin: 0; }
-        .footer .container .row div .contact ul li {
-          color: #5c5c5c;
-          font-size: 1.5em; }
-          .footer .container .row div .contact ul li:nth-child(3) {
-            margin-bottom: 30px; }
-          .footer .container .row div .contact ul li a {
-            color: #01a6a0;
-            text-decoration: underline; }
-        .footer .container .row div .contact ul.social-media {
-          margin-top: 25px; }
-          .footer .container .row div .contact ul.social-media li {
-            margin: 0 5px 0 0;
-            float: left; }
-            .footer .container .row div .contact ul.social-media li a {
-              background: url("/images/social-media.svg");
-              background-repeat: no-repeat;
-              background-size: cover;
-              text-indent: -10000px;
-              display: inline-block;
-              height: 31px;
-              width: 31px; }
-            .footer .container .row div .contact ul.social-media li:nth-child(2) a {
-              background-position-x: -29px; }
-            .footer .container .row div .contact ul.social-media li:nth-child(3) a {
-              background-position-x: -59px; }
-            .footer .container .row div .contact ul.social-media li:nth-child(4) a {
-              background-position-x: -89px; }
-    .footer .container .row div nav ul {
-      font-size: 1.4em;
-      margin: 0 0 15px 0; }
-      .footer .container .row div nav ul li {
-        line-height: 1.225em; }
-        .footer .container .row div nav ul li a {
-          text-transform: none;
-          color: #01a6a0; }
 
 footer {
   background: #eaeaea;
@@ -506,7 +556,8 @@ footer {
   border-bottom: 4px solid #01a6a0;
   display: flex;
   align-items: center;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   footer .container {
     height: 100%; }
     footer .container .logo {

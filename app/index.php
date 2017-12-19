@@ -1,10 +1,14 @@
 <?php 
 
-	$page = basename($_SERVER['PHP_SELF']); 
-
 	include('includes/header.php');
 
-	include('pages/' . $page);
+	if(isset($_GET['page'])) {
+		include('pages/' . $_GET['page'] . '.php');
+	}
+
+	if(!isset($_GET['page'])) {
+		include('pages/home.php');
+	}
 
 	include('includes/footer.php');
 

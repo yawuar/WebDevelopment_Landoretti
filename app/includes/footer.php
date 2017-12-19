@@ -93,7 +93,7 @@
             <div class="col-sm-3 col-md-3">
                 <div class="search">
                     <h4>FIND WHAT YOU NEED.</h4>
-                    <form action="#" method="GET" class="navbar-right input-field input-footer">
+                    <form action="#" method="GET" class="input-field input-footer">
 						
 						<input type="text" name="search" placeholder="Search">
 
@@ -119,6 +119,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container copy">
+        <p>&copy; 2013 Studio6, Inc. All rights reserved.</p>
     </div>
 </section>
 <footer>

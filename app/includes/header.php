@@ -8,12 +8,12 @@
 	);
 
 	$arrNav = array(
-		'home' => 'home.php',
-		'art' => 'art.php',
-		'isearch' => 'isearch.php',
-		'myauctions' => 'myauctions.php',
-		'mybids' => 'mybids.php',
-		'contact' => 'contact.php'
+		'home' => 'index.php',
+		'art' => 'index.php?page=art',
+		'isearch' => 'index.php?page=isearch',
+		'myauctions' => 'index.php?page=myauctions',
+		'mybids' => 'index.php?page=mybids',
+		'contact' => 'index.php?page=contact'
 	);
 
 	$arrLanguage = array(
