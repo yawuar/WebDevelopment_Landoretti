@@ -78,7 +78,7 @@ ul {
     font-size: 1.5em; }
     .input-field input[type="text"] {
       height: 28px;
-      width: calc(100%/1024*207);
+      width: 207px;
       border: 1px solid #ededed;
       border-radius: 4px;
       color: #1d1d1b; }
@@ -623,6 +623,9 @@ footer {
   align-items: center;
   position: relative;
   width: 100%; }
+  @media (max-width: 767px) {
+    footer {
+      height: 100%; } }
   footer .container {
     height: 100%; }
     footer .container .logo {

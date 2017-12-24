@@ -129,7 +129,7 @@ ul {
 		font-size: 1.5em;
 		&[type="text"] {
 			height: 28px;
-			width: calc(100%/1024*207);
+			width: 207px;
 			border: 1px solid $lightgrey;
 			border-radius: 4px;
 			color: $darkestgrey;
@@ -932,6 +932,10 @@ footer {
 	align-items: center;
 	position: relative;
 	width: 100%;
+
+	@media (max-width: 767px) {
+		height: 100%;
+	}
 	.container {
 		height: 100%;
 		.logo {
