@@ -7,10 +7,10 @@
             <div class="top blue-overlay">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. magnis dis parturient montes, nascetur ridiculus mus...</p>
-                <p>Price: &euro; 299,99</p>
+                <span class="bold">Price:</span> 
+                <span class="euro-size">&euro; 299,99</span>
             </div>
-            <div class="bottom">
-            </div>
+            <a href="#" class="bottom">visit auction<span></span></a>
         </div>
     </div>
 </header>

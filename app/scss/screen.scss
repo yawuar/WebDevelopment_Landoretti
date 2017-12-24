@@ -19,6 +19,7 @@ $hoverGrey: #565656;
 
 $blue: #0a1e75;
 $lightBlue: #0120a6;
+$lighterBlue: #2b45b5;
 
 @mixin placeholder {
 	&::-webkit-input-placeholder {@content}
@@ -88,6 +89,10 @@ ul {
 	list-style: none;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 /*
 *
 *	set the default container width to 2024px
@@ -124,7 +129,7 @@ ul {
 		font-size: 1.5em;
 		&[type="text"] {
 			height: 28px;
-			width: 207px;
+			width: calc(100%/1024*207);
 			border: 1px solid $lightgrey;
 			border-radius: 4px;
 			color: $darkestgrey;
@@ -696,21 +701,64 @@ nav {
 
 			.top {
 				height: calc(100%/332*252);
-				padding: 30px 30px 0 30px;
+				// padding: 30px 30px 0 30px;
 
 				h1 {
 					font-family: "Helvetica", sans-serif;
 					font-size: 3em;
 					font-weight: lighter;
+					padding: 30px 0 0 30px;
+					height: 71px;
+
+					border-bottom: 1px solid $lighterBlue;
 				}
 				p {
 					margin: 0;
+					font-size: 1.5em;
+					padding: 21px 30px 0 30px;
+				}
+
+				span {
+					padding-left: 30px;
+					margin-top: 14px;
+					display: inline-block;
+
+					&.bold {
+						font-size: 1.5em;
+					}
+
+					&.euro-size {
+						font-size: 1.8em;
+						padding-left: 0;
+					}
 				}
 			}
 
 			.bottom {
+				display: inline-block;
 				background-color: white;
 				height: calc(100%/332*80);
+				width: 100%;
+				color: $green;
+				padding-left: 30px;
+				font-size: 2em;
+				text-transform: uppercase;
+
+				display: flex;
+    			align-items: center;
+
+				span {
+					display: inline-block;
+					background: url('/images/icons/link-arrow.png');
+					background-repeat: no-repeat;
+					height: 22px;
+					width: 11px;
+					margin-left: 20px;
+				}
+
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 	}
@@ -800,6 +848,53 @@ nav {
 					}
 				}
 				nav {
+
+					&::after {
+						display: block;
+						content: "";
+						clear: both;
+					}
+
+					h4 {
+						@media (max-width: 767px) {
+							display: none;
+						}
+					}
+					ul {
+						.dropdown {
+							a {
+								display: none;
+								
+								@media (max-width: 767px) {
+									display: block;
+									color: black;
+									font-weight: bold;
+									padding-left: 0;
+								}
+							}
+							.dropdown-menu {
+								font-weight: normal;
+								font-size: 1em;
+								@media (min-width: 768px) {
+									position: static;
+									display: block;
+									border: none;
+									box-shadow: none;
+									font-size: 1em;
+								}
+								li {
+									a {
+										font-weight: normal;
+										color: $green;
+										@media (min-width: 768px) {
+											display: block;
+											padding-left: 0;
+										}
+									}
+								}
+							}
+						}
+					}
 					ul {
 						font-size: 1.4em;
 						margin: 0 0 15px 0;
