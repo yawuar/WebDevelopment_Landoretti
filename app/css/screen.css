@@ -669,6 +669,12 @@ nav {
   #faq-filter .container {
     padding: 0; } }
 
+#faq-filter .container h1 {
+  color: #545353;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: lighter;
+  margin: 55px 0; }
+
 #faq-filter .container .filter {
   background-color: #f7f8f7;
   height: 134px;
@@ -680,7 +686,8 @@ nav {
   align-items: center; }
   @media (max-width: 991px) {
     #faq-filter .container .filter {
-      height: auto; } }
+      height: auto;
+      padding: 15px; } }
   #faq-filter .container .filter .filter-items {
     width: 100%;
     float: left; }

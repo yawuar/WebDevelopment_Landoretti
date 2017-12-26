@@ -993,6 +993,13 @@ nav {
 		@media (min-width: 991px) {
 			padding: 0;
 		}
+
+		h1 {
+			color: #545353;
+			font-family: 'Helvetica', sans-serif;
+			font-weight: lighter;
+			margin: 55px 0;
+		}
 		.filter {
 			background-color: #f7f8f7;
 			height: 134px;
@@ -1006,6 +1013,7 @@ nav {
 
 			@media (max-width: 991px) {
 				height: auto;
+				padding: 15px;
 			}
 
 			.filter-items {
