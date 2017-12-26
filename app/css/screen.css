@@ -47,6 +47,12 @@ h4 {
   margin: 0;
   color: black; }
 
+h5 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  color: #0a1e75; }
+
 ul {
   list-style: none; }
 
@@ -684,10 +690,6 @@ nav {
   border: 1px solid #e5e5e5;
   display: flex;
   align-items: center; }
-  @media (max-width: 991px) {
-    #faq-filter .container .filter {
-      height: auto;
-      padding: 15px; } }
   #faq-filter .container .filter .filter-items {
     width: 100%;
     float: left; }
@@ -698,6 +700,57 @@ nav {
         #faq-filter .container .filter .filter-items div ul li a {
           color: #01a6a0;
           border-bottom: 2px solid #01a6a0; }
+
+#faq-filter .container .button {
+  float: right; }
+  #faq-filter .container .button a {
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    width: 117px;
+    height: 48px;
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-top: 0;
+    font-weight: bold;
+    color: #0a1e75;
+    font-size: 1.2em;
+    text-decoration: none; }
+    #faq-filter .container .button a:hover {
+      background-color: #e1e1e1; }
+
+#faq-list {
+  margin-top: 57px; }
+  #faq-list .container .articles article {
+    min-height: 135px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #f4f4f4; }
+    @media (max-width: 991px) {
+      #faq-list .container .articles article {
+        height: auto; } }
+    #faq-list .container .articles article:last-child {
+      border: none;
+      margin-bottom: 0; }
+    #faq-list .container .articles article .qa {
+      float: left; }
+      #faq-list .container .articles article .qa ul li {
+        color: #0a1e75;
+        font-size: 3em; }
+        #faq-list .container .articles article .qa ul li:last-child {
+          color: #545353; }
+    #faq-list .container .articles article .info {
+      margin-left: 85px; }
+      #faq-list .container .articles article .info p {
+        font-size: 1.6em;
+        line-height: 22px;
+        color: #4e4e4e;
+        margin-top: 30px;
+        margin-bottom: 0; }
+        #faq-list .container .articles article .info p span {
+          font-weight: bold; }
+          #faq-list .container .articles article .info p span:last-child {
+            border-bottom: 2px solid #01a6a0;
+            color: #01a6a0; }
 
 /*
 *

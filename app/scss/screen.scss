@@ -90,6 +90,13 @@ h4 {
 	color: black;
 }
 
+h5 {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0;
+	color: $blue;
+}
+
 ul {
 	list-style: none;
 }
@@ -1011,11 +1018,6 @@ nav {
 			display: flex;
 			align-items: center;
 
-			@media (max-width: 991px) {
-				height: auto;
-				padding: 15px;
-			}
-
 			.filter-items {
 				width: 100%;
 				float: left;
@@ -1028,6 +1030,85 @@ nav {
 							a {
 								color: $green;
 								border-bottom: 2px solid $green;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.button {
+			float: right;
+			a {
+				display: inline-block;
+				text-align: center;
+				line-height: 48px;
+				width: 117px;
+				height: 48px;
+				background-color: $lightestGrey;
+				border: 1px solid $lightergrey;
+				border-top: 0;
+				font-weight: bold;
+				color: $blue;
+				font-size: 1.2em;
+				text-decoration: none;
+
+				&:hover {
+					background-color: $hoverGreyBtn;
+				}
+			}
+		}
+	}
+}
+
+#faq-list {
+	margin-top: 57px;
+
+	.container {
+		.articles {
+			article {
+				min-height: 135px;
+				margin-bottom: 35px;
+				border-bottom: 1px solid #f4f4f4;
+
+				@media (max-width: 991px) {
+					height: auto;
+				}
+
+				&:last-child {
+					border: none;
+					margin-bottom: 0;
+				}
+
+				.qa {
+					float: left;
+					ul {
+						li {
+							color: $blue;
+							font-size: 3em;
+
+							&:last-child {
+								color: #545353;
+							}
+						}
+					}
+				}
+
+				.info {
+					margin-left: 85px;
+					p {
+						font-size: 1.6em;
+						line-height: 22px;
+						color: $darkgrey;
+						margin-top: 30px;
+						margin-bottom: 0;
+
+						span {
+							font-weight: bold;
+
+							&:last-child {
+								border-bottom: 2px solid $green;
+								color: $green;
 							}
 						}
 					}

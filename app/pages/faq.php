@@ -41,11 +41,100 @@
             </div>
         </div>
 
+        <div class="button">
+            <a href="#">I SEARCH ></a>
+        </div>
+
     </div>
 </section>
 
 <section id="faq-list">
     <div class="container">
-
+        <div class="articles">
+            <article>
+                <div class="qa">
+                    <ul>
+                        <li>Q</li>
+                        <li>A</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h5>How to bid?</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </article>
+            <article>
+                <div class="qa">
+                    <ul>
+                        <li>Q</li>
+                        <li>A</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h5>How to bid?</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </article>
+            <article>
+                <div class="qa">
+                    <ul>
+                        <li>Q</li>
+                        <li>A</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h5>How to bid?</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </article>
+            <article>
+                <div class="qa">
+                    <ul>
+                        <li>Q</li>
+                        <li>A</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h5>How to bid?</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </article>
+            <article>
+                <div class="qa">
+                    <ul>
+                        <li>Q</li>
+                        <li>A</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h5>How to bid?</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </article>
+            <article>
+                <div class="qa">
+                    <ul>
+                        <li>Q</li>
+                        <li>A</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h5>How to bid?</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </article>
+            <article>
+                <div class="qa">
+                    <ul>
+                        <li>Q</li>
+                        <li>A</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h5>How to bid?</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </article>
+        </div>
     </div>
 </section>
