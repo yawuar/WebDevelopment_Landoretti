@@ -925,6 +925,11 @@ nav {
 				display: flex;
 				align-items: center;
 
+				@media (max-width: 767px) {
+					height: auto;
+					padding: 15px 0;
+				}
+
 				&:last-child {
 					border-bottom: 1px solid $lightergrey;
 				}

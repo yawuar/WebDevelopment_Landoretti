@@ -621,6 +621,10 @@ nav {
         border-bottom: 0;
         display: flex;
         align-items: center; }
+        @media (max-width: 767px) {
+          #isearch-overview .container .articles article {
+            height: auto;
+            padding: 15px 0; } }
         #isearch-overview .container .articles article:last-child {
           border-bottom: 1px solid #e5e5e5; }
         #isearch-overview .container .articles article .info {
