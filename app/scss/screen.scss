@@ -189,6 +189,20 @@ ul {
 	}
 }
 
+.breadcrumbs {
+	font-size: 1.5em;
+	margin-top: 36px;
+	ul {
+		margin: 0;
+		li {
+			display: inline-block;
+			a {
+				color: $green;
+			}
+		}
+	}
+}
+
 /*
 *
 *	CSS of the Navigation
@@ -196,7 +210,7 @@ ul {
 */
 
 nav {
-	z-index: 1;
+	z-index: 2;
 	a {
 		text-transform: uppercase;
 	}
@@ -776,20 +790,6 @@ nav {
 			padding: 0 15px;
 		}
 
-		.breadcrumbs {
-			font-size: 1.5em;
-			margin-top: 36px;
-			ul {
-				margin: 0;
-				li {
-					display: inline-block;
-					a {
-						color: $green;
-					}
-				}
-			}
-		}
-
 		h1 {
 			font-weight: lighter;
 			margin: 55px 0;
@@ -976,6 +976,53 @@ nav {
 							background-color: $hoverGreyBtn;
 						}
 					} 
+				}
+			}
+		}
+	}
+}
+
+/*
+*
+*	CSS of the Faq
+*
+*/
+#faq-filter {
+	.container {
+		//padding: 0;
+		@media (min-width: 991px) {
+			padding: 0;
+		}
+		.filter {
+			background-color: #f7f8f7;
+			height: 134px;
+			padding: 0 47px 0 50px;
+			font-size: 1.8em;
+			font-weight: bold;
+			border: 1px solid $lightergrey;
+
+			display: flex;
+			align-items: center;
+
+			@media (max-width: 991px) {
+				height: auto;
+			}
+
+			.filter-items {
+				width: 100%;
+				float: left;
+
+				div {
+					padding: 0;
+					ul {
+						li {
+							line-height: 32px;
+							a {
+								color: $green;
+								border-bottom: 2px solid $green;
+							}
+						}
+					}
 				}
 			}
 		}

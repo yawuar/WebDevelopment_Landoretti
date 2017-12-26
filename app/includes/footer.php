@@ -23,7 +23,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="#">Terms of Service</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">FAQ</a></li>
+                                <li><a href="index.php?page=faq">FAQ</a></li>
                                 <li><a href="#">Contact Us</a></li>
                                 <li><a href="#">About Us</a></li>
                             </ul>
