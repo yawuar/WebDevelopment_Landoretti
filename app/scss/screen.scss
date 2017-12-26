@@ -876,6 +876,10 @@ nav {
 				.button {
 					width: calc(100%/1024*211);
 
+					@media (max-width: 767px) {
+						margin-bottom: 0;
+					}
+
 					input {
 						background-color: $darkerGrey;
 						width: 100%;
@@ -894,6 +898,9 @@ nav {
 
 	.container {
 		padding: 0;
+		@media (max-width: 767px) {
+			padding: 0 15px;
+		}
 		h3 {
 			font-family: 'Helvetica', sans-serif;
 			font-weight: lighter;
@@ -930,6 +937,10 @@ nav {
 						margin-bottom: 0;
 						font-size: 1.5em;
 						color: $footerGrey;
+
+						@media (max-width: 767px) {
+							padding-left: 15px;
+						}
 
 						span {
 							font-weight: bold;
