@@ -165,7 +165,9 @@ label {
   background-color: #e5e5e5;
   border-radius: 0;
   border: 0;
-  width: 100%; }
+  width: 100%;
+  height: 48px;
+  line-height: 48px; }
   .nice-select span {
     font-weight: bold;
     color: #545353; }
@@ -790,27 +792,53 @@ nav {
 *	CSS of the add auctions
 *
 */
-#auctions-form .container form .select {
-  width: calc(100%/1024*482); }
-  @media (max-width: 767px) {
-    #auctions-form .container form .select {
-      width: 100%; } }
-
-#auctions-form .container form input {
-  border-radius: 0;
-  font-size: 1.5em;
-  height: 48px; }
-  #auctions-form .container form input[type="text"] {
-    background-color: #f5f5f5;
-    border: 1px solid #e5e5e5; }
-  #auctions-form .container form input::-webkit-input-placeholder {
-    color: #545353; }
-  #auctions-form .container form input:-moz-placeholder {
-    color: #545353; }
-  #auctions-form .container form input::-moz-placeholder {
-    color: #545353; }
-  #auctions-form .container form input:-ms-input-placeholder {
-    color: #545353; }
+#auctions-form .container form .row {
+  max-width: 753px;
+  margin: 0; }
+  #auctions-form .container form .row:nth-child(2) .form-group:first-child {
+    margin-right: calc(100%/753*60); }
+  #auctions-form .container form .row:nth-child(3) .form-group:first-child, #auctions-form .container form .row:nth-child(3) .form-group:nth-child(2) {
+    margin-right: calc(100%/753*60); }
+  #auctions-form .container form .row .form-group {
+    padding: 0; }
+  #auctions-form .container form .row .select, #auctions-form .container form .row .title {
+    width: calc(100%/753*482); }
+    @media (max-width: 767px) {
+      #auctions-form .container form .row .select, #auctions-form .container form .row .title {
+        width: 100%; } }
+  #auctions-form .container form .row label span {
+    font-size: .7em; }
+  #auctions-form .container form .row .small-input {
+    width: calc(100%/753*211); }
+    @media (max-width: 767px) {
+      #auctions-form .container form .row .small-input {
+        width: 100%; } }
+  #auctions-form .container form .row input {
+    border-radius: 0;
+    font-size: 1.5em;
+    height: 48px;
+    padding: 0 0 0 15px; }
+    #auctions-form .container form .row input[type="text"] {
+      background-color: #f5f5f5;
+      border: 1px solid #e5e5e5; }
+    @media (max-width: 767px) {
+      #auctions-form .container form .row input {
+        padding: 0 15px; } }
+    #auctions-form .container form .row input::-webkit-input-placeholder {
+      color: #545353; }
+    #auctions-form .container form .row input:-moz-placeholder {
+      color: #545353; }
+    #auctions-form .container form .row input::-moz-placeholder {
+      color: #545353; }
+    #auctions-form .container form .row input:-ms-input-placeholder {
+      color: #545353; }
+    #auctions-form .container form .row input#title {
+      width: 100%; }
+  #auctions-form .container form .row .big-textarea {
+    width: 100%; }
+    #auctions-form .container form .row .big-textarea textarea {
+      width: 100%;
+      height: 125px; }
 
 /*
 *

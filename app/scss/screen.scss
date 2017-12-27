@@ -226,6 +226,8 @@ label {
 	border-radius: 0;
 	border: 0;
 	width: 100%;
+	height: 48px;
+	line-height: 48px;
 
 	span {
 		font-weight: bold;
@@ -1179,24 +1181,76 @@ nav {
 #auctions-form {
 	.container {
 		form {
-			.select {
-				width: calc(100%/1024*482);
+			.row {
+				max-width: 753px;
+				margin: 0;
+				&:nth-child(2) {
+					.form-group {
+						&:first-child {
+							margin-right: calc(100%/753*60);
+						}
+					}
+				}
+
+				&:nth-child(3) {
+					.form-group {
+						&:first-child, &:nth-child(2) {
+							margin-right: calc(100%/753*60);
+						}
+					}
+				}
+			.form-group {
+			 	padding: 0;
+			}
+			.select, .title {
+				width: calc(100%/753*482);
 				@media (max-width: 767px) {
 					width: 100%;
 				}
 			}
 
-			input {
-				border-radius: 0;
-				font-size: 1.5em;
-				height: 48px;
-				&[type="text"] {
-					background-color: $lightestGrey;
-					border: 1px solid $lightergrey;
+				label {
+					span {
+						font-size: .7em;
+					}
 				}
 
-				@include placeholder {
-					color: #545353;
+				.small-input {
+					width: calc(100%/753*211);
+					@media (max-width: 767px) {
+						width: 100%;
+					}
+				}
+
+				input {
+					border-radius: 0;
+					font-size: 1.5em;
+					height: 48px;
+					padding: 0 0 0 15px;
+					&[type="text"] {
+						background-color: $lightestGrey;
+						border: 1px solid $lightergrey;
+					}
+
+					@media (max-width: 767px) {
+						padding: 0 15px;
+					}
+
+					@include placeholder {
+						color: #545353;
+					}
+
+					&#title {
+						width: 100%;
+					}
+				}
+
+				.big-textarea {
+					width: 100%;
+					textarea {
+						width: 100%;
+						height: 125px;
+					}
 				}
 			}
 		}
