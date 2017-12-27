@@ -910,6 +910,9 @@ nav {
         font-size: 1.8em; }
     #auctions-form .container form .row .pricing .info {
       width: calc(100%/753*482); }
+      @media (max-width: 767px) {
+        #auctions-form .container form .row .pricing .info {
+          width: 100%; } }
       #auctions-form .container form .row .pricing .info span {
         color: #0a1e75;
         font-size: 1.8em; }

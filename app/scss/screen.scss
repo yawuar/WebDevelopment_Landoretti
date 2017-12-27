@@ -1351,6 +1351,9 @@ nav {
 
 					.info {
 						width: calc(100%/753*482);
+						@media (max-width: 767px) {
+							width: 100%;
+						}
 
 						span {
 							color: $blue;
