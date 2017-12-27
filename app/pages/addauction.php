@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 form-group file-upload">
+                <div class="col-sm-12 form-group file-upload">
                     <label for="description">Photos</label>
                     <p>Please upload one picture with the signature of the artwork and one picture of the artwork.</p>
                     <p>You can upload to 3 pictures with a maximum of of 10MB each.</p>
@@ -89,6 +89,50 @@
                         <p>optional image</p>
                         <input type="file" name="optional" id="optional">
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 pricing">
+                    <h3>Pricing</h3>
+                    <div class="col-sm-4 form-group small-input">
+                        <label for="minimum">Minimum estimate price</label>
+                        <input type="text" class="form-control" name="minimum" id="minimum" placeholder="X X X X">
+                    </div>
+                    <div class="col-sm-4 form-group small-input">
+                        <label for="maximum">Maximum estimate price</label>
+                        <input type="text" class="form-control" name="maximum" id="maximum" placeholder="X X X X">
+                    </div>
+                    <div class="col-sm-4 form-group small-input">
+                        <label for="title">Buyout price <span>(optional)</span></label>
+                        <input type="text" class="form-control" name="title" id="title" placeholder="X X X X">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 pricing">
+                    <h3>Pricing</h3>
+                    <div class="col-sm-4 form-group small-input">
+                        <label for="end">End date</label>
+                        <input type="text" class="form-control" name="end" id="end" placeholder="DD/MM/YY">
+                    </div>
+                    <div class="col-sm-8 form-group info">
+                        <span>Attention</span>
+                        <p>You can not change the information after adding this auction.</p>
+                        <p>If you're not certain about the information of your artwork, please ask for help.</p>
+                        <p>We will answer your question as soon as possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 check">
+                    <input type="checkbox" name="check" id="check">
+                    <p>I agree to <span>The Terms & Conditions</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 submit">
+                    <input type="submit" value="ADD AUCTION">
+                    <a href="#">ASK A QUESTION ></a>
                 </div>
             </div>
         </form>
