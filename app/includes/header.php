@@ -7,6 +7,11 @@
 		'logout' => 'logout.php'
 	);
 
+	$arrNotLoggedInMenu = array(
+		'register' => 'register.php',
+		'login' => 'login.php',
+	);
+
 	$arrNav = array(
 		'home' => 'index.php',
 		'art' => 'index.php?page=art',
@@ -21,6 +26,8 @@
 		'fr' => '#',
 		'en' => '#'
 	);
+
+	$isLoggedIn = false;
 
 ?>
 <!DOCTYPE html>
@@ -52,6 +59,7 @@
 
 	<!-- Css files -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/screen.css">
 </head>
 <body>
@@ -82,12 +90,22 @@
 				
 				<div class="collapse navbar-collapse navigation">
 					
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav <?php echo (!$isLoggedIn) ? 'login' : 'loggedin' ?>">
 
-						<?php foreach($arrUserMenu as $value => $key) { ?>
+						<?php if($isLoggedIn) { ?>
+							<?php foreach($arrUserMenu as $value => $key) { ?>
 
-							<li><a href="<?= $key ?>"><?= $value ?></a></li>
+								<li><a href="<?= $key ?>"><?= $value ?></a></li>
 
+							<?php } ?>
+						<?php } ?>
+
+						<?php if(!$isLoggedIn) { ?>
+							<?php foreach($arrNotLoggedInMenu as $value => $key) { ?>
+
+								<li><a href="<?= $key ?>"><?= $value ?></a></li>
+
+							<?php } ?>
 						<?php } ?>
 
 					</ul>

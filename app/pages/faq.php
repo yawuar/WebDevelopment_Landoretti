@@ -71,7 +71,7 @@
                     </ul>
                 </div>
                 <div class="info">
-                    <h5>How to bid?</h5>
+                    <h5>How to sell?</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
                 </div>
             </article>
@@ -83,7 +83,7 @@
                     </ul>
                 </div>
                 <div class="info">
-                    <h5>How to bid?</h5>
+                    <h5>How to buy?</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
                 </div>
             </article>
@@ -95,7 +95,7 @@
                     </ul>
                 </div>
                 <div class="info">
-                    <h5>How to bid?</h5>
+                    <h5>How to register?</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
                 </div>
             </article>
@@ -107,7 +107,19 @@
                     </ul>
                 </div>
                 <div class="info">
-                    <h5>How to bid?</h5>
+                    <h5>How to ask a question?</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>‘I search’</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </article>
+            <article>
+                <div class="qa">
+                    <ul>
+                        <li>Q</li>
+                        <li>A</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h5>What is a watchlist?</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
                 </div>
             </article>
@@ -119,19 +131,7 @@
                     </ul>
                 </div>
                 <div class="info">
-                    <h5>How to bid?</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
-                </div>
-            </article>
-            <article>
-                <div class="qa">
-                    <ul>
-                        <li>Q</li>
-                        <li>A</li>
-                    </ul>
-                </div>
-                <div class="info">
-                    <h5>How to bid?</h5>
+                    <h5>How to use a watchlist?</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <span>nostrud exercitation</span> ullamco laboris nisi ut aliquip ex ea <span>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
                 </div>
             </article>

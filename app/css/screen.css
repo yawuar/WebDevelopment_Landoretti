@@ -24,10 +24,11 @@ body {
   /* 2 */ }
 
 h1 {
-  font-family: 'Helvetica';
+  font-family: 'Helvetica', sans-serif;
   font-size: 4.5em;
-  margin: 0;
-  color: white; }
+  font-weight: lighter;
+  margin: 55px 0;
+  color: #545353; }
 
 h2 {
   font-family: 'Helvetica';
@@ -118,6 +119,11 @@ ul {
       font-weight: normal;
       opacity: 1; }
 
+label {
+  font-size: 2em;
+  color: #0a1e75;
+  font-weight: normal; }
+
 .blue-overlay {
   background-color: rgba(1, 32, 166, 0.651); }
 
@@ -149,6 +155,33 @@ ul {
       display: inline-block; }
       .breadcrumbs ul li a {
         color: #01a6a0; }
+
+/*
+*
+* Css of nice - select
+*
+*/
+.nice-select {
+  background-color: #e5e5e5;
+  border-radius: 0;
+  border: 0;
+  width: 100%; }
+  .nice-select span {
+    font-weight: bold;
+    color: #545353; }
+  .nice-select .list {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    box-shadow: none; }
+    .nice-select .list li {
+      height: 50px;
+      line-height: 50px;
+      border: 1px solid #e5e5e5;
+      border-top: 0;
+      color: #545353; }
+      .nice-select .list li:first-child {
+        display: none; }
 
 /*
 *
@@ -229,9 +262,9 @@ nav {
             @media (max-width: 767px) {
               nav.navbar-default .container .information .navigation ul {
                 display: inline-block; } }
-            nav.navbar-default .container .information .navigation ul li {
+            nav.navbar-default .container .information .navigation ul.loggedin li {
               font-size: 1.3em; }
-              nav.navbar-default .container .information .navigation ul li:nth-child(1):before {
+              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(1):before {
                 content: "";
                 display: block;
                 background: url("/images/icons/watchlist.png") no-repeat;
@@ -239,11 +272,11 @@ nav {
                 height: 10px;
                 float: left;
                 margin: 5px 10px 5px 0; }
-              nav.navbar-default .container .information .navigation ul li:nth-child(1) a {
+              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(1) a {
                 border-right: 1px solid #0a1e75;
                 float: left;
                 padding-right: 20px; }
-              nav.navbar-default .container .information .navigation ul li:nth-child(2):before {
+              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(2):before {
                 content: "";
                 display: block;
                 background: url("/images/icons/profile.png") no-repeat;
@@ -251,15 +284,25 @@ nav {
                 height: 14px;
                 margin: 3px 10px 3px 20px;
                 float: left; }
-              nav.navbar-default .container .information .navigation ul li:nth-child(2) a {
+              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(2) a {
                 border-right: 1px solid #0a1e75;
                 float: left;
                 padding-right: 20px; }
-              nav.navbar-default .container .information .navigation ul li a {
+              nav.navbar-default .container .information .navigation ul.loggedin li a {
                 padding: 0;
                 color: #0a1e75; }
-              nav.navbar-default .container .information .navigation ul li:last-child {
+              nav.navbar-default .container .information .navigation ul.loggedin li:last-child {
                 padding-left: 20px; }
+            nav.navbar-default .container .information .navigation ul.login li {
+              font-size: 1.3em; }
+              nav.navbar-default .container .information .navigation ul.login li:nth-child(1) a {
+                border-right: 1px solid #0a1e75;
+                padding-right: 40px; }
+              nav.navbar-default .container .information .navigation ul.login li a {
+                padding: 0;
+                color: #0a1e75; }
+              nav.navbar-default .container .information .navigation ul.login li:last-child {
+                padding-left: 40px; }
     nav.navbar-default .main-navigation {
       background-color: #eaeaea;
       height: 50px; }
@@ -492,11 +535,11 @@ nav {
       .isearch-bg .container .info .top {
         height: calc(100%/332*252); }
         .isearch-bg .container .info .top h1 {
-          font-family: "Helvetica", sans-serif;
           font-size: 3em;
-          font-weight: lighter;
           padding: 30px 0 0 30px;
           height: 71px;
+          color: white;
+          margin: 0;
           border-bottom: 1px solid #6c7dc6; }
         .isearch-bg .container .info .top p {
           margin: 0;
@@ -537,10 +580,6 @@ nav {
   @media (max-width: 767px) {
     #isearch-content .container {
       padding: 0 15px; } }
-  #isearch-content .container h1 {
-    font-weight: lighter;
-    margin: 55px 0;
-    color: #545353; }
   #isearch-content .container h3 {
     font-family: 'Helvetica', sans-serif;
     font-weight: lighter;
@@ -558,10 +597,6 @@ nav {
         #isearch-content .container form .row .form-group {
           width: 100% !important;
           margin-bottom: 40px; } }
-      #isearch-content .container form .row .form-group label {
-        font-size: 2em;
-        color: #0a1e75;
-        font-weight: normal; }
       #isearch-content .container form .row .form-group input {
         border-radius: 0;
         font-size: 1.5em;
@@ -675,12 +710,6 @@ nav {
   #faq-filter .container {
     padding: 0; } }
 
-#faq-filter .container h1 {
-  color: #545353;
-  font-family: 'Helvetica', sans-serif;
-  font-weight: lighter;
-  margin: 55px 0; }
-
 #faq-filter .container .filter {
   background-color: #f7f8f7;
   height: 134px;
@@ -755,6 +784,33 @@ nav {
           #faq-list .container .articles article .info p span:last-child {
             border-bottom: 2px solid #01a6a0;
             color: #01a6a0; }
+
+/*
+*
+*	CSS of the add auctions
+*
+*/
+#auctions-form .container form .select {
+  width: calc(100%/1024*482); }
+  @media (max-width: 767px) {
+    #auctions-form .container form .select {
+      width: 100%; } }
+
+#auctions-form .container form input {
+  border-radius: 0;
+  font-size: 1.5em;
+  height: 48px; }
+  #auctions-form .container form input[type="text"] {
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5; }
+  #auctions-form .container form input::-webkit-input-placeholder {
+    color: #545353; }
+  #auctions-form .container form input:-moz-placeholder {
+    color: #545353; }
+  #auctions-form .container form input::-moz-placeholder {
+    color: #545353; }
+  #auctions-form .container form input:-ms-input-placeholder {
+    color: #545353; }
 
 /*
 *
