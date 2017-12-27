@@ -63,7 +63,32 @@
             <div class="row">
                 <div class="col-sm-4 form-group big-textarea">
                     <label for="description">Description</label>
-                    <textarea name="description" id="description"></textarea>
+                    <textarea name="description" id="description">What's the condition of the artwork?</textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 form-group big-textarea">
+                    <label for="description">Origin</label>
+                    <textarea name="description" id="description">What's the origin of the artwork?</textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 form-group file-upload">
+                    <label for="description">Photos</label>
+                    <p>Please upload one picture with the signature of the artwork and one picture of the artwork.</p>
+                    <p>You can upload to 3 pictures with a maximum of of 10MB each.</p>
+                    <div class="col-sm-4 file-button">
+                        <p>upload image <span>of the artwork</span></p>
+                        <input type="file" name="artwork" id="artwork">
+                    </div>
+                    <div class="col-sm-4 file-button">
+                        <p>upload image <span>of the signature</span></p>
+                        <input type="file" name="signature" id="signature">
+                    </div>
+                    <div class="col-sm-4 file-button">
+                        <p>optional image</p>
+                        <input type="file" name="optional" id="optional">
+                    </div>
                 </div>
             </div>
         </form>
