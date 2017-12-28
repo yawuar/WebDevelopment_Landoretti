@@ -1,5 +1,22 @@
 <?php 
     include('includes/landingpage.php');
+
+    $errors = [];
+
+    // check if form is submitted
+    if(isset($_POST['submit']) && strtolower($_POST['submit']) === strtolower('ADMIT REQUEST')) {
+        if(empty($_POST['what'])) {
+            $errors['what'] = 'Please enter a value for what you are looking for?';
+        }
+
+        if(empty($_POST['artist'])) {
+            $errors['artist'] = 'Please enter an artist?';
+        }
+
+        if(empty($_POST['info'])) {
+            $errors['info'] = 'Please enter some information about the artwork?';
+        }
+    }
 ?>
 
 <!-- Content of Isearch -->
@@ -11,12 +28,18 @@
                 <li><a href="#">I search</a></li>
             </ul>
         </div>
-
         <h1>I search</h1>
-
         <h3>Add a request</h3>
-
-        <form>
+        <?php if(!empty($errors)) { ?>
+            <div class="errors alert alert-danger">
+                <ul>
+                    <?php foreach($errors as $error) { ?>
+                        <li><?= $error ?></li>
+                    <?php } ?>
+                </ul>
+            </div>
+        <?php } ?>
+        <form method="POST" action="index.php?page=isearch">
             <div class="row">
                 <div class="col-sm-6 form-group right-marg">
                     <label for="what">What are you looking for?</label>
@@ -33,7 +56,7 @@
                     <input type="text" class="form-control" name="info" id="info" placeholder="Lorem ipsum, dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore">
                 </div>
                 <div class="col-sm-3 form-group button">
-                    <input type="submit" class="btn" name="btn" id="btn" value="ADMIT REQUEST">
+                    <input type="submit" class="submit" name="submit" id="submit" value="ADMIT REQUEST">
                 </div>
             </div>
             <div class="row">
@@ -41,7 +64,6 @@
                     <small id="passwordHelpBlock" class="form-text text-muted">Your request must be approved by the administrator. If your question has been approved, it will appear on our site.</small>
                 </div>
             </div>
-
         </form>
     </div>
 </section>
