@@ -1,5 +1,61 @@
 <?php 
     include('includes/landingpage.php');
+
+    $errors = [];
+
+    // check if form is submitted
+    if(isset($_POST['submit']) && strtolower($_POST['submit']) === strtolower('ADD AUCTION')) {
+        var_dump('ghello');
+        if(empty($_POST['title'])) {
+            $errors['title'] = 'Please enter a value for what you are looking for?';
+        }
+
+        if(empty($_POST['year'])) {
+            $errors['year'] = 'Please enter an artist?';
+        }
+
+        if(empty($_POST['width'])) {
+            $errors['width'] = 'Please enter the width of the artwork?';
+        }
+
+        if(empty($_POST['height'])) {
+            $errors['height'] = 'Please enter the height of the artwork?';
+        }
+        
+        if(empty($_POST['depth'])) {
+            $errors['depth'] = 'Please enter the depth of the artwork?';
+        }
+
+        if(empty($_POST['description'])) {
+            $errors['description'] = 'Please enter the description of the artwork?';
+        }
+
+        if(empty($_POST['origin'])) {
+            $errors['origin'] = 'Please enter the origin of the artwork?';
+        }
+
+        if(empty($_POST['minimum'])) {
+            $errors['minimum'] = 'Please enter the minimum of the artwork?';
+        }
+
+        if(empty($_POST['maximum'])) {
+            $errors['maximum'] = 'Please enter the maximum of the artwork?';
+        }
+
+        if(empty($_POST['price'])) {
+            $errors['price'] = 'Please enter the price of the artwork?';
+        }
+
+        if(empty($_POST['end'])) {
+            $errors['end'] = 'Please enter the end of the artwork?';
+        }
+
+        if(empty($_POST['check'])) {
+            $errors['check'] = 'Check the box';
+        }
+
+        var_dump($errors);
+    }
 ?>
 
 <section id="auctions-form">
@@ -15,7 +71,7 @@
 
         <h1>Add a new auction</h1>
 
-        <form>
+        <form method="POST" action="index.php?page=addauction">
             <div class="row">
                 <div class="col-sm-6 form-group right-marg select">
                     <select id="style">
@@ -42,22 +98,22 @@
                     <input type="text" class="form-control" name="title" id="title" placeholder="Auction title">
                 </div>
                 <div class="col-sm-6 form-group right-marg small-input">
-                    <label for="title">Year</label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="X X X X">
+                    <label for="year">Year</label>
+                    <input type="text" class="form-control" name="year" id="year" placeholder="X X X X">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 form-group small-input">
-                    <label for="title">Width</label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="Auction title">
+                    <label for="width">Width</label>
+                    <input type="text" class="form-control" name="width" id="width" placeholder="X X X X">
                 </div>
                 <div class="col-sm-4 form-group small-input">
-                    <label for="title">Height</label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="X X X X">
+                    <label for="height">Height</label>
+                    <input type="text" class="form-control" name="height" id="height" placeholder="X X X X">
                 </div>
                 <div class="col-sm-4 form-group small-input">
-                    <label for="title">Depth <span>(optional)</span></label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="X X X X">
+                    <label for="depth">Depth <span>(optional)</span></label>
+                    <input type="text" class="form-control" name="depth" id="depth" placeholder="X X X X">
                 </div>
             </div>
             <div class="row">
@@ -68,18 +124,18 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 form-group big-textarea">
-                    <label for="description">Origin</label>
-                    <textarea name="description" id="description">What's the origin of the artwork?</textarea>
+                    <label for="origin">Origin</label>
+                    <textarea name="origin" id="origin">What's the origin of the artwork?</textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12 form-group file-upload">
-                    <label for="description">Photos</label>
+                    <label for="photos">Photos</label>
                     <p>Please upload one picture with the signature of the artwork and one picture of the artwork.</p>
                     <p>You can upload to 3 pictures with a maximum of of 10MB each.</p>
                     <div class="col-sm-4 file-button">
                         <p>upload image <span>of the artwork</span></p>
-                        <input type="file" name="artwork" id="artwork">
+                        <input type="file" name="image" id="image">
                     </div>
                     <div class="col-sm-4 file-button">
                         <p>upload image <span>of the signature</span></p>
@@ -103,8 +159,8 @@
                         <input type="text" class="form-control" name="maximum" id="maximum" placeholder="X X X X">
                     </div>
                     <div class="col-sm-4 form-group small-input">
-                        <label for="title">Buyout price <span>(optional)</span></label>
-                        <input type="text" class="form-control" name="title" id="title" placeholder="X X X X">
+                        <label for="price">Buyout price <span>(optional)</span></label>
+                        <input type="text" class="form-control" name="price" id="price" placeholder="X X X X">
                     </div>
                 </div>
             </div>
@@ -131,7 +187,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 submit">
-                    <input type="submit" value="ADD AUCTION">
+                    <input type="submit" name="submit" value="ADD AUCTION">
                     <a href="#">ASK A QUESTION ></a>
                 </div>
             </div>

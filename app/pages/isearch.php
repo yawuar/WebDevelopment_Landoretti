@@ -43,17 +43,17 @@
             <div class="row">
                 <div class="col-sm-6 form-group right-marg">
                     <label for="what">What are you looking for?</label>
-                    <input type="text" class="form-control" name="what" id="what" placeholder="Mona Lisa">
+                    <input type="text" class="form-control <?php echo ($errors['what']) ? 'error' : '' ?>" name="what" id="what" placeholder="Mona Lisa">
                 </div>
                 <div class="col-sm-6 form-group">
                     <label for="artist">Artist</label>
-                    <input type="text" class="form-control" name="artist" id="artist" placeholder="Leonardo Da Vinci">
+                    <input type="text" class="form-control <?php echo ($errors['artist']) ? 'error' : '' ?>" name="artist" id="artist" placeholder="Leonardo Da Vinci">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-9 form-group right-marg">
                     <label for="info">Information about the artwork</label>
-                    <input type="text" class="form-control" name="info" id="info" placeholder="Lorem ipsum, dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore">
+                    <input type="text" class="form-control <?php echo ($errors['info']) ? 'error' : '' ?>" name="info" id="info" placeholder="Lorem ipsum, dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore">
                 </div>
                 <div class="col-sm-3 form-group button">
                     <input type="submit" class="submit" name="submit" id="submit" value="ADMIT REQUEST">

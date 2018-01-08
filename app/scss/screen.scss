@@ -278,6 +278,11 @@ label {
 	}
 }
 
+.error {
+	background-color: #fff1f1 !important;
+	border: 1px solid #fa0002 !important;
+}
+
 /*
 *
 *	CSS of the Navigation
@@ -1077,7 +1082,6 @@ nav {
 */
 #faq-filter {
 	.container {
-		//padding: 0;
 		@media (min-width: 991px) {
 			padding: 0;
 		}
@@ -1444,6 +1448,107 @@ nav {
 						display: block;
 						color: $green;
 						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+*
+*	CSS of the my auctions page
+*
+*/
+#my-auctions {
+	.container {
+		@media (min-width: 991px) {
+			padding: 0;
+		}
+		h1 {
+			margin-bottom: 0;
+		}
+
+		> a {
+			font-size: 1.2em;
+			color: $blue;
+			font-weight: bold;
+
+			background-color: $lightestGrey;
+			border: 1px solid $lightergrey;
+			width: 157px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+		}
+
+		.pending {
+			clear: both;
+			display: block;
+			content: "";
+
+			h3 {
+				font-family: 'Helvetica', sans-serif;
+				font-weight: lighter;
+				margin-bottom: 22px;
+			}
+
+			table {
+				width: 100%;
+				thead {
+					tr {
+						border: 1px solid #cacaca;
+						th {
+							background-color: #f8f8f8;
+							text-align: center;
+							height: 35px;
+							&:first-child {
+								width: calc(100%/1024*535);
+							}
+
+							&:nth-child(2) {
+								width: calc(100%/1024*162);
+							}
+
+							&:nth-child(3) {
+								width: calc(100%/1024*162);
+							}
+
+							&:nth-child(4) {
+								width: calc(100%/1024*165);
+							}
+						}
+					}
+				}
+				tbody {
+					tr {
+						td {
+							height: 135px;
+							border: 1px solid #cacaca;
+							text-align: center;
+
+							.image {
+								background-color: red;
+								display: block;
+								height: 100%;
+								width: 135px;
+								float: left;
+							}
+
+							.info {
+								float: left;
+								height: 100%;
+								margin-left: 37px;
+								text-align: left;
+
+								display: flex;
+    							align-items: center;
+
+								h3 {
+									margin: 0;
+								}
+							}
+						}
 					}
 				}
 			}
