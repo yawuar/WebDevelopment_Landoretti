@@ -5,7 +5,6 @@
 
     // check if form is submitted
     if(isset($_POST['submit']) && strtolower($_POST['submit']) === strtolower('ADD AUCTION')) {
-        var_dump('ghello');
         if(empty($_POST['title'])) {
             $errors['title'] = 'Please enter a value for what you are looking for?';
         }
@@ -53,8 +52,6 @@
         if(empty($_POST['check'])) {
             $errors['check'] = 'Check the box';
         }
-
-        var_dump($errors);
     }
 ?>
 
@@ -70,6 +67,16 @@
         </div>
 
         <h1>Add a new auction</h1>
+
+        <?php if(!empty($errors)) { ?>
+            <div class="errors alert alert-danger">
+                <ul>
+                    <?php foreach($errors as $error) { ?>
+                        <li><?= $error ?></li>
+                    <?php } ?>
+                </ul>
+            </div>
+        <?php } ?>
 
         <form method="POST" action="index.php?page=addauction">
             <div class="row">
@@ -95,37 +102,37 @@
             <div class="row">
                 <div class="col-sm-6 form-group right-marg title">
                     <label for="title">Auction title</label>
-                    <input type="text" class="form-control" name="title" id="title" placeholder="Auction title">
+                    <input type="text" class="form-control <?php echo ($errors['title']) ? 'error' : '' ?>" name="title" id="title" placeholder="Auction title">
                 </div>
                 <div class="col-sm-6 form-group right-marg small-input">
                     <label for="year">Year</label>
-                    <input type="text" class="form-control" name="year" id="year" placeholder="X X X X">
+                    <input type="text" class="form-control <?php echo ($errors['year']) ? 'error' : '' ?>" name="year" id="year" placeholder="X X X X">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 form-group small-input">
                     <label for="width">Width</label>
-                    <input type="text" class="form-control" name="width" id="width" placeholder="X X X X">
+                    <input type="text" class="form-control <?php echo ($errors['width']) ? 'error' : '' ?>" name="width" id="width" placeholder="X X X X">
                 </div>
                 <div class="col-sm-4 form-group small-input">
                     <label for="height">Height</label>
-                    <input type="text" class="form-control" name="height" id="height" placeholder="X X X X">
+                    <input type="text" class="form-control <?php echo ($errors['height']) ? 'error' : '' ?>" name="height" id="height" placeholder="X X X X">
                 </div>
                 <div class="col-sm-4 form-group small-input">
                     <label for="depth">Depth <span>(optional)</span></label>
-                    <input type="text" class="form-control" name="depth" id="depth" placeholder="X X X X">
+                    <input type="text" class="form-control <?php echo ($errors['depth']) ? 'error' : '' ?>" name="depth" id="depth" placeholder="X X X X">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 form-group big-textarea">
                     <label for="description">Description</label>
-                    <textarea name="description" id="description">What's the condition of the artwork?</textarea>
+                    <textarea name="description" id="description" class="<?php echo ($errors['description']) ? 'error' : '' ?>">What's the condition of the artwork?</textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 form-group big-textarea">
                     <label for="origin">Origin</label>
-                    <textarea name="origin" id="origin">What's the origin of the artwork?</textarea>
+                    <textarea name="origin" id="origin" class="<?php echo ($errors['origin']) ? 'error' : '' ?>">What's the origin of the artwork?</textarea>
                 </div>
             </div>
             <div class="row">
@@ -152,15 +159,15 @@
                     <h3>Pricing</h3>
                     <div class="col-sm-4 form-group small-input">
                         <label for="minimum">Minimum estimate price</label>
-                        <input type="text" class="form-control" name="minimum" id="minimum" placeholder="X X X X">
+                        <input type="text" class="form-control <?php echo ($errors['minimum']) ? 'error' : '' ?>" name="minimum" id="minimum" placeholder="X X X X">
                     </div>
                     <div class="col-sm-4 form-group small-input">
                         <label for="maximum">Maximum estimate price</label>
-                        <input type="text" class="form-control" name="maximum" id="maximum" placeholder="X X X X">
+                        <input type="text" class="form-control <?php echo ($errors['maximum']) ? 'error' : '' ?>" name="maximum" id="maximum" placeholder="X X X X">
                     </div>
                     <div class="col-sm-4 form-group small-input">
                         <label for="price">Buyout price <span>(optional)</span></label>
-                        <input type="text" class="form-control" name="price" id="price" placeholder="X X X X">
+                        <input type="text" class="form-control <?php echo ($errors['price']) ? 'error' : '' ?>" name="price" id="price" placeholder="X X X X">
                     </div>
                 </div>
             </div>
@@ -169,7 +176,7 @@
                     <h3>Pricing</h3>
                     <div class="col-sm-4 form-group small-input">
                         <label for="end">End date</label>
-                        <input type="text" class="form-control" name="end" id="end" placeholder="DD/MM/YY">
+                        <input type="text" class="form-control <?php echo ($errors['end']) ? 'error' : '' ?>" name="end" id="end" placeholder="DD/MM/YY">
                     </div>
                     <div class="col-sm-8 form-group info">
                         <span>Attention</span>
