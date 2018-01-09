@@ -372,6 +372,25 @@ table {
 
 /*
 *
+* Css for form
+*
+*/
+.custom-input {
+	background-color: $lightestGrey;
+	border: 1px solid $lightergrey;
+	border-radius: 0;
+    font-size: 1.5em;
+    height: 48px;
+	padding: 0 0 0 15px;
+	
+	@include placeholder {
+		color: #545353;
+	}
+}
+
+
+/*
+*
 *	CSS of the Navigation
 *
 */
@@ -1339,23 +1358,9 @@ nav {
 				}
 
 				input {
-					border-radius: 0;
-					font-size: 1.5em;
-					height: 48px;
-					padding: 0 0 0 15px;
-					&[type="text"] {
-						background-color: $lightestGrey;
-						border: 1px solid $lightergrey;
-					}
-
 					@media (max-width: 767px) {
 						padding: 0 15px;
 					}
-
-					@include placeholder {
-						color: #545353;
-					}
-
 					&#title {
 						width: 100%;
 					}
@@ -1608,21 +1613,166 @@ nav {
 			margin-bottom: 0;
 		}
 
-		> a {
-			font-size: 1.2em;
-			color: $blue;
-			font-weight: bold;
-
-			background-color: $lightestGrey;
-			border: 1px solid $lightergrey;
-			width: 157px;
+		.btns {
 			height: 50px;
-			line-height: 50px;
-			text-align: center;
-			margin-bottom: 46px;
+			a {
+				font-size: 1.2em;
+				color: $blue;
+				font-weight: bold;
 
-			&.small-margin {
-				margin-right: 5px;
+				background-color: $lightestGrey;
+				border: 1px solid $lightergrey;
+				width: 157px;
+				height: 100%;
+				line-height: 50px;
+				text-align: center;
+				margin-bottom: 46px;
+
+				&.small-margin {
+					margin-right: 5px;
+				}
+			}
+		}
+
+		.watchlist {
+			.filter {
+				ul {
+					display: inline-block;
+					li {
+						float: left;
+						font-size: 1.2em;
+
+						&:first-child {
+							font-weight: bold;
+							a {
+								padding-bottom: 7px;
+								border-bottom: 3px solid #d4d4d4;
+							}
+						}
+
+						&:nth-child(2), &:nth-child(3) {
+							margin-left: 6px;
+						}
+						a {
+							color: #545353;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/*
+*
+*	CSS of the Register page
+*
+*/
+
+#register {
+	.container {
+		@media (min-width: 991px) {
+			padding: 0;
+		}
+		form {
+			.row {
+				margin: 0;
+
+				&.margin-bottom {
+					@media (min-width: 768px) {
+						margin-bottom: 40px;
+					}
+				}
+
+				.form-group {
+					padding: 0;
+					margin-bottom: 0;
+
+					@media (max-width: 767px) {
+						width: 100% !important;
+						margin-bottom: 20px;
+					}
+				}
+				.big-form {
+					width: calc(100%/1024*482);
+				}
+
+				.small-form {
+					width: calc(100%/1024*211);
+				}
+
+				.right-marg {
+					margin-right: calc(100%/1024*60);
+				}
+
+				.special-input {
+				width: calc(100%/1024*482);
+
+				label {
+					width: 100%;
+				}
+
+				.phone-code, .phone-number {
+					float: left;
+				}
+
+				.phone-code {
+					width: calc(100%/482*90);
+					margin-right: calc(100%/482*8);
+				}
+
+				.phone-number {
+					width: calc(100%/482*384);
+				}
+			}
+
+			.check {
+					padding: 0;
+					margin-top: 66px;
+					input, p {
+						float: left;
+					}
+
+					input {
+						height: auto;
+						margin-right: 14px;
+					}
+
+					p {
+						font-size: 1.5em;
+						margin: 0;
+						span {
+							color: $green;
+							text-decoration: underline;
+						}
+					}
+
+					&::after {
+						clear: both;
+						display: block;
+						content: "";
+					}
+				}
+
+				.submit {
+					padding: 0;
+					margin-top: 32px;
+					width: calc(100%/1024*268);
+					@media (max-width: 767px) {
+						width: 100%;
+					}
+					input {
+						font-family: 'Helvetica', sans-serif;
+						font-weight: lighter;
+						font-size: 1.8em;
+						background-color: $green;
+						height: 60px;
+						width: 100%;
+						color: white;
+						text-align: center;
+						border: none;
+					}
+				}
 			}
 		}
 	}

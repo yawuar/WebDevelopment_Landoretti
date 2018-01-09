@@ -14,10 +14,19 @@
 
         <h1>My watchlist</h1>
         
-        <a class="pull-right" href="index.php?page=addauction">CLEAR WATCHLIST &gt;</a>
-        <a class="pull-right small-margin" href="index.php?page=addauction">DELETE SELECTED &gt;</a>
+        <div class="btns">
+            <a class="pull-right" href="index.php?page=addauction">CLEAR WATCHLIST &gt;</a>
+            <a class="pull-right small-margin" href="index.php?page=addauction">DELETE SELECTED &gt;</a>
+        </div>
 
         <div class="watchlist">
+            <div class="filter">
+                <ul>
+                    <li><a href="">all(11)</a> |</li>
+                    <li><a href="">active(8)</a> |</li>
+                    <li><a href="">ended(3)</a></li>
+                </ul>
+            </div>
             <table>
                 <thead>
                     <tr>

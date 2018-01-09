@@ -2,13 +2,13 @@
 
 	// generate array with all list items
 	$arrUserMenu = array(
-		'watchlist' => 'watchlist.php',
+		'watchlist' => 'index.php?page=mywatchlist',
 		'profile' => 'profile.php',
 		'logout' => 'logout.php'
 	);
 
 	$arrNotLoggedInMenu = array(
-		'register' => 'register.php',
+		'register' => 'index.php?page=register',
 		'login' => 'login.php',
 	);
 

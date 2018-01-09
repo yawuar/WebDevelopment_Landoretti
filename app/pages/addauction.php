@@ -102,25 +102,25 @@
             <div class="row">
                 <div class="col-sm-6 form-group right-marg title">
                     <label for="title">Auction title</label>
-                    <input type="text" class="form-control <?php echo ($errors['title']) ? 'error' : '' ?>" name="title" id="title" placeholder="Auction title">
+                    <input type="text" class="form-control custom-input <?php echo ($errors['title']) ? 'error' : '' ?>" name="title" id="title" placeholder="Auction title">
                 </div>
                 <div class="col-sm-6 form-group right-marg small-input">
                     <label for="year">Year</label>
-                    <input type="text" class="form-control <?php echo ($errors['year']) ? 'error' : '' ?>" name="year" id="year" placeholder="X X X X">
+                    <input type="text" class="form-control custom-input <?php echo ($errors['year']) ? 'error' : '' ?>" name="year" id="year" placeholder="X X X X">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 form-group small-input">
                     <label for="width">Width</label>
-                    <input type="text" class="form-control <?php echo ($errors['width']) ? 'error' : '' ?>" name="width" id="width" placeholder="X X X X">
+                    <input type="text" class="form-control custom-input <?php echo ($errors['width']) ? 'error' : '' ?>" name="width" id="width" placeholder="X X X X">
                 </div>
                 <div class="col-sm-4 form-group small-input">
                     <label for="height">Height</label>
-                    <input type="text" class="form-control <?php echo ($errors['height']) ? 'error' : '' ?>" name="height" id="height" placeholder="X X X X">
+                    <input type="text" class="form-control custom-input <?php echo ($errors['height']) ? 'error' : '' ?>" name="height" id="height" placeholder="X X X X">
                 </div>
                 <div class="col-sm-4 form-group small-input">
                     <label for="depth">Depth <span>(optional)</span></label>
-                    <input type="text" class="form-control <?php echo ($errors['depth']) ? 'error' : '' ?>" name="depth" id="depth" placeholder="X X X X">
+                    <input type="text" class="form-control custom-input <?php echo ($errors['depth']) ? 'error' : '' ?>" name="depth" id="depth" placeholder="X X X X">
                 </div>
             </div>
             <div class="row">
@@ -159,15 +159,15 @@
                     <h3>Pricing</h3>
                     <div class="col-sm-4 form-group small-input">
                         <label for="minimum">Minimum estimate price</label>
-                        <input type="text" class="form-control <?php echo ($errors['minimum']) ? 'error' : '' ?>" name="minimum" id="minimum" placeholder="X X X X">
+                        <input type="text" class="form-control custom-input <?php echo ($errors['minimum']) ? 'error' : '' ?>" name="minimum" id="minimum" placeholder="X X X X">
                     </div>
                     <div class="col-sm-4 form-group small-input">
                         <label for="maximum">Maximum estimate price</label>
-                        <input type="text" class="form-control <?php echo ($errors['maximum']) ? 'error' : '' ?>" name="maximum" id="maximum" placeholder="X X X X">
+                        <input type="text" class="form-control custom-input <?php echo ($errors['maximum']) ? 'error' : '' ?>" name="maximum" id="maximum" placeholder="X X X X">
                     </div>
                     <div class="col-sm-4 form-group small-input">
                         <label for="price">Buyout price <span>(optional)</span></label>
-                        <input type="text" class="form-control <?php echo ($errors['price']) ? 'error' : '' ?>" name="price" id="price" placeholder="X X X X">
+                        <input type="text" class="form-control custom-input <?php echo ($errors['price']) ? 'error' : '' ?>" name="price" id="price" placeholder="X X X X">
                     </div>
                 </div>
             </div>
@@ -176,7 +176,7 @@
                     <h3>Pricing</h3>
                     <div class="col-sm-4 form-group small-input">
                         <label for="end">End date</label>
-                        <input type="text" class="form-control <?php echo ($errors['end']) ? 'error' : '' ?>" name="end" id="end" placeholder="DD/MM/YY">
+                        <input type="text" class="form-control custom-input <?php echo ($errors['end']) ? 'error' : '' ?>" name="end" id="end" placeholder="DD/MM/YY">
                     </div>
                     <div class="col-sm-8 form-group info">
                         <span>Attention</span>
