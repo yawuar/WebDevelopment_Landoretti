@@ -150,11 +150,15 @@ label {
   font-size: 1.5em;
   margin-top: 36px; }
   .breadcrumbs ul {
-    margin: 0; }
+    margin: 0;
+    display: inline-block; }
     .breadcrumbs ul li {
       display: inline-block; }
       .breadcrumbs ul li a {
         color: #01a6a0; }
+  .breadcrumbs p {
+    color: #5c5b5b;
+    margin-bottom: 0; }
 
 /*
 *
@@ -1196,6 +1200,67 @@ nav {
       color: white;
       text-align: center;
       border: none; }
+
+/*
+*
+* Css of the detail page
+*
+*/
+@media (min-width: 991px) {
+  #detail .container {
+    padding: 0; } }
+
+#detail .container h1 {
+  margin-bottom: 0; }
+
+#detail .container .date {
+  font-size: 1.4em;
+  margin: 5px 0 0 0; }
+  #detail .container .date > span {
+    color: #0a1e75; }
+
+#detail .container .detail .row {
+  margin: 0; }
+  #detail .container .detail .row .no-padding {
+    padding: 0; }
+  #detail .container .detail .row .col-sm-8 {
+    width: calc(100%/1024*710); }
+    #detail .container .detail .row .col-sm-8 .detail-pictures .main {
+      height: 381px;
+      margin-bottom: 12px; }
+      #detail .container .detail .row .col-sm-8 .detail-pictures .main img {
+        border: 1px solid #a4a4a4;
+        width: 100%;
+        height: 100%; }
+    #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails {
+      display: inline-block;
+      width: 100%; }
+      #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails a {
+        background-color: red;
+        float: left;
+        width: calc(100%/710*229);
+        padding: 0;
+        height: 109px;
+        cursor: pointer; }
+        #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails a:hover .overlay {
+          background-color: rgba(255, 255, 255, 0); }
+        #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails a:nth-child(1) {
+          margin-right: calc(100%/710*12); }
+        #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails a:nth-child(2) {
+          margin-right: calc(100%/710*11); }
+        #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails a .overlay {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.7);
+          z-index: 1; }
+        #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails a img {
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+          border: 1px solid #a4a4a4; }
 
 /*
 *

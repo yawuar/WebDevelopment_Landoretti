@@ -66,7 +66,7 @@
                 <li><a href="index.php">Home &gt;</a></li>
                 <li><a href="#">Auctions &gt;</a></li>
                 <li><a href="#">Salvador Dali &gt;</a></li>
-                <li><a href="#">Dance of Time lll</a></li>
+                <li><a href="#">Dance of Time III</a></li>
             </ul>
         </div>
 

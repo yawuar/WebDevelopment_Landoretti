@@ -35,7 +35,7 @@
                             </div>
                             <div class="info">
                                 <div>
-                                    <h3>Dance of Time lll</h3>
+                                    <h3>Dance of Time III</h3>
                                     <a href="#">1979, Salvador Dali</a>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                             </div>
                             <div class="info">
                                 <div>
-                                    <h3>Dance of Time lll</h3>
+                                    <h3>Dance of Time III</h3>
                                     <a href="#">1979, Salvador Dali</a>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                             </div>
                             <div class="info">
                                 <div>
-                                    <h3>Dance of Time lll</h3>
+                                    <h3>Dance of Time III</h3>
                                     <a href="#">1979, Salvador Dali</a>
                                 </div>
                             </div>
@@ -117,7 +117,7 @@
                             </div>
                             <div class="info">
                                 <div>
-                                    <h3>Dance of Time lll</h3>
+                                    <h3>Dance of Time III</h3>
                                     <a href="#">1979, Salvador Dali</a>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@
                             </div>
                             <div class="info">
                                 <div>
-                                    <h3>Dance of Time lll</h3>
+                                    <h3>Dance of Time III</h3>
                                     <a href="#">1979, Salvador Dali</a>
                                 </div>
                             </div>
@@ -164,7 +164,7 @@
                             </div>
                             <div class="info">
                                 <div>
-                                    <h3>Dance of Time lll</h3>
+                                    <h3>Dance of Time III</h3>
                                     <a href="#">1979, Salvador Dali</a>
                                 </div>
                             </div>
@@ -180,7 +180,7 @@
                             </div>
                             <div class="info">
                                 <div>
-                                    <h3>Dance of Time lll</h3>
+                                    <h3>Dance of Time III</h3>
                                     <a href="#">1979, Salvador Dali</a>
                                 </div>
                             </div>
