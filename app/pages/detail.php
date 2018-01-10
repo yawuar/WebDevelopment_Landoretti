@@ -118,4 +118,81 @@
             </div>
         </div>
     </div>
+    <div class="related-items">
+        <div class="container">
+            <h2>Related items</h2>
+            <div class="col-sm-3">
+                <div class="item">
+                    <div class="image">
+                        <img src="../images/myauctions/clock.jpg" alt="clock">
+                    </div>
+                    <div class="info">
+                        <div>
+                            <a href="#">1979, Salvador Dali</a>
+                            <h6>Dance of Time III</h6>
+                            <p class="price">€ 8.900</p>
+                            <div class="visit-auction">
+                                <p>25d 14u 44m</p>
+                                <a href="#">visit auction &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="item">
+                    <div class="image">
+                        <img src="../images/myauctions/blueman.jpg" alt="blueman">
+                    </div>
+                    <div class="info">
+                        <div>
+                            <a href="#">1979, Salvador Dali</a>
+                            <h6>Dance of Time III</h6>
+                            <p class="price">€ 8.900</p>
+                            <div class="visit-auction">
+                                <p>25d 14u 44m</p>
+                                <a href="#">visit auction &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="item">
+                    <div class="image">
+                        <img src="../images/myauctions/lady.jpg" alt="lady">
+                    </div>
+                    <div class="info">
+                        <div>
+                            <a href="#">1979, Salvador Dali</a>
+                            <h6>Dance of Time III</h6>
+                            <p class="price">€ 8.900</p>
+                            <div class="visit-auction">
+                                <p>25d 14u 44m</p>
+                                <a href="#">visit auction &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="item">
+                    <div class="image">
+                        <img src="../images/myauctions/body.jpg" alt="body">
+                    </div>
+                    <div class="info">
+                        <div>
+                            <a href="#">1979, Salvador Dali</a>
+                            <h6>Dance of Time III</h6>
+                            <p class="price">€ 8.900</p>
+                            <div class="visit-auction">
+                                <p>25d 14u 44m</p>
+                                <a href="#">visit auction &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

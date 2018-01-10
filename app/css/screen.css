@@ -1410,6 +1410,76 @@ nav {
           #detail .container .detail .row .info-auction .col-sm-3 div .ask a:hover {
             text-decoration: none; }
 
+#detail .related-items {
+  height: 547px;
+  background-color: #f4f4f4; }
+  @media (max-width: 767px) {
+    #detail .related-items {
+      height: auto; } }
+  #detail .related-items .container {
+    height: 100%; }
+    #detail .related-items .container h2 {
+      font-size: 3em;
+      text-align: left;
+      margin-top: 44px;
+      line-height: 23px; }
+    #detail .related-items .container .col-sm-3 {
+      width: calc(100%/1024*250);
+      height: 382px;
+      margin-right: calc(100%/1024*8);
+      padding: 0;
+      margin-bottom: 50px; }
+      @media (max-width: 767px) {
+        #detail .related-items .container .col-sm-3 {
+          width: 100%; } }
+      #detail .related-items .container .col-sm-3:last-child {
+        margin-right: 0; }
+      #detail .related-items .container .col-sm-3 .item {
+        height: 100%; }
+        #detail .related-items .container .col-sm-3 .item .image {
+          height: 250px;
+          width: 100%; }
+          #detail .related-items .container .col-sm-3 .item .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        #detail .related-items .container .col-sm-3 .item .info {
+          height: 132px;
+          padding-top: 25px;
+          display: flex;
+          justify-content: center; }
+          #detail .related-items .container .col-sm-3 .item .info div p, #detail .related-items .container .col-sm-3 .item .info div h6 {
+            margin: 0; }
+          #detail .related-items .container .col-sm-3 .item .info div > a {
+            font-size: 1.5em;
+            color: #0a1e75; }
+          #detail .related-items .container .col-sm-3 .item .info div h6 {
+            font-size: 2em;
+            color: #545353;
+            line-height: 16px; }
+          #detail .related-items .container .col-sm-3 .item .info div p {
+            font-size: 1.4em; }
+            #detail .related-items .container .col-sm-3 .item .info div p.price {
+              font-size: 1.8em; }
+          #detail .related-items .container .col-sm-3 .item .info div .visit-auction {
+            float: left;
+            border-bottom: 1px solid #e5e5e5;
+            margin-top: -7px;
+            text-align: center;
+            line-height: 48px; }
+            #detail .related-items .container .col-sm-3 .item .info div .visit-auction p, #detail .related-items .container .col-sm-3 .item .info div .visit-auction a {
+              float: left; }
+            #detail .related-items .container .col-sm-3 .item .info div .visit-auction p {
+              margin-right: 11px; }
+            #detail .related-items .container .col-sm-3 .item .info div .visit-auction a {
+              height: 50px;
+              width: 117px;
+              border: 1px solid #e5e5e5;
+              color: #0a1e75;
+              font-size: 1.2em;
+              font-weight: bold;
+              text-transform: uppercase; }
+
 /*
 *
 *	CSS of the Footer
