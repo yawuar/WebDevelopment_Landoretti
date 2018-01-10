@@ -1195,6 +1195,9 @@ nav {
   #detail .container .detail .row .col-sm-8 {
     width: calc(100%/1024*710);
     margin-right: calc(100%/1024*64); }
+    @media (max-width: 767px) {
+      #detail .container .detail .row .col-sm-8 {
+        width: 100%; } }
     #detail .container .detail .row .col-sm-8 .detail-pictures {
       height: 502px; }
       #detail .container .detail .row .col-sm-8 .detail-pictures .main {
@@ -1203,7 +1206,8 @@ nav {
         #detail .container .detail .row .col-sm-8 .detail-pictures .main img {
           border: 1px solid #a4a4a4;
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          object-fit: cover; }
       #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails {
         display: inline-block;
         width: 100%; }
@@ -1293,6 +1297,40 @@ nav {
           font-weight: bold;
           color: #01a6a0;
           border-bottom: 1px solid #01a6a0; }
+      #detail .container .detail .row .col-sm-4 .bid .bid-system p {
+        font-size: 1.4em;
+        margin: 0;
+        padding-right: 20px;
+        height: 24px; }
+      #detail .container .detail .row .col-sm-4 .bid .bid-system .system form {
+        width: 100%;
+        height: 60px;
+        background-color: #01a6a0;
+        display: flex;
+        padding: 12px 20px 11px 18px; }
+        #detail .container .detail .row .col-sm-4 .bid .bid-system .system form input {
+          float: left; }
+          #detail .container .detail .row .col-sm-4 .bid .bid-system .system form input[type="text"] {
+            font-family: 'Helvetica', sans-serif;
+            height: 37px;
+            width: 112px;
+            font-size: 1.7em;
+            padding-left: 14px; }
+          #detail .container .detail .row .col-sm-4 .bid .bid-system .system form input[type="submit"] {
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-left: 14px; }
+      #detail .container .detail .row .col-sm-4 .bid .link {
+        text-align: center;
+        font-size: 1.4em;
+        height: 37px;
+        line-height: 37px; }
+        #detail .container .detail .row .col-sm-4 .bid .link a {
+          color: #0a1e75;
+          border-bottom: 1px solid #0a1e75; }
 
 /*
 *
