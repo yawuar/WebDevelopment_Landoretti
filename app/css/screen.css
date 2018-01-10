@@ -1248,7 +1248,7 @@ nav {
       #detail .container .detail .row .col-sm-4 {
         width: 100%; }
         #detail .container .detail .row .col-sm-4.no-padding {
-          margin-top: 20px; } }
+          margin-top: 50px; } }
     #detail .container .detail .row .col-sm-4 .information {
       text-align: right;
       margin-bottom: 50px; }
@@ -1340,6 +1340,75 @@ nav {
         #detail .container .detail .row .col-sm-4 .bid .link a {
           color: #0a1e75;
           border-bottom: 1px solid #0a1e75; }
+  #detail .container .detail .row .info-auction {
+    height: 383px;
+    background-color: #f4f4f4;
+    margin: 50px 0;
+    border: 1px solid #e5e5e5;
+    padding: 35px 20px; }
+    @media (max-width: 767px) {
+      #detail .container .detail .row .info-auction {
+        height: auto; } }
+    #detail .container .detail .row .info-auction .col-sm-9 {
+      padding: 0;
+      width: calc(100%/984*690);
+      margin-right: calc(100%/984*64);
+      height: 100%; }
+      @media (max-width: 767px) {
+        #detail .container .detail .row .info-auction .col-sm-9 {
+          width: 100%; } }
+      #detail .container .detail .row .info-auction .col-sm-9 .text:first-child {
+        margin-bottom: 27px; }
+      #detail .container .detail .row .info-auction .col-sm-9 .text h6 {
+        font-size: 1.3em;
+        font-weight: bold;
+        color: black;
+        margin: 0; }
+      #detail .container .detail .row .info-auction .col-sm-9 .text p {
+        font-size: 1.2em;
+        color: #595959;
+        line-height: 20px;
+        margin-bottom: 0; }
+    #detail .container .detail .row .info-auction .col-sm-3 {
+      height: 100%;
+      width: calc(100%/984*230);
+      padding: 0 0 0 20px; }
+      @media (max-width: 767px) {
+        #detail .container .detail .row .info-auction .col-sm-3 {
+          width: 100%;
+          padding-left: 0;
+          margin-top: 20px; } }
+      #detail .container .detail .row .info-auction .col-sm-3 div .artist, #detail .container .detail .row .info-auction .col-sm-3 div .dimensions, #detail .container .detail .row .info-auction .col-sm-3 div .color {
+        margin-bottom: 30px; }
+        #detail .container .detail .row .info-auction .col-sm-3 div .artist p, #detail .container .detail .row .info-auction .col-sm-3 div .dimensions p, #detail .container .detail .row .info-auction .col-sm-3 div .color p {
+          margin: 0;
+          font-size: 1.3em;
+          color: #595959;
+          line-height: 20px; }
+          #detail .container .detail .row .info-auction .col-sm-3 div .artist p.title, #detail .container .detail .row .info-auction .col-sm-3 div .dimensions p.title, #detail .container .detail .row .info-auction .col-sm-3 div .color p.title {
+            font-weight: bold;
+            color: black; }
+      #detail .container .detail .row .info-auction .col-sm-3 div .ask {
+        height: 59px;
+        background-color: #757575;
+        width: 209px;
+        border-radius: 0;
+        text-align: center;
+        display: flex;
+        align-items: center; }
+        #detail .container .detail .row .info-auction .col-sm-3 div .ask a {
+          display: block;
+          color: white;
+          font-weight: bold;
+          font-size: 1.4em;
+          width: 100%;
+          height: 100%;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #detail .container .detail .row .info-auction .col-sm-3 div .ask a:hover {
+            text-decoration: none; }
 
 /*
 *
