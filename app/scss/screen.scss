@@ -117,6 +117,10 @@ ul {
 		width: 1024px;
 	}
 
+	@media (min-width: 991px) {
+		padding: 0;
+	}
+
 	@media (max-width: 991px) {
 		width: 100%;
 		//margin: 0 15px;
@@ -419,10 +423,6 @@ nav {
 		margin: 0;
 
 		.container {
-			padding: 0;
-			@media (max-width: 991px) {
-				padding: 0 15px;
-			}
 			.navbar-header {
 
 				.navbar-toggle {
@@ -714,7 +714,6 @@ nav {
 		.container {
 			position: relative;
 			height: 100%;
-			padding: 0;
 
 			display: flex;
 			align-items: center;
@@ -1001,11 +1000,6 @@ nav {
 
 #isearch-content {
 	.container {
-		padding: 0;
-
-		@media (max-width: 767px) {
-			padding: 0 15px;
-		}
 
 		h3 {
 			font-family: 'Helvetica', sans-serif;
@@ -1102,10 +1096,6 @@ nav {
 	margin-top: 75px;
 
 	.container {
-		padding: 0;
-		@media (max-width: 767px) {
-			padding: 0 15px;
-		}
 		h3 {
 			font-family: 'Helvetica', sans-serif;
 			font-weight: lighter;
@@ -1194,10 +1184,6 @@ nav {
 */
 #faq-filter {
 	.container {
-		@media (min-width: 991px) {
-			padding: 0;
-		}
-
 		.filter {
 			background-color: #f7f8f7;
 			height: 134px;
@@ -1560,9 +1546,6 @@ nav {
 */
 #my-auctions {
 	.container {
-		@media (min-width: 991px) {
-			padding: 0;
-		}
 		h1 {
 			margin-bottom: 0;
 		}
@@ -1612,9 +1595,6 @@ nav {
 
 #my-watchlist {
 	.container {
-		@media (min-width: 991px) {
-			padding: 0;
-		}
 		h1 {
 			margin-bottom: 0;
 		}
@@ -1677,9 +1657,6 @@ nav {
 
 #register {
 	.container {
-		@media (min-width: 991px) {
-			padding: 0;
-		}
 		form {
 			.row {
 				margin: 0;
@@ -1791,15 +1768,12 @@ nav {
 */
 #detail {
 	.container {
-		@media (min-width: 991px) {
-			padding: 0;
-		}
 		h1 {
 			margin-bottom: 0;
 		}
 		.date {
 			font-size: 1.4em;
-			margin: 5px 0 0 0;
+			margin: 5px 0 23px 0;
 
 			> span {
 				color: $blue;
@@ -1816,8 +1790,10 @@ nav {
 
 				.col-sm-8 {
 					width: calc(100%/1024*710);
+					margin-right: calc(100%/1024*64);
 
 					.detail-pictures {
+						height: 502px;
 						.main {
 							height: 381px;
 							margin-bottom: 12px;
@@ -1862,6 +1838,7 @@ nav {
 									width: 100%;
 									height: 100%;
 									background-color:rgba(255, 255, 255, 0.7);
+									border: 1px solid #a4a4a4;
 
 									z-index: 1;
 								}
@@ -1878,7 +1855,92 @@ nav {
 				}
 
 				.col-sm-4 {
+					width: calc(100%/1024*250);
 
+					.information {
+						text-align: right;
+						margin-bottom: 50px;
+						.title {
+							border-bottom: 1px solid $lightergrey;
+							height: 51px;
+							h6 {
+								font-family: 'Helvetica', sans-serif;
+								font-size: 2.7em;
+								color: black;
+								margin: 0;
+							}
+
+							a {
+								font-size: 1.4em;
+							}
+						}
+
+						.expire {
+							border-bottom: 1px solid $lightergrey;
+							height: 73px;
+							display: flex;
+							align-items: center;
+							justify-content: flex-end;
+							div {
+								p {
+									font-size: 1.4em;
+									margin: 0;
+									&.date {
+										color: $green;
+									}
+								}
+							}
+						}
+
+						.description {
+							margin-top: 22px;
+							p {
+								font-size: 1.3em;
+								margin: 0;
+							}
+
+							a {
+								font-size: 1.4em;
+								font-weight: bold;
+								color: black;
+								border-bottom: 2px solid black;
+							}
+						}
+					}
+
+					.bid {
+						border: 1px solid $lightergrey;
+						height: 100%;
+						text-align: right;
+						height: 233px;
+
+						.info {
+							height: 111px;
+							display: flex;
+							align-items: center;
+							justify-content: flex-end;
+							margin-right: 20px;
+							div {
+								p {
+									margin: 0;
+									font-size: 1.6em;
+									color: $blue;
+
+									&.price {
+										font-weight: bold;
+										font-size: 2.5em;
+									}
+								}
+
+								a {
+									font-size: 1.4em;
+									font-weight: bold;
+									color: $green;
+									border-bottom: 1px solid $green;
+								}
+							}
+						}
+					}
 				}
 			}
 		}

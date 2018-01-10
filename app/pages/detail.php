@@ -41,7 +41,43 @@
                     </div>
                 </div>
                 <div class="col-sm-4 no-padding">
-                    test
+                    <div class="information">
+                        <div class="title">
+                            <h6>Dance of Time III</h6>
+                            <a href="#">1979, Salvador Dali</a>
+                        </div>
+                        <div class="expire">
+                            <div>
+                                <p class="date">25d 14u 44m left </p>
+                                <p>September 09, 2013, 13:00 p.m. (EST)</p>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <p>tur adipisicing elit, sed do eiusmod tempor incididunt ut labaliqore et dolore magna incididunt ut labaliqore et dolore magna..  </p>
+                            <a href="#">more</a>
+                        </div>
+                    </div>
+                    <div class="bid">
+                        <div class="info">
+                            <div>
+                                <p>Estimated price:</p>
+                                <p class="price">€ 9.500 - € 10.500</p>
+                                <a href="#">Buy now for € 15.000</a>
+                            </div>
+                        </div>
+                        <div class="bid-system">
+                            <p>bids: 7</p>
+                            <div class="system">
+                                <form action="index.php?page=detail">
+                                    <input type="text" name="price" id="price">
+                                    <input type="submit" value="BID NOW">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="link">
+                            <a href="">add to my watchlist</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row"></div>
