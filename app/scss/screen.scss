@@ -1813,6 +1813,12 @@ nav {
 						.thumbnails {
 							display: inline-block;
 							width: 100%;
+
+							&::after {
+								clear: both;
+								display: block;
+								content: "";
+							}
 							a {
 								background-color: red;
 								float: left;
@@ -1864,6 +1870,9 @@ nav {
 
 					@media (max-width: 767px) {
 						width: 100%;
+						&.no-padding {
+							margin-top: 20px;
+						}
 					}
 
 					.information {

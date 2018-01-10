@@ -1211,6 +1211,10 @@ nav {
       #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails {
         display: inline-block;
         width: 100%; }
+        #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails::after {
+          clear: both;
+          display: block;
+          content: ""; }
         #detail .container .detail .row .col-sm-8 .detail-pictures .thumbnails a {
           background-color: red;
           float: left;
@@ -1242,7 +1246,9 @@ nav {
     width: calc(100%/1024*250); }
     @media (max-width: 767px) {
       #detail .container .detail .row .col-sm-4 {
-        width: 100%; } }
+        width: 100%; }
+        #detail .container .detail .row .col-sm-4.no-padding {
+          margin-top: 20px; } }
     #detail .container .detail .row .col-sm-4 .information {
       text-align: right;
       margin-bottom: 50px; }
