@@ -1862,6 +1862,10 @@ nav {
 				.col-sm-4 {
 					width: calc(100%/1024*250);
 
+					@media (max-width: 767px) {
+						width: 100%;
+					}
+
 					.information {
 						text-align: right;
 						margin-bottom: 50px;

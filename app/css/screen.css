@@ -1240,6 +1240,9 @@ nav {
             border: 1px solid #a4a4a4; }
   #detail .container .detail .row .col-sm-4 {
     width: calc(100%/1024*250); }
+    @media (max-width: 767px) {
+      #detail .container .detail .row .col-sm-4 {
+        width: 100%; } }
     #detail .container .detail .row .col-sm-4 .information {
       text-align: right;
       margin-bottom: 50px; }
