@@ -1123,7 +1123,7 @@ nav {
       background-color: #e1e1e1; }
 
 #faq-list {
-  margin-top: 57px; }
+  margin-top: 54px; }
   #faq-list .container .articles article {
     min-height: 135px;
     margin-bottom: 35px;
@@ -1138,16 +1138,18 @@ nav {
       float: left; }
       #faq-list .container .articles article .qa ul li {
         color: #0a1e75;
-        font-size: 3em; }
+        font-size: 3em;
+        line-height: 29px; }
         #faq-list .container .articles article .qa ul li:last-child {
-          color: #545353; }
+          color: #545353;
+          margin-top: 15px; }
     #faq-list .container .articles article .info {
       margin-left: 85px; }
       #faq-list .container .articles article .info p {
         font-size: 1.6em;
         line-height: 22px;
         color: #4e4e4e;
-        margin-top: 30px;
+        margin-top: 23px;
         margin-bottom: 0; }
         #faq-list .container .articles article .info p span {
           font-weight: bold; }

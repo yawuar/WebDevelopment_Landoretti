@@ -1685,7 +1685,7 @@ nav {
 }
 
 #faq-list {
-	margin-top: 57px;
+	margin-top: 54px;
 
 	.container {
 		.articles {
@@ -1709,9 +1709,11 @@ nav {
 						li {
 							color: $blue;
 							font-size: 3em;
+							line-height: 29px;
 
 							&:last-child {
 								color: #545353;
+								margin-top: 15px;
 							}
 						}
 					}
@@ -1723,7 +1725,7 @@ nav {
 						font-size: 1.6em;
 						line-height: 22px;
 						color: $darkgrey;
-						margin-top: 30px;
+						margin-top: 23px;
 						margin-bottom: 0;
 
 						span {
