@@ -301,11 +301,13 @@ table {
     				align-items: center;
 
 					h3 {
+						font-size: 1.45em;
+						font-weight: normal;
 						margin: 0 !important;
 					}
 
 					a {
-						font-size: 1.8em;
+						font-size: 1.05em;
 						color: $blue;
 					}
 				}
@@ -518,6 +520,7 @@ nav {
 						}
 
 						&.loggedin {
+							display: none;
 							li {
 								font-size: 1.3em;
 
@@ -586,6 +589,64 @@ nav {
 
 								&:last-child {
 									padding-left: 40px;
+								}
+							}
+						}
+
+						&.loginForm {
+							display: none;
+							margin: 11px 0;
+							li {
+								font-size: 1.3em;
+
+								&:nth-child(1) {
+									a {
+										padding-right: 40px;
+									}
+								}
+
+								a {
+									padding: 0;
+									color: $blue;
+									line-height: 28px;
+								}
+							}
+
+							form {
+								height: 28px;
+								width: 290px;
+								float: left;
+								font-style: italic;
+								.user, .password, .submit {
+									float: left;
+									margin-right: 25px;
+								}
+
+								.submit {
+									margin-right: 0;
+
+									input {
+										background-color: red;
+										height: 28px;
+										width: 28px;
+										background-color: #e5e5e5;
+										border: none;
+									}
+								}
+								
+								.user, .password {
+									input {
+										width: 106px;
+										height: 28px;
+										border-radius: 0;
+										border: 1px solid #e5e5e5;
+
+										background-color: #f8f8f8;
+
+										@include placeholder {
+											color: #72736e;
+										}
+									}
 								}
 							}
 						}
@@ -1520,6 +1581,14 @@ nav {
 						margin-bottom: 0;
 					}
 
+					label {
+						text-indent: -9999px;
+
+						@media (max-width: 767px) {
+							display: none;
+						}
+					}
+
 					input {
 						background-color: $darkerGrey;
 						width: 100%;
@@ -1564,6 +1633,7 @@ nav {
 				@media (max-width: 767px) {
 					height: auto;
 					padding: 15px 0;
+					display: inline-block;
 				}
 
 				&:last-child {
@@ -1573,6 +1643,11 @@ nav {
 				.info {
 					width: calc(100%/1024*813);
 					padding-left: 0;
+
+					@media (max-width: 767px) {
+						width: 100%;
+					}
+
 					p {
 						padding-left: 46px;
 						margin-bottom: 0;
@@ -1594,6 +1669,12 @@ nav {
 
 					display: flex;
 					justify-content: center;
+
+					@media (max-width: 767px) {
+						margin-top: 20px;
+						width: 100%;
+						justify-content: baseline;
+					}
 
 					a {
 						display: inline-block;

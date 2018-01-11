@@ -56,6 +56,7 @@
                     <input type="text" class="form-control <?php echo ($errors['info']) ? 'error' : '' ?>" name="info" id="info" placeholder="Lorem ipsum, dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore">
                 </div>
                 <div class="col-sm-3 form-group button">
+                    <label for="submit">submit</label>
                     <input type="submit" class="submit" name="submit" id="submit" value="ADMIT REQUEST">
                 </div>
             </div>

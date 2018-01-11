@@ -213,9 +213,11 @@ table {
       display: flex;
       align-items: center; }
       table tbody tr td .info h3 {
+        font-size: 1.45em;
+        font-weight: normal;
         margin: 0 !important; }
       table tbody tr td .info a {
-        font-size: 1.8em;
+        font-size: 1.05em;
         color: #0a1e75; }
 
 /*
@@ -364,37 +366,39 @@ nav {
           @media (max-width: 767px) {
             nav.navbar-default .container .information .navigation ul {
               display: inline-block; } }
-          nav.navbar-default .container .information .navigation ul.loggedin li {
-            font-size: 1.3em; }
-            nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(1):before {
-              content: "";
-              display: block;
-              background: url("/images/icons/watchlist.png") no-repeat;
-              width: 11px;
-              height: 10px;
-              float: left;
-              margin: 5px 10px 5px 0; }
-            nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(1) a {
-              border-right: 1px solid #0a1e75;
-              float: left;
-              padding-right: 20px; }
-            nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(2):before {
-              content: "";
-              display: block;
-              background: url("/images/icons/profile.png") no-repeat;
-              width: 13px;
-              height: 14px;
-              margin: 3px 10px 3px 20px;
-              float: left; }
-            nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(2) a {
-              border-right: 1px solid #0a1e75;
-              float: left;
-              padding-right: 20px; }
-            nav.navbar-default .container .information .navigation ul.loggedin li a {
-              padding: 0;
-              color: #0a1e75; }
-            nav.navbar-default .container .information .navigation ul.loggedin li:last-child {
-              padding-left: 20px; }
+          nav.navbar-default .container .information .navigation ul.loggedin {
+            display: none; }
+            nav.navbar-default .container .information .navigation ul.loggedin li {
+              font-size: 1.3em; }
+              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(1):before {
+                content: "";
+                display: block;
+                background: url("/images/icons/watchlist.png") no-repeat;
+                width: 11px;
+                height: 10px;
+                float: left;
+                margin: 5px 10px 5px 0; }
+              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(1) a {
+                border-right: 1px solid #0a1e75;
+                float: left;
+                padding-right: 20px; }
+              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(2):before {
+                content: "";
+                display: block;
+                background: url("/images/icons/profile.png") no-repeat;
+                width: 13px;
+                height: 14px;
+                margin: 3px 10px 3px 20px;
+                float: left; }
+              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(2) a {
+                border-right: 1px solid #0a1e75;
+                float: left;
+                padding-right: 20px; }
+              nav.navbar-default .container .information .navigation ul.loggedin li a {
+                padding: 0;
+                color: #0a1e75; }
+              nav.navbar-default .container .information .navigation ul.loggedin li:last-child {
+                padding-left: 20px; }
           nav.navbar-default .container .information .navigation ul.login li {
             font-size: 1.3em; }
             nav.navbar-default .container .information .navigation ul.login li:nth-child(1) a {
@@ -405,6 +409,47 @@ nav {
               color: #0a1e75; }
             nav.navbar-default .container .information .navigation ul.login li:last-child {
               padding-left: 40px; }
+          nav.navbar-default .container .information .navigation ul.loginForm {
+            display: none;
+            margin: 11px 0; }
+            nav.navbar-default .container .information .navigation ul.loginForm li {
+              font-size: 1.3em; }
+              nav.navbar-default .container .information .navigation ul.loginForm li:nth-child(1) a {
+                padding-right: 40px; }
+              nav.navbar-default .container .information .navigation ul.loginForm li a {
+                padding: 0;
+                color: #0a1e75;
+                line-height: 28px; }
+            nav.navbar-default .container .information .navigation ul.loginForm form {
+              height: 28px;
+              width: 290px;
+              float: left;
+              font-style: italic; }
+              nav.navbar-default .container .information .navigation ul.loginForm form .user, nav.navbar-default .container .information .navigation ul.loginForm form .password, nav.navbar-default .container .information .navigation ul.loginForm form .submit {
+                float: left;
+                margin-right: 25px; }
+              nav.navbar-default .container .information .navigation ul.loginForm form .submit {
+                margin-right: 0; }
+                nav.navbar-default .container .information .navigation ul.loginForm form .submit input {
+                  background-color: red;
+                  height: 28px;
+                  width: 28px;
+                  background-color: #e5e5e5;
+                  border: none; }
+              nav.navbar-default .container .information .navigation ul.loginForm form .user input, nav.navbar-default .container .information .navigation ul.loginForm form .password input {
+                width: 106px;
+                height: 28px;
+                border-radius: 0;
+                border: 1px solid #e5e5e5;
+                background-color: #f8f8f8; }
+                nav.navbar-default .container .information .navigation ul.loginForm form .user input::-webkit-input-placeholder, nav.navbar-default .container .information .navigation ul.loginForm form .password input::-webkit-input-placeholder {
+                  color: #72736e; }
+                nav.navbar-default .container .information .navigation ul.loginForm form .user input:-moz-placeholder, nav.navbar-default .container .information .navigation ul.loginForm form .password input:-moz-placeholder {
+                  color: #72736e; }
+                nav.navbar-default .container .information .navigation ul.loginForm form .user input::-moz-placeholder, nav.navbar-default .container .information .navigation ul.loginForm form .password input::-moz-placeholder {
+                  color: #72736e; }
+                nav.navbar-default .container .information .navigation ul.loginForm form .user input:-ms-input-placeholder, nav.navbar-default .container .information .navigation ul.loginForm form .password input:-ms-input-placeholder {
+                  color: #72736e; }
     nav.navbar-default .main-navigation {
       background-color: #eaeaea;
       height: 50px; }
@@ -1009,6 +1054,11 @@ nav {
     @media (max-width: 767px) {
       #isearch-content .container form .row .button {
         margin-bottom: 0; } }
+    #isearch-content .container form .row .button label {
+      text-indent: -9999px; }
+      @media (max-width: 767px) {
+        #isearch-content .container form .row .button label {
+          display: none; } }
     #isearch-content .container form .row .button input {
       background-color: #757575;
       width: 100%;
@@ -1040,12 +1090,16 @@ nav {
       @media (max-width: 767px) {
         #isearch-overview .container .articles article {
           height: auto;
-          padding: 15px 0; } }
+          padding: 15px 0;
+          display: inline-block; } }
       #isearch-overview .container .articles article:last-child {
         border-bottom: 1px solid #e5e5e5; }
       #isearch-overview .container .articles article .info {
         width: calc(100%/1024*813);
         padding-left: 0; }
+        @media (max-width: 767px) {
+          #isearch-overview .container .articles article .info {
+            width: 100%; } }
         #isearch-overview .container .articles article .info p {
           padding-left: 46px;
           margin-bottom: 0;
@@ -1060,6 +1114,11 @@ nav {
         width: calc(100%/1024*211);
         display: flex;
         justify-content: center; }
+        @media (max-width: 767px) {
+          #isearch-overview .container .articles article .button {
+            margin-top: 20px;
+            width: 100%;
+            justify-content: baseline; } }
         #isearch-overview .container .articles article .button a {
           display: inline-block;
           width: 172px;

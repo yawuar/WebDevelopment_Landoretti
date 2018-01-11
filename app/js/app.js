@@ -53,6 +53,27 @@
 		dots.eq(imageIndex - 1).toggleClass('active');
 	}
 
+	function showForm(e) {
+		e.preventDefault();
+		$('.nav.login').css('display', 'none');
+		$('.loginForm').css('display', 'block');
+	}
+
+	function login(e) {
+		e.preventDefault();
+		var values = $(e.target).serializeArray();
+
+		var user = values[0];
+		var password = values[1];
+		
+		if(user.value === 'yawuar' && password.value === 'test123') {
+			$('.nav.loginForm').css('display', 'none');
+			$('.loggedIn').css('display', 'block');
+		}
+
+		return false;
+	}
+
 	function bindEvents() {
 		$('ul.language li').click(activateLanguage);
 		$('#style').niceSelect();
@@ -65,6 +86,10 @@
 		$('.right').click(carousel);
 
 		$('.dots .dot').click(currentImage);
+
+		$('.login-btn').click(showForm);
+
+		$('.login-form').submit(login);
 	}
 
 	showImage(imageIndex);

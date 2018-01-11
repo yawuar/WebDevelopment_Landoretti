@@ -3,7 +3,7 @@
 	// generate array with all list items
 	$arrUserMenu = array(
 		'watchlist' => 'index.php?page=mywatchlist',
-		'profile' => 'profile.php',
+		'profile' => 'index.php?page=profile',
 		'logout' => 'logout.php'
 	);
 
@@ -13,7 +13,7 @@
 	);
 
 	$arrNav = array(
-		'home' => 'index.php',
+		'home' => 'index.php?page=home',
 		'art' => 'index.php?page=art',
 		'isearch' => 'index.php?page=isearch',
 		'myauctions' => 'index.php?page=myauctions',
@@ -27,7 +27,9 @@
 		'en' => '#'
 	);
 
-	$isLoggedIn = false;
+	//$isLoggedIn = false;
+
+	var_dump($_SERVER['HTTP_REFERER']);
 
 ?>
 <!DOCTYPE html>
@@ -90,7 +92,7 @@
 				
 				<div class="collapse navbar-collapse navigation">
 					
-					<ul class="nav navbar-nav <?php echo (!$isLoggedIn) ? 'login' : 'loggedin' ?>">
+					<ul class="nav navbar-nav login">
 
 						<?php if($isLoggedIn) { ?>
 							<?php foreach($arrUserMenu as $value => $key) { ?>
@@ -99,14 +101,39 @@
 
 							<?php } ?>
 						<?php } ?>
+							
+						<?php foreach($arrNotLoggedInMenu as $value => $key) { ?>
 
-						<?php if(!$isLoggedIn) { ?>
-							<?php foreach($arrNotLoggedInMenu as $value => $key) { ?>
+							<li><a class="<?= $value ?>-btn" href="<?= $key ?>"><?= $value ?></a></li>
 
-								<li><a href="<?= $key ?>"><?= $value ?></a></li>
-
-							<?php } ?>
 						<?php } ?>
+
+					</ul>
+
+					<ul class="nav navbar-nav loggedIn">
+
+						<?php foreach($arrUserMenu as $value => $key) { ?>
+
+							<li><a href="<?= $key ?>"><?= $value ?></a></li>
+
+						<?php } ?>
+
+					</ul>
+
+					<ul class="nav navbar-nav loginForm">
+
+						<li><a href="index.php?page=register">register</a></li>
+						<form class="login-form" action="">
+							<div class="user">
+								<input type="text" class="form-control <?php echo ($errors['user']) ? 'error' : '' ?>" name="user" id="user" placeholder="User">
+							</div>
+							<div class="password">
+								<input type="password" class="form-control <?php echo ($errors['password']) ? 'error' : '' ?>" name="password" id="password" placeholder="Password">
+							</div>
+							<div class="submit">
+								<input type="submit" value=">">
+							</div>
+						</form>
 
 					</ul>
 
