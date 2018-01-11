@@ -720,7 +720,7 @@ nav {
         height: auto; } }
     @media (max-width: 767px) {
       .background .carousel {
-        bottom: 15px; } }
+        bottom: 60px; } }
     .background .carousel .container {
       position: relative;
       height: 100%;
@@ -771,7 +771,10 @@ nav {
           padding: 0 20px; } }
       @media (max-width: 767px) {
         .how .container .row div {
-          padding: 0 20px; } }
+          padding: 0 20px;
+          margin-bottom: 25px; }
+          .how .container .row div:last-child {
+            margin-bottom: 0; } }
       .how .container .row div .icon {
         background-size: auto;
         width: 117px;
@@ -801,7 +804,14 @@ nav {
       width: calc(100%/1024*314); }
       @media (max-width: 767px) {
         .popular .container .row div.col-md-4 {
-          width: 100%; } }
+          width: 100%;
+          float: left; } }
+      @media (max-width: 767px) {
+        .popular .container .row div.col-md-4 div {
+          width: calc(50% - 3.75px);
+          float: left; }
+          .popular .container .row div.col-md-4 div:first-child {
+            margin-right: 7.5px; } }
       .popular .container .row div.col-md-4 div.overlay a {
         display: none; }
         .popular .container .row div.col-md-4 div.overlay a .svg-icon {
@@ -828,13 +838,13 @@ nav {
       .popular .container .row div.col-md-4 div:first-child {
         margin-bottom: 7.5px; }
     .popular .container .row div.col-md-8 {
-      background-color: blue;
       width: calc(100%/1024*702);
       margin-left: calc(100%/1024*8); }
       @media (max-width: 767px) {
         .popular .container .row div.col-md-8 {
           width: 100%;
-          margin: 7.5px 0 0 0; } }
+          margin: 0;
+          float: left; } }
       .popular .container .row div.col-md-8.overlay {
         -moz-transition: 3s ease;
         -o-transition: 3s ease;
