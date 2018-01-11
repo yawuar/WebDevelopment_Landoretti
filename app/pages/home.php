@@ -1,6 +1,26 @@
 <!-- Header of Home page -->
 <header class="background">
 
+	<div class="arrows">
+		<a href="#" class="left"></a>
+		<a href="#" class="right"></a>
+	</div>
+
+	<div class="carousel-images">
+		<div class="carousel-image">
+			<img src="../images/background/frame.jpg" alt="Frame">
+		</div>
+		<div class="carousel-image">
+			<img src="../images/background/cameras.jpg" alt="Cameras">
+		</div>
+		<div class="carousel-image">
+			<img src="../images/background/vinyl.jpg" alt="Vinyl">
+		</div>
+		<div class="carousel-image">
+			<img src="../images/background/old_camera.jpg" alt="Old Camera">
+		</div>
+	</div>
+
 	<div class="carousel">
 
 			<div class="container blue-overlay">
@@ -17,7 +37,12 @@
 
 	</div>
 
-	<div class="arrows"></div>
+	<div class="dots">
+		<span class="dot" data-id="1"></span>
+		<span class="dot" data-id="2"></span>
+		<span class="dot" data-id="3"></span>
+		<span class="dot" data-id="4"></span>
+	</div>
 
 </header>
 
