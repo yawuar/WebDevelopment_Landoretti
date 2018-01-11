@@ -800,6 +800,10 @@ nav {
         .how .container .row div p {
           font-size: 1.5em;
           line-height: 20px; }
+          @media (max-width: 767px) {
+            .how .container .row div p {
+              max-width: 75%;
+              margin: 0 auto; } }
 
 .popular {
   background-color: #eaeaea;
