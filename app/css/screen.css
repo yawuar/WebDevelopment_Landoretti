@@ -760,37 +760,46 @@ nav {
         border: 1px solid #e2e2e2; }
 
 .how {
-  height: auto;
-  padding: 50px 0; }
-  .how .container .row {
-    text-align: center; }
-    .how .container .row div {
-      padding: 0 60px; }
-      @media (max-width: 991px) {
-        .how .container .row div {
-          padding: 0 20px; } }
-      @media (max-width: 767px) {
-        .how .container .row div {
-          padding: 0 20px;
-          margin-bottom: 25px; }
-          .how .container .row div:last-child {
-            margin-bottom: 0; } }
-      .how .container .row div .icon {
-        background-size: auto;
-        width: 117px;
-        height: 117px;
-        margin: 0 auto; }
-      .how .container .row div:nth-child(1) .icon {
-        background: url("/images/pen.png") no-repeat; }
-      .how .container .row div:nth-child(2) .icon {
-        background: url("/images/check.png") no-repeat; }
-      .how .container .row div:nth-child(3) .icon {
-        background: url("/images/smile.png") no-repeat; }
-      .how .container .row div h3 {
-        font-size: 2.5em;
-        margin: 35px 0 10px 0; }
-      .how .container .row div p {
-        font-size: 1.5em; }
+  height: 434px;
+  padding: 44px 0 50px 0; }
+  @media (max-width: 767px) {
+    .how {
+      height: auto; } }
+  .how .container {
+    height: 100%; }
+    .how .container h2 {
+      margin-bottom: 53px; }
+    .how .container .row {
+      text-align: center; }
+      .how .container .row div {
+        padding: 0 60px; }
+        @media (max-width: 991px) {
+          .how .container .row div {
+            padding: 0 20px; } }
+        @media (max-width: 767px) {
+          .how .container .row div {
+            padding: 0 20px;
+            margin-bottom: 25px; }
+            .how .container .row div:last-child {
+              margin-bottom: 0; } }
+        .how .container .row div .icon {
+          background-size: auto;
+          width: 117px;
+          height: 117px;
+          margin: 0 auto; }
+        .how .container .row div:nth-child(1) .icon {
+          background: url("/images/pen.png") no-repeat; }
+        .how .container .row div:nth-child(2) .icon {
+          background: url("/images/check.png") no-repeat; }
+        .how .container .row div:nth-child(3) .icon {
+          background: url("/images/smile.png") no-repeat; }
+        .how .container .row div h3 {
+          font-size: 2.5em;
+          line-height: 21px;
+          margin: 33px 0 10px 0; }
+        .how .container .row div p {
+          font-size: 1.5em;
+          line-height: 20px; }
 
 .popular {
   background-color: #eaeaea;

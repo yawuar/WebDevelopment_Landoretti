@@ -1148,10 +1148,19 @@ nav {
 
 
 .how {
-	height: auto;
-	padding: 50px 0;
+	height: 434px;
+	padding: 44px 0 50px 0;
+
+	@media (max-width: 767px) {
+		height: auto;
+	}
 
 	.container {
+		height: 100%;
+
+		h2 {
+			margin-bottom: 53px;
+		}
 		.row {
 			text-align: center;
 
@@ -1197,11 +1206,13 @@ nav {
 
 				h3 {
 					font-size: 2.5em;
-					margin: 35px 0 10px 0;
+					line-height: 21px;
+					margin: 33px 0 10px 0;
 				}
 
 				p {
 					font-size: 1.5em;
+					line-height: 20px;
 				}
 			}
 		}
