@@ -12,5 +12,7 @@
     ExpiresByType application/x-shockwave-flash "access 1 month"
     ExpiresByType image/x-icon "access 1 year"
     ExpiresDefault "access 1 month"
+    AddType image/svg+xml .svg
+    AddOutputFilterByType DEFLATE image/svg+xml
 </IfModule>
 ## EXPIRES CACHING ##
