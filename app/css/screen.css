@@ -2047,9 +2047,12 @@ footer {
   width: 100%; }
   @media (max-width: 767px) {
     footer {
-      height: 100%; } }
+      height: auto; } }
   footer .container {
-    height: 100%; }
+    height: auto; }
+    @media (max-width: 767px) {
+      footer .container {
+        margin-bottom: 140px; } }
     footer .container .logo {
       background-image: url("/images/bottomLogo.png");
       background-repeat: no-repeat;
@@ -2068,6 +2071,19 @@ footer {
       footer .container nav ul.language {
         padding-left: 0;
         font-size: 1.3em; }
+        @media (max-width: 767px) {
+          footer .container nav ul.language {
+            text-align: center; }
+            footer .container nav ul.language li {
+              height: 50px;
+              width: 50px;
+              float: left; }
+              footer .container nav ul.language li a {
+                padding: 0;
+                height: 100%;
+                line-height: 50px; }
+              footer .container nav ul.language li:hover {
+                background-color: #d6d6d6; } }
         footer .container nav ul.language li a {
           font-weight: normal;
           color: #0a1e75; }

@@ -3142,10 +3142,14 @@ footer {
 	width: 100%;
 
 	@media (max-width: 767px) {
-		height: 100%;
+		height: auto;
 	}
 	.container {
-		height: 100%;
+		height: auto;
+
+		@media (max-width: 767px) {
+			margin-bottom: 140px;
+		}
 		.logo {
 			background-image: url('/images/bottomLogo.png');
 			background-repeat: no-repeat;
@@ -3169,6 +3173,26 @@ footer {
 				&.language {
 					padding-left: 0;
 					font-size: 1.3em;
+
+					@media (max-width: 767px) {
+						text-align: center;
+
+						li {
+							height: 50px;
+							width: 50px;
+							float: left;
+
+							a {
+								padding: 0;
+								height: 100%;
+								line-height: 50px;
+							}
+
+							&:hover {
+								background-color: darken($grey, 8);
+							}
+						}
+					}
 
 					li {
 						a {
