@@ -131,32 +131,41 @@
                 </nav>
             </div>
             <div class="col-sm-3 col-md-3">
-                <div class="search">
+                <nav>
                     <h4>FIND WHAT YOU NEED.</h4>
-                    <form action="#" method="GET" class="input-field input-footer">
-						
-						<input type="text" name="search" placeholder="Search">
-
-						<input type="submit" value="search">
-
-					</form>
-                </div>
-                <div class="contact">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">FIND WHAT YOU NEED <b class="caret"></b></a>
+                            <ul class="dropdown-menu">                            
+                                <form action="#" method="GET" class="input-field input-footer">
+                                    <input type="text" name="search" placeholder="Search">
+                                    <input type="submit" value="search">
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="contact">
                     <h4>CONTACT</h4>
-                    <ul>
-                        <li>Landoretti ART</li>
-                        <li>Straatnaam xxx</li>
-                        <li>xxxx, Oostende</li>
-                        <li>+xx (0)x xxx xx xx</li>
-                        <li><a href="#">info@landorettiart.com</a></li>
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle">CONTACT <b class="caret"></b></a>
+                            <ul class="dropdown-menu">                            
+                                <li>Landoretti ART</li>
+                                <li>Straatnaam xxx</li>
+                                <li>xxxx, Oostende</li>
+                                <li>+xx (0)x xxx xx xx</li>
+                                <li><a href="#">info@landorettiart.com</a></li>
+                            </ul>
+                            <ul class="dropdown-menu social-media">
+                                <li><a href="#">facebook</a></li>
+                                <li><a href="#">twitter</a></li>
+                                <li><a href="#">youtube</a></li>
+                                <li><a href="#">google</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                    <ul class="social-media">
-                        <li><a href="#">facebook</a></li>
-                        <li><a href="#">twitter</a></li>
-                        <li><a href="#">youtube</a></li>
-                        <li><a href="#">google</a></li>
-                    </ul>
-                </div>
+                </nav>
             </div>
         </div>
     </div>
