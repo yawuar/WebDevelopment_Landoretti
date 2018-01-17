@@ -47,15 +47,36 @@ gulp.task('watch', function() {
 // ------------------
 
 // used to places all the files, uglified in a dist folder
-gulp.task('useref', function(){
-  return gulp.src('app/*.html')
-    .pipe(useref())
+// gulp.task('useref', function(){
+//   return gulp.src('app/**/*')
+//     .pipe(useref())
+//     .pipe(gulpIf('*.+(png|jpg|jpeg|gif|svg)', cache(imagemin({
+//       interlaced: true
+//     }))))
+//     // uglify js
+//     .pipe(gulpIf('*.js', uglify()))
+//     // uglify css files
+//     .pipe(gulpIf('*.css', cssnano()))
+//     //destination folder dist
+//     .pipe(gulp.dest('dist'))
+// });
+
+// task to minify js
+gulp.task('uglify', function () {
+  return gulp.src('app/js/*.js')
     // uglify js
     .pipe(gulpIf('*.js', uglify()))
-    // uglify css files
+    //destination folder dist
+    .pipe(gulp.dest('dist/js'))
+});
+
+// task to minify js
+gulp.task('cssnano', function () {
+  return gulp.src('app/css/*.css')
+    // uglify js
     .pipe(gulpIf('*.css', cssnano()))
     //destination folder dist
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist/css'))
 });
 
 gulp.task('images', function(){
@@ -68,11 +89,12 @@ gulp.task('images', function(){
   .pipe(gulp.dest('dist/images'))
 });
 
-gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*')
-  .pipe(gulp.dest('dist/fonts'));
+// put includes into dist folder
+gulp.task('includes', function () {
+  gulp.src('app/includes/*.php').pipe(gulp.dest('dist/includes'));
+  gulp.src('app/pages/*.php').pipe(gulp.dest('dist/pages'));
+  gulp.src('app/*.php').pipe(gulp.dest('dist'));
 });
-
 // Cleaning 
 gulp.task('clean', function() {
   return del.sync('dist').then(function(cb) {
@@ -102,7 +124,7 @@ gulp.task('build', function (callback){
 	runSequence(
 		'clean:dist', 
     	'sass', 
-    	['useref', 'images', 'fonts'],
+    ['images', 'uglify', 'cssnano', 'includes'],
     	callback
   	);
 });
