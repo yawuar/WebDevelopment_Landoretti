@@ -4,12 +4,12 @@
 	$arrUserMenu = array(
 		'watchlist' => 'index.php?page=mywatchlist',
 		'profile' => 'index.php?page=profile',
-		'logout' => 'logout.php'
+		'logout' => 'index.php?page=logout'
 	);
 
 	$arrNotLoggedInMenu = array(
 		'register' => 'index.php?page=register',
-		'login' => 'login.php',
+		'login' => 'index.php?page=login',
 	);
 
 	$arrNav = array(
