@@ -96,6 +96,7 @@ gulp.task('includes', function () {
   gulp.src('app/pages/*.php').pipe(gulp.dest('dist/pages'));
   gulp.src('app/*.php').pipe(gulp.dest('dist'));
   gulp.src('app/.htaccess').pipe(gulp.dest('dist'));
+  gulp.src('app/robots.txt').pipe(gulp.dest('dist'));
 });
 // Cleaning 
 gulp.task('clean', function() {
