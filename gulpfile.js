@@ -92,6 +92,7 @@ gulp.task('images', function(){
 // put includes into dist folder
 gulp.task('includes', function () {
   gulp.src('app/includes/*.php').pipe(gulp.dest('dist/includes'));
+  gulp.src('app/favicons/*.+(png|jpg|jpeg|gif|svg)').pipe(gulp.dest('dist/favicons'));
   gulp.src('app/pages/*.php').pipe(gulp.dest('dist/pages'));
   gulp.src('app/*.php').pipe(gulp.dest('dist'));
 });
