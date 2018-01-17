@@ -137,12 +137,12 @@
 					<ul class="nav navbar-nav loginForm">
 
 						<li><a href="index.php?page=register">register</a></li>
-						<form class="login-form" action="">
+						<form class="login-form" action="#" autocomplete="on">
 							<div class="user">
 								<input type="text" class="form-control <?php echo ($errors['user']) ? 'error' : '' ?>" name="user" id="user" placeholder="User">
 							</div>
 							<div class="password">
-								<input type="password" class="form-control <?php echo ($errors['password']) ? 'error' : '' ?>" name="password" id="password" placeholder="Password">
+								<input type="password" class="form-control <?php echo ($errors['password']) ? 'error' : '' ?>" name="password" id="password_login" placeholder="Password" autocomplete="on">
 							</div>
 							<div class="submit">
 								<input type="submit" value=">">

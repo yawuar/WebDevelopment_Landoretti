@@ -96,11 +96,11 @@
             <div class="row margin-bottom">
                 <div class="col-sm-6 form-group big-form right-marg">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control custom-input <?php echo ($errors['password']) ? 'error' : '' ?>" name="password" id="password" placeholder="Password">
+                    <input type="password" class="form-control custom-input <?php echo ($errors['password']) ? 'error' : '' ?>" name="password" id="password" placeholder="Password" autocomplete="on">
                 </div>
                 <div class="col-sm-6 form-group big-form">
                     <label for="password_confirmation">Password confirmation</label>
-                    <input type="password" class="form-control custom-input <?php echo ($errors['password_confirmation']) ? 'error' : '' ?>" name="password_confirmation" id="password_confirmation" placeholder="Password">
+                    <input type="password" class="form-control custom-input <?php echo ($errors['password_confirmation']) ? 'error' : '' ?>" name="password_confirmation" id="password_confirmation" placeholder="Password" autocomplete="on">
                 </div>
             </div>
             <div class="row margin-bottom">

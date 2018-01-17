@@ -2764,6 +2764,7 @@ nav {
 			border: 1px solid #e5e5e5;
 			@media (max-width: 767px) {
 				height: auto;
+				padding: 25px 0;
 			}
 
 			h5 {
@@ -2780,6 +2781,11 @@ nav {
 				padding: 0;
 				color: #575757;
 				font-size: 1.5em;
+
+				@media (max-width: 767px) {
+					width: 100% !important;
+					border: none !important;
+				}
 
 				p, h6 {
 					margin: 0;
