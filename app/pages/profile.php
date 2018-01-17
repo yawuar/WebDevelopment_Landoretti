@@ -61,7 +61,7 @@
                 <div class="col-sm-3">
                     <div class="item">
                         <div class="image">
-                            <img src="../images/myauctions/blueman.jpg" alt="blueman">
+                            <img src="../images/myauctions/spine.jpg" alt="spine">
                         </div>
                         <div class="info">
                             <div>
@@ -79,7 +79,7 @@
                 <div class="col-sm-3">
                     <div class="item">
                         <div class="image">
-                            <img src="../images/myauctions/elephant.jpg" alt="elephant">
+                            <img src="../images/myauctions/clock.jpg" alt="clock">
                         </div>
                         <div class="info">
                             <div>
