@@ -12,3 +12,6 @@ ExpiresByType application/x-shockwave-flash "access 1 month"
 ExpiresByType image/x-icon "access 1 year"
 ExpiresDefault "access 1 month"
 </IfModule>
+<filesMatch "\\.(js|js.gz)$">
+Header set Cache-Control "max-age=604800, private"
+</filesMatch>
