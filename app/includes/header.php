@@ -37,6 +37,9 @@
 <head>
     <meta charset="UTF-8">
 	<meta http-equiv="Cache-control" content="public">
+	<meta name="description" content="Landoretti">
+	<meta name="keywords" content="Landoretti, HTML, CSS">
+  	<meta name="author" content="Yawuar Serna Delgado">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Landoretti</title>

@@ -27,6 +27,8 @@ var del = require('del');
 
 var runSequence = require('run-sequence');
 
+var htmlmin = require('htmlmin');
+
 // Basic Gulp task syntax
 gulp.task('hello', function() {
   console.log('Hello Yawuar!');
