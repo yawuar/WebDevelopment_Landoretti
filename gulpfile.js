@@ -95,6 +95,7 @@ gulp.task('includes', function () {
   gulp.src('app/favicons/*.+(png|jpg|jpeg|gif|svg)').pipe(gulp.dest('dist/favicons'));
   gulp.src('app/pages/*.php').pipe(gulp.dest('dist/pages'));
   gulp.src('app/*.php').pipe(gulp.dest('dist'));
+  gulp.src('app/.htaccess').pipe(gulp.dest('dist'));
 });
 // Cleaning 
 gulp.task('clean', function() {
