@@ -26,6 +26,9 @@
 		'fr' => '#',
 		'en' => '#'
 	);
+
+	//$isLoggedIn = false;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -367,11 +367,11 @@ nav {
           @media (max-width: 767px) {
             nav.navbar-default .container .information .navigation ul {
               display: inline-block; } }
-          nav.navbar-default .container .information .navigation ul.loggedin {
+          nav.navbar-default .container .information .navigation ul.loggedIn {
             display: none; }
-            nav.navbar-default .container .information .navigation ul.loggedin li {
+            nav.navbar-default .container .information .navigation ul.loggedIn li {
               font-size: 1.3em; }
-              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(1):before {
+              nav.navbar-default .container .information .navigation ul.loggedIn li:nth-child(1):before {
                 content: "";
                 display: block;
                 background: url("/images/icons/watchlist.png") no-repeat;
@@ -379,11 +379,11 @@ nav {
                 height: 10px;
                 float: left;
                 margin: 5px 10px 5px 0; }
-              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(1) a {
+              nav.navbar-default .container .information .navigation ul.loggedIn li:nth-child(1) a {
                 border-right: 1px solid #0a1e75;
                 float: left;
                 padding-right: 20px; }
-              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(2):before {
+              nav.navbar-default .container .information .navigation ul.loggedIn li:nth-child(2):before {
                 content: "";
                 display: block;
                 background: url("/images/icons/profile.png") no-repeat;
@@ -391,14 +391,14 @@ nav {
                 height: 14px;
                 margin: 3px 10px 3px 20px;
                 float: left; }
-              nav.navbar-default .container .information .navigation ul.loggedin li:nth-child(2) a {
+              nav.navbar-default .container .information .navigation ul.loggedIn li:nth-child(2) a {
                 border-right: 1px solid #0a1e75;
                 float: left;
                 padding-right: 20px; }
-              nav.navbar-default .container .information .navigation ul.loggedin li a {
+              nav.navbar-default .container .information .navigation ul.loggedIn li a {
                 padding: 0;
                 color: #0a1e75; }
-              nav.navbar-default .container .information .navigation ul.loggedin li:last-child {
+              nav.navbar-default .container .information .navigation ul.loggedIn li:last-child {
                 padding-left: 20px; }
           nav.navbar-default .container .information .navigation ul.login li {
             font-size: 1.3em; }
