@@ -2832,16 +2832,28 @@ nav {
 
 			.container {
 				height: 100%;
+				padding: 0;
 
-				.col-sm-3 {
+				.col-md-3 {
 					width: calc(100%/1024*250);
 					height: 382px;
 					margin-right: calc(100%/1024*8);
 					padding: 0;
 					margin-bottom: 50px;
 
+					@media (max-width: 991px) {
+						width: 49%;
+						float: left;
+						margin-right: 0;
+
+						&:nth-child(even) {
+							margin-right: 1%;
+						}
+					}
+
 					@media (max-width: 767px) {
 						width: 100%;
+						margin-right: 0;
 					}
 
 					&:last-child {

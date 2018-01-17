@@ -1884,56 +1884,65 @@ nav {
     #profile .container .items {
       height: auto; } }
   #profile .container .items .container {
-    height: 100%; }
-    #profile .container .items .container .col-sm-3 {
+    height: 100%;
+    padding: 0; }
+    #profile .container .items .container .col-md-3 {
       width: calc(100%/1024*250);
       height: 382px;
       margin-right: calc(100%/1024*8);
       padding: 0;
       margin-bottom: 50px; }
+      @media (max-width: 991px) {
+        #profile .container .items .container .col-md-3 {
+          width: 49%;
+          float: left;
+          margin-right: 0; }
+          #profile .container .items .container .col-md-3:nth-child(even) {
+            margin-right: 1%; } }
       @media (max-width: 767px) {
-        #profile .container .items .container .col-sm-3 {
-          width: 100%; } }
-      #profile .container .items .container .col-sm-3:last-child {
+        #profile .container .items .container .col-md-3 {
+          width: 100%;
+          margin-right: 0; } }
+      #profile .container .items .container .col-md-3:last-child {
         margin-right: 0; }
-      #profile .container .items .container .col-sm-3 .item {
+      #profile .container .items .container .col-md-3 .item {
         height: 100%; }
-        #profile .container .items .container .col-sm-3 .item .image {
+        #profile .container .items .container .col-md-3 .item .image {
           height: 250px;
           width: 100%; }
-          #profile .container .items .container .col-sm-3 .item .image img {
+          #profile .container .items .container .col-md-3 .item .image img {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-        #profile .container .items .container .col-sm-3 .item .info {
+        #profile .container .items .container .col-md-3 .item .info {
           height: 132px;
           padding-top: 25px;
           display: flex;
           justify-content: center; }
-          #profile .container .items .container .col-sm-3 .item .info div p, #profile .container .items .container .col-sm-3 .item .info div h6 {
+          #profile .container .items .container .col-md-3 .item .info div p, #profile .container .items .container .col-md-3 .item .info div h6 {
             margin: 0; }
-          #profile .container .items .container .col-sm-3 .item .info div > a {
+          #profile .container .items .container .col-md-3 .item .info div > a {
             font-size: 1.5em;
             color: #0a1e75; }
-          #profile .container .items .container .col-sm-3 .item .info div h6 {
+          #profile .container .items .container .col-md-3 .item .info div h6 {
             font-size: 2em;
             color: #545353;
             line-height: 16px; }
-          #profile .container .items .container .col-sm-3 .item .info div p {
+          #profile .container .items .container .col-md-3 .item .info div p {
             font-size: 1.4em; }
-            #profile .container .items .container .col-sm-3 .item .info div p.price {
+            #profile .container .items .container .col-md-3 .item .info div p.price {
               font-size: 1.8em; }
-          #profile .container .items .container .col-sm-3 .item .info div .visit-auction {
+          #profile .container .items .container .col-md-3 .item .info div .visit-auction {
             float: left;
             border-bottom: 1px solid #e5e5e5;
             margin-top: -7px;
             text-align: center;
             line-height: 48px; }
-            #profile .container .items .container .col-sm-3 .item .info div .visit-auction p, #profile .container .items .container .col-sm-3 .item .info div .visit-auction a {
+            #profile .container .items .container .col-md-3 .item .info div .visit-auction p, #profile .container .items .container .col-md-3 .item .info div .visit-auction a {
               float: left; }
-            #profile .container .items .container .col-sm-3 .item .info div .visit-auction p {
+            #profile .container .items .container .col-md-3 .item .info div .visit-auction p {
               margin-right: 11px; }
-            #profile .container .items .container .col-sm-3 .item .info div .visit-auction a {
+            #profile .container .items .container .col-md-3 .item .info div .visit-auction a {
               height: 50px;
               width: 117px;
               border: 1px solid #e5e5e5;

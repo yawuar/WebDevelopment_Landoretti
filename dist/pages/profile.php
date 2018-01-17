@@ -40,7 +40,7 @@
         <div class="items">
             <div class="container">
                 <h3>Active auctions</h3>
-                <div class="col-sm-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="item">
                         <div class="image">
                             <img src="../images/myauctions/faces.jpg" alt="faces">
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="item">
                         <div class="image">
                             <img src="../images/myauctions/spine.jpg" alt="spine">
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="item">
                         <div class="image">
                             <img src="../images/myauctions/clock.jpg" alt="clock">
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="item">
                         <div class="image">
                             <img src="../images/myauctions/radio.jpg" alt="radio">
