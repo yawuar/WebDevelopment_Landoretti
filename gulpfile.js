@@ -80,7 +80,7 @@ gulp.task('cssnano', function () {
 });
 
 gulp.task('images', function(){
-  return gulp.src('app/images/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
   .pipe(
   	cache(imagemin())
   )
