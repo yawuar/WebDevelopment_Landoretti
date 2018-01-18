@@ -21,10 +21,10 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Auction details</th>
-                        <th>Estimated price</th>
-                        <th>End date</th>
-                        <th>Remaining time</th>
+                        <th class="details">Auction details</th>
+                        <th class="price">Estimated price</th>
+                        <th class="date">End date</th>
+                        <th class="time">Remaining time</th>
                     </tr>
                 </thead>
                 <tbody>

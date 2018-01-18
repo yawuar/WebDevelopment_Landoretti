@@ -200,12 +200,12 @@ table {
       width: 135px;
       float: left; }
     table tbody tr td:nth-child(2) {
-      font-size: 1.35em; }
+      font-size: 2.2em; }
     table tbody tr td:nth-child(3) {
-      font-size: .9em;
+      font-size: 1.4em;
       line-height: 20px; }
     table tbody tr td:nth-child(4) {
-      font-size: 1em; }
+      font-size: 1.6em; }
     table tbody tr td .info {
       float: left;
       height: 100%;
@@ -213,12 +213,14 @@ table {
       text-align: left;
       display: flex;
       align-items: center; }
+      table tbody tr td .info h3, table tbody tr td .info a {
+        font-family: 'Helvetica';
+        font-weight: normal; }
       table tbody tr td .info h3 {
-        font-size: 1.45em;
-        font-weight: normal;
+        font-size: 2.3em;
         margin: 0 !important; }
       table tbody tr td .info a {
-        font-size: 1.05em;
+        font-size: 1.7em;
         color: #0a1e75; }
 
 /*
