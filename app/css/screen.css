@@ -180,13 +180,13 @@ table {
       color: #545353;
       font-size: .95em;
       font-weight: normal; }
-      table thead tr th:first-child {
-        width: calc(100%/1024*535); }
-      table thead tr th:nth-child(2) {
+      table thead tr th.checkbox {
+        width: calc(100%/1024*30); }
+      table thead tr th.details {
+        width: calc(100%/1024*505); }
+      table thead tr th.price, table thead tr th.date {
         width: calc(100%/1024*162); }
-      table thead tr th:nth-child(3) {
-        width: calc(100%/1024*162); }
-      table thead tr th:nth-child(4) {
+      table thead tr th.time {
         width: calc(100%/1024*165); }
   table tbody tr td {
     height: 135px;
@@ -1528,20 +1528,51 @@ nav {
     #my-watchlist .container .btns a.small-margin {
       margin-right: 5px; }
 
-#my-watchlist .container .watchlist .filter ul {
-  display: inline-block; }
-  #my-watchlist .container .watchlist .filter ul li {
-    float: left;
-    font-size: 1.2em; }
-    #my-watchlist .container .watchlist .filter ul li:first-child {
-      font-weight: bold; }
-      #my-watchlist .container .watchlist .filter ul li:first-child a {
-        padding-bottom: 7px;
-        border-bottom: 3px solid #d4d4d4; }
-    #my-watchlist .container .watchlist .filter ul li:nth-child(2), #my-watchlist .container .watchlist .filter ul li:nth-child(3) {
-      margin-left: 6px; }
-    #my-watchlist .container .watchlist .filter ul li a {
-      color: #545353; }
+#my-watchlist .container .watchlist .col-md-12 {
+  padding: 0; }
+  #my-watchlist .container .watchlist .col-md-12 .col-md-1, #my-watchlist .container .watchlist .col-md-12 .col-md-11 {
+    padding: 0;
+    float: left; }
+  #my-watchlist .container .watchlist .col-md-12 .col-md-1 {
+    padding-top: 35px;
+    width: calc(100%/1024*30); }
+    @media (max-width: 767px) {
+      #my-watchlist .container .watchlist .col-md-12 .col-md-1 {
+        width: calc(100%/1024*60); } }
+    #my-watchlist .container .watchlist .col-md-12 .col-md-1 .vertical-align {
+      height: 137px;
+      line-height: 137px; }
+      #my-watchlist .container .watchlist .col-md-12 .col-md-1 .vertical-align input {
+        height: 21px;
+        width: 21px;
+        -webkit-appearance: button;
+        border: 1px solid #939393; }
+  #my-watchlist .container .watchlist .col-md-12 .col-md-11 {
+    width: calc(100%/1024*994); }
+    @media (max-width: 767px) {
+      #my-watchlist .container .watchlist .col-md-12 .col-md-11 {
+        width: calc(100%/1024*964); } }
+
+#my-watchlist .container .watchlist .filter {
+  padding-left: calc(100%/1024*30); }
+  #my-watchlist .container .watchlist .filter ul {
+    display: inline-block; }
+    #my-watchlist .container .watchlist .filter ul li {
+      float: left;
+      font-size: 1.2em; }
+      #my-watchlist .container .watchlist .filter ul li:first-child {
+        font-weight: bold; }
+        #my-watchlist .container .watchlist .filter ul li:first-child a {
+          padding-bottom: 7px;
+          border-bottom: 3px solid #d4d4d4; }
+      #my-watchlist .container .watchlist .filter ul li:nth-child(2), #my-watchlist .container .watchlist .filter ul li:nth-child(3) {
+        margin-left: 6px; }
+      #my-watchlist .container .watchlist .filter ul li a {
+        color: #545353; }
+        #my-watchlist .container .watchlist .filter ul li a:hover {
+          text-decoration: none;
+          padding-bottom: 7px;
+          border-bottom: 3px solid #d4d4d4; }
 
 @media (max-width: 991px) {
   #my-watchlist .container .watchlist .table-overflow {
