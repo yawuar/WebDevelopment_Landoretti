@@ -25,30 +25,20 @@
                     <nav>
                         <h4>Price</h4>
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">PRICE <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="">Up to 5,000</a></li>
-                                    <li><a href="">5,000–10,000</a></li>
-                                    <li><a href="">10,000–25,000</a></li>
-                                    <li><a href="">25,000–50,000</a></li>
-                                    <li><a href="">50,000–100,000</a></li>
-                                    <li><a href="">Above</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="">Up to 5,000</a></li>
+                            <li><a href="">5,000–10,000</a></li>
+                            <li><a href="">10,000–25,000</a></li>
+                            <li><a href="">25,000–50,000</a></li>
+                            <li><a href="">50,000–100,000</a></li>
+                            <li><a href="">Above</a></li>
                         </ul>
                     </nav>
                     <nav>
                         <h4>Ending</h4>
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">ENDINGS <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="">Ending this Week</a></li>
-                                    <li><a href="">Newly Listed</a></li>
-                                    <li><a href="">Purchase Now</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="">Ending this Week</a></li>
+                            <li><a href="">Newly Listed</a></li>
+                            <li><a href="">Purchase Now</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -56,30 +46,20 @@
                     <nav>
                         <h4>Era</h4>
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">ERA <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="">Pre-War</a></li>
-                                    <li><a href="">1940s–1950s</a></li>
-                                    <li><a href="">1960s–1980s</a></li>
-                                    <li><a href="">1990s–Present</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="">Pre-War</a></li>
+                            <li><a href="">1940s–1950s</a></li>
+                            <li><a href="">1960s–1980s</a></li>
+                            <li><a href="">1990s–Present</a></li>
                         </ul>
                     </nav>
                     <nav>
                         <h4>Media</h4>
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">ERA <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="">Design</a></li>
-                                    <li><a href="">Paintings and Works on Paper</a></li>
-                                    <li><a href="">Photographs</a></li>
-                                    <li><a href="">Prints and Multiples</a></li>
-                                    <li><a href="">Sculpture</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="">Design</a></li>
+                            <li><a href="">Paintings and Works on Paper</a></li>
+                            <li><a href="">Photographs</a></li>
+                            <li><a href="">Prints and Multiples</a></li>
+                            <li><a href="">Sculpture</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -87,24 +67,19 @@
                     <nav>
                         <h4>STYLE</h4>
                         <ul class="nav navbar-nav">
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown" class="dropdown-toggle">STYLE <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Abstract</a></li>
-                                    <li><a href="#">African American</a></li>
-                                    <li><a href="#">Asian Contemporary</a></li>
-                                    <li><a href="#">Conceptual</a></li>
-                                    <li><a href="#">Contemporary</a></li>
-                                    <li><a href="#">Emerging Artists</a></li>
-                                    <li><a href="#">Figurative</a></li>
-                                    <li><a href="#">Middle Eastern Contemporary</a></li>
-                                    <li><a href="#">Minimalism</a></li>
-                                    <li><a href="#">Modern</a></li>
-                                    <li><a href="#">Pop</a></li>
-                                    <li><a href="#">Urban</a></li>
-                                    <li><a href="#">Vintage Photographs</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="#">Abstract</a></li>
+                            <li><a href="#">African American</a></li>
+                            <li><a href="#">Asian Contemporary</a></li>
+                            <li><a href="#">Conceptual</a></li>
+                            <li><a href="#">Contemporary</a></li>
+                            <li><a href="#">Emerging Artists</a></li>
+                            <li><a href="#">Figurative</a></li>
+                            <li><a href="#">Middle Eastern Contemporary</a></li>
+                            <li><a href="#">Minimalism</a></li>
+                            <li><a href="#">Modern</a></li>
+                            <li><a href="#">Pop</a></li>
+                            <li><a href="#">Urban</a></li>
+                            <li><a href="#">Vintage Photographs</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -752,34 +752,59 @@ nav {
 *
 */
 #overview-filter {
-	height: auto;
+	height: 82px;
 	border-bottom: 1px solid #afafaf;
 	box-sizing: content-box;
 	-webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	
+	@media (max-width: 767px) {
+		height: auto;
+	}
 
 	&.active {
 		height: 423px;
 
+		@media (max-width: 767px) {
+			height: auto;
+		}
+
 		.filter-menu {
 			display: block !important;
+			margin-top: 34px;
 		}
 	}
 
 	.top {
-		height: 82px;
+		height: 100%;
+		padding-bottom: 34px;
+
+		@media (max-width: 767px) {
+			padding: 25px 0;
+		}
 
 		.container {
-			.list {
+			div	{
+				position: relative;
+				.list {
 				display: inline-block;
 				ul {
 					line-height: 82px;
+
+					@media (max-width: 767px) {
+						line-height: 30px;
+					}
+
 					li {
 						float: left;
 						font-size: 1.5em;
 						color: #4d4d4d;
+
+						@media (max-width: 767px) {
+							float: none;
+						}
 
 						&:first-child {
 							font-weight: bold;
@@ -804,6 +829,15 @@ nav {
 			.options {
 				display: flex;
 				align-items: center;
+
+				@media (max-width: 767px) {
+					position: absolute;
+					top: 50%;
+					right: 0;
+
+					transform: translateY(-50%);
+				}
+
 				h5, a {
 					float: left;
 					line-height: 82px;
@@ -827,33 +861,66 @@ nav {
 					}
 				}
 			}
+			}
 
 			.filter-menu {
 				display: none;
+				width: 100%;
+				float: left;
 
 				.col-sm-3 {
 					padding: 0;
 
-					nav {
-						h4 {
+					width: calc(100%/1024*250);
+					margin-right: calc(100%/1024*8);
 
+					&:last-child {
+						clear: both;
+						margin-right: 0;
+					}
+
+					&:nth-child(1), &:nth-child(2) {
+						margin-bottom: 25px;
+					}
+
+					@media (max-width: 767px) {
+						width: 49%;
+						margin-right: 1%;
+						float: left;
+					}
+
+					nav {
+						float: left;
+						clear: both;
+						h4 {
+							font-size: 1.3em;
+							font-weight: bold;
+						}
+
+						&:nth-child(2) {
+							margin-top: 23px;
 						}
 
 						.nav {
-							.dropdown-toggle {
-								display: none;
-							}
+							margin: 5px 0 0 10px;
 
-							.dropdown-menu {
-								position: static;
-								display: block;
-								border: none;
-								box-shadow: none;
-								font-size: 1em;
+							li {
+								font-size: 1.2em;
+								float: none;
+								margin-bottom: 10px;
+								display: table;
 
-								li {
-									a {
-										padding: 0;
+								&:last-child {
+									margin-bottom: 0;
+								}
+								a {
+									padding: 0;
+									color: #595959;
+									line-height: 10px;
+
+									&:hover {
+										background: none;
+										border-bottom: 2px solid #b8b8b8;
 									}
 								}
 							}
@@ -933,6 +1000,10 @@ nav {
 
 			.big-image {
 				margin-right: calc(100%/1024*8);
+
+				@media (max-width: 767px) {
+					margin-bottom: 60px;
+				}
 
 				.image {
 					height: 100%;
