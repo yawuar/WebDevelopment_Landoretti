@@ -596,8 +596,10 @@ nav {
         width: calc(100%/1024*250);
         margin-right: calc(100%/1024*8); }
         #overview-filter .top .container .filter-menu .col-sm-3:last-child {
-          clear: both;
           margin-right: 0; }
+          @media (max-width: 767px) {
+            #overview-filter .top .container .filter-menu .col-sm-3:last-child {
+              clear: both; } }
         #overview-filter .top .container .filter-menu .col-sm-3:nth-child(1), #overview-filter .top .container .filter-menu .col-sm-3:nth-child(2) {
           margin-bottom: 25px; }
         @media (max-width: 767px) {

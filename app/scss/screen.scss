@@ -874,9 +874,13 @@ nav {
 					width: calc(100%/1024*250);
 					margin-right: calc(100%/1024*8);
 
+
 					&:last-child {
-						clear: both;
 						margin-right: 0;
+
+						@media (max-width: 767px) {
+							clear: both;
+						}
 					}
 
 					&:nth-child(1), &:nth-child(2) {
