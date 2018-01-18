@@ -124,11 +124,21 @@
 
         <div class="head">
             <div class="col-sm-6 big-image">
-                <img src="../images/person.jpg" alt="person">
+                <div class="image">
+                    <div class="overlay">
+                        <div class="svg-icon"></div>
+                        <div class="transparent"></div>
+                    </div>
+                    <img src="../images/person.jpg" alt="person">
+                </div>
             </div>
             <div class="col-sm-6">
                 <div class="col-sm-6">
                     <div class="image">
+                        <div class="overlay">
+						    <div class="svg-icon"></div>
+						    <div class="transparent"></div>
+                        </div>
                         <img src="../images/myauctions/clock.jpg" alt="clock">
                     </div>
                     <div class="info">
@@ -145,6 +155,10 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="image">
+                        <div class="overlay">
+						    <div class="svg-icon"></div>
+						    <div class="transparent"></div>
+                        </div>
                         <img src="../images/myauctions/blueman.jpg" alt="blueman">
                     </div>
                     <div class="info">
@@ -161,6 +175,10 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="image">
+                        <div class="overlay">
+						    <div class="svg-icon"></div>
+						    <div class="transparent"></div>
+                        </div>
                         <img src="../images/myauctions/lady.jpg" alt="lady">
                     </div>
                     <div class="info">
@@ -177,6 +195,10 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="image">
+                        <div class="overlay">
+						    <div class="svg-icon"></div>
+						    <div class="transparent"></div>
+                        </div>
                         <img src="../images/myauctions/body.jpg" alt="body">
                     </div>
                     <div class="info">
@@ -195,9 +217,13 @@
         </div>
         <div class="items">
             <div class="container">
-                <div class="col-sm-3">
+                <div class="col-xs-3 col-sm-6">
                     <div class="item">
                         <div class="image">
+                            <div class="overlay">
+                                <div class="svg-icon"></div>
+                                <div class="transparent"></div>
+                            </div>
                             <img src="../images/myauctions/faces.jpg" alt="faces">
                         </div>
                         <div class="info">
@@ -213,9 +239,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-3 col-sm-6">
                     <div class="item">
                         <div class="image">
+                            <div class="overlay">
+                                <div class="svg-icon"></div>
+                                <div class="transparent"></div>
+                            </div>
                             <img src="../images/myauctions/blueman.jpg" alt="blueman">
                         </div>
                         <div class="info">
@@ -231,9 +261,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-3 col-sm-6">
                     <div class="item">
                         <div class="image">
+                            <div class="overlay">
+                                <div class="svg-icon"></div>
+                                <div class="transparent"></div>
+                            </div>
                             <img src="../images/myauctions/elephant.jpg" alt="elephant">
                         </div>
                         <div class="info">
@@ -249,9 +283,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-xs-3 col-sm-6">
                     <div class="item">
                         <div class="image">
+                            <div class="overlay">
+                                <div class="svg-icon"></div>
+                                <div class="transparent"></div>
+                            </div>
                             <img src="../images/myauctions/radio.jpg" alt="radio">
                         </div>
                         <div class="info">

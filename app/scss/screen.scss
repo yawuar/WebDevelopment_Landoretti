@@ -865,6 +865,58 @@ nav {
 	}
 }
 
+.image {
+	width: 100%;
+	height: 250px;
+
+	position: relative;
+
+	.overlay, img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.overlay {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		.svg-icon, .transparent {
+			position: absolute;
+		}
+
+		.svg-icon {
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			background: url('/images/icons/search.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: calc(100%/702*115); 
+			height: calc(100%/702*113);
+			z-index: 1;
+		}
+
+		.transparent {
+			background-color: $hoverGrey;
+			height: 100%;
+			width: 100%;
+			opacity: 0.702;
+		}
+	}
+
+	&:hover {
+		.overlay {
+			display: block;
+		}
+	}
+
+	img {
+		object-fit: cover;
+	}
+}
+
 #overview {
 	.container {
 		.breadcrumbs {
@@ -882,9 +934,12 @@ nav {
 			.big-image {
 				margin-right: calc(100%/1024*8);
 
-				img {
-					@media (max-width: 767px) {
-						width: 100%;
+				.image {
+					height: 100%;
+					img {
+						@media (max-width: 767px) {
+							width: 100%;
+						}
 					}
 				}
 			}
@@ -897,6 +952,7 @@ nav {
 				@media (max-width: 767px) {
 					width: 100%;
 				}
+				
 
 				.col-sm-6 {
 					height: 381px;
@@ -908,21 +964,14 @@ nav {
 
 					&:nth-child(1), &:nth-child(2) {
 						margin-bottom: 60px;
+						@media (max-width: 991px) {
+						//height: 50%;
+							margin-bottom: calc(100%/381*50) !important;
+						}
 					}
 
 					&:nth-child(odd) {
 						margin-right: calc(100%/1024*16);
-					}
-
-					.image {
-						width: 100%;
-						height: 250px;
-
-						img {
-							width: 100%;
-							height: 100%;
-							object-fit: cover;
-						}
 					}
 
 					.info {
@@ -995,12 +1044,21 @@ nav {
 			.container {
 				height: 100%;
 
-				.col-sm-3 {
+				.col-xs-3 {
 					width: calc(100%/1024*250);
 					height: 382px;
 					margin-right: calc(100%/1024*8);
 					padding: 0;
 					margin-bottom: 50px;
+
+					@media (max-width: 991px) {
+						width: 49%;
+						.item {
+							&:nth-child(even) {
+								margin-right: 1%;
+							}
+						}
+					}
 
 					@media (max-width: 767px) {
 						width: 100%;

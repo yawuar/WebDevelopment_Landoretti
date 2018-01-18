@@ -577,6 +577,40 @@ nav {
           #overview-filter .top .container .filter-menu .col-sm-3 nav .nav .dropdown-menu li a {
             padding: 0; }
 
+.image {
+  width: 100%;
+  height: 250px;
+  position: relative; }
+  .image .overlay, .image img {
+    width: 100%;
+    height: 100%; }
+  .image .overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .image .overlay .svg-icon, .image .overlay .transparent {
+      position: absolute; }
+    .image .overlay .svg-icon {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: url("/images/icons/search.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: calc(100%/702*115);
+      height: calc(100%/702*113);
+      z-index: 1; }
+    .image .overlay .transparent {
+      background-color: #565656;
+      height: 100%;
+      width: 100%;
+      opacity: 0.702; }
+  .image:hover .overlay {
+    display: block; }
+  .image img {
+    object-fit: cover; }
+
 #overview .container .breadcrumbs {
   margin-top: 15px;
   margin-bottom: 56px; }
@@ -588,9 +622,11 @@ nav {
       height: auto; } }
   #overview .container .head .big-image {
     margin-right: calc(100%/1024*8); }
-    @media (max-width: 767px) {
-      #overview .container .head .big-image img {
-        width: 100%; } }
+    #overview .container .head .big-image .image {
+      height: 100%; }
+      @media (max-width: 767px) {
+        #overview .container .head .big-image .image img {
+          width: 100%; } }
   #overview .container .head .col-sm-6 {
     height: 100%;
     padding: 0;
@@ -606,15 +642,11 @@ nav {
           width: 100%; } }
       #overview .container .head .col-sm-6 .col-sm-6:nth-child(1), #overview .container .head .col-sm-6 .col-sm-6:nth-child(2) {
         margin-bottom: 60px; }
+        @media (max-width: 991px) {
+          #overview .container .head .col-sm-6 .col-sm-6:nth-child(1), #overview .container .head .col-sm-6 .col-sm-6:nth-child(2) {
+            margin-bottom: calc(100%/381*50) !important; } }
       #overview .container .head .col-sm-6 .col-sm-6:nth-child(odd) {
         margin-right: calc(100%/1024*16); }
-      #overview .container .head .col-sm-6 .col-sm-6 .image {
-        width: 100%;
-        height: 250px; }
-        #overview .container .head .col-sm-6 .col-sm-6 .image img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
       #overview .container .head .col-sm-6 .col-sm-6 .info {
         height: 132px;
         padding-top: 25px;
@@ -659,55 +691,60 @@ nav {
       height: auto; } }
   #overview .container .items .container {
     height: 100%; }
-    #overview .container .items .container .col-sm-3 {
+    #overview .container .items .container .col-xs-3 {
       width: calc(100%/1024*250);
       height: 382px;
       margin-right: calc(100%/1024*8);
       padding: 0;
       margin-bottom: 50px; }
+      @media (max-width: 991px) {
+        #overview .container .items .container .col-xs-3 {
+          width: 49%; }
+          #overview .container .items .container .col-xs-3 .item:nth-child(even) {
+            margin-right: 1%; } }
       @media (max-width: 767px) {
-        #overview .container .items .container .col-sm-3 {
+        #overview .container .items .container .col-xs-3 {
           width: 100%; } }
-      #overview .container .items .container .col-sm-3:last-child {
+      #overview .container .items .container .col-xs-3:last-child {
         margin-right: 0; }
-      #overview .container .items .container .col-sm-3 .item {
+      #overview .container .items .container .col-xs-3 .item {
         height: 100%; }
-        #overview .container .items .container .col-sm-3 .item .image {
+        #overview .container .items .container .col-xs-3 .item .image {
           height: 250px;
           width: 100%; }
-          #overview .container .items .container .col-sm-3 .item .image img {
+          #overview .container .items .container .col-xs-3 .item .image img {
             width: 100%;
             height: 100%;
             object-fit: cover; }
-        #overview .container .items .container .col-sm-3 .item .info {
+        #overview .container .items .container .col-xs-3 .item .info {
           height: 132px;
           padding-top: 25px;
           display: flex;
           justify-content: center; }
-          #overview .container .items .container .col-sm-3 .item .info div p, #overview .container .items .container .col-sm-3 .item .info div h6 {
+          #overview .container .items .container .col-xs-3 .item .info div p, #overview .container .items .container .col-xs-3 .item .info div h6 {
             margin: 0; }
-          #overview .container .items .container .col-sm-3 .item .info div > a {
+          #overview .container .items .container .col-xs-3 .item .info div > a {
             font-size: 1.5em;
             color: #0a1e75; }
-          #overview .container .items .container .col-sm-3 .item .info div h6 {
+          #overview .container .items .container .col-xs-3 .item .info div h6 {
             font-size: 2em;
             color: #545353;
             line-height: 16px; }
-          #overview .container .items .container .col-sm-3 .item .info div p {
+          #overview .container .items .container .col-xs-3 .item .info div p {
             font-size: 1.4em; }
-            #overview .container .items .container .col-sm-3 .item .info div p.price {
+            #overview .container .items .container .col-xs-3 .item .info div p.price {
               font-size: 1.8em; }
-          #overview .container .items .container .col-sm-3 .item .info div .visit-auction {
+          #overview .container .items .container .col-xs-3 .item .info div .visit-auction {
             float: left;
             border-bottom: 1px solid #e5e5e5;
             margin-top: -7px;
             text-align: center;
             line-height: 48px; }
-            #overview .container .items .container .col-sm-3 .item .info div .visit-auction p, #overview .container .items .container .col-sm-3 .item .info div .visit-auction a {
+            #overview .container .items .container .col-xs-3 .item .info div .visit-auction p, #overview .container .items .container .col-xs-3 .item .info div .visit-auction a {
               float: left; }
-            #overview .container .items .container .col-sm-3 .item .info div .visit-auction p {
+            #overview .container .items .container .col-xs-3 .item .info div .visit-auction p {
               margin-right: 11px; }
-            #overview .container .items .container .col-sm-3 .item .info div .visit-auction a {
+            #overview .container .items .container .col-xs-3 .item .info div .visit-auction a {
               height: 50px;
               width: 117px;
               border: 1px solid #e5e5e5;
