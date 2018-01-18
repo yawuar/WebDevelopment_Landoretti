@@ -2858,10 +2858,6 @@ nav {
 				padding: 0;
 				margin-bottom: 50px;
 
-				@media (max-width: 767px) {
-					width: 100%;
-				}
-
 				@media (max-width: 991px) {
 					width: 49.5%;
 					margin-right: 1%;
@@ -2869,6 +2865,10 @@ nav {
 					&:nth-child(odd) {
 						margin-right: 0;
 					}
+				}
+
+				@media (max-width: 767px) {
+					width: 100%;
 				}
 
 				&:last-child {
