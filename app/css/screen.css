@@ -1912,6 +1912,12 @@ nav {
       @media (max-width: 767px) {
         #detail .related-items .container .col-sm-3 {
           width: 100%; } }
+      @media (max-width: 991px) {
+        #detail .related-items .container .col-sm-3 {
+          width: 49.5%;
+          margin-right: 1%; }
+          #detail .related-items .container .col-sm-3:nth-child(odd) {
+            margin-right: 0; } }
       #detail .related-items .container .col-sm-3:last-child {
         margin-right: 0; }
       #detail .related-items .container .col-sm-3 .item {

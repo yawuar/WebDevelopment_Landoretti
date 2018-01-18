@@ -124,6 +124,10 @@
             <div class="col-sm-3">
                 <div class="item">
                     <div class="image">
+                        <div class="overlay">
+						    <div class="svg-icon"></div>
+						    <div class="transparent"></div>
+                        </div>
                         <img src="../images/myauctions/clock.jpg" alt="clock">
                     </div>
                     <div class="info">
@@ -142,6 +146,10 @@
             <div class="col-sm-3">
                 <div class="item">
                     <div class="image">
+                        <div class="overlay">
+						    <div class="svg-icon"></div>
+						    <div class="transparent"></div>
+                        </div>
                         <img src="../images/myauctions/blueman.jpg" alt="blueman">
                     </div>
                     <div class="info">
@@ -160,6 +168,10 @@
             <div class="col-sm-3">
                 <div class="item">
                     <div class="image">
+                        <div class="overlay">
+						    <div class="svg-icon"></div>
+						    <div class="transparent"></div>
+                        </div>
                         <img src="../images/myauctions/lady.jpg" alt="lady">
                     </div>
                     <div class="info">
@@ -178,6 +190,10 @@
             <div class="col-sm-3">
                 <div class="item">
                     <div class="image">
+                        <div class="overlay">
+						    <div class="svg-icon"></div>
+						    <div class="transparent"></div>
+                        </div>
                         <img src="../images/myauctions/body.jpg" alt="body">
                     </div>
                     <div class="info">
