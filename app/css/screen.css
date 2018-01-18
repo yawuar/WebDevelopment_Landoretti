@@ -1543,6 +1543,14 @@ nav {
     #my-watchlist .container .watchlist .filter ul li a {
       color: #545353; }
 
+@media (max-width: 991px) {
+  #my-watchlist .container .watchlist .table-overflow {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%; }
+    #my-watchlist .container .watchlist .table-overflow table {
+      min-width: 1024px; } }
+
 /*
 *
 *	CSS of the Register page

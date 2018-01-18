@@ -2303,6 +2303,18 @@ nav {
 					}
 				}
 			}
+
+			.table-overflow {
+				@media (max-width: 991px) {
+					overflow-x: scroll;
+					overflow-y: hidden;
+					width: 100%;
+
+					table {
+						min-width: 1024px;
+					}
+				}
+			}
 		}
 	}
 }
