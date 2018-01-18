@@ -43,6 +43,10 @@
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="item">
                         <div class="image">
+                            <div class="overlay">
+                                <div class="svg-icon"></div>
+                                <div class="transparent"></div>
+                            </div>
                             <img src="../images/myauctions/faces.jpg" alt="faces">
                         </div>
                         <div class="info">
@@ -61,6 +65,10 @@
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="item">
                         <div class="image">
+                            <div class="overlay">
+                                <div class="svg-icon"></div>
+                                <div class="transparent"></div>
+                            </div>
                             <img src="../images/myauctions/spine.jpg" alt="spine">
                         </div>
                         <div class="info">
@@ -79,6 +87,10 @@
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="item">
                         <div class="image">
+                            <div class="overlay">
+                                <div class="svg-icon"></div>
+                                <div class="transparent"></div>
+                            </div>
                             <img src="../images/myauctions/clock.jpg" alt="clock">
                         </div>
                         <div class="info">
@@ -97,6 +109,10 @@
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="item">
                         <div class="image">
+                            <div class="overlay">
+                                <div class="svg-icon"></div>
+                                <div class="transparent"></div>
+                            </div>
                             <img src="../images/myauctions/radio.jpg" alt="radio">
                         </div>
                         <div class="info">
