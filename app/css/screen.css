@@ -77,6 +77,14 @@ ul {
   .container {
     width: 100%; } }
 
+@media (max-width: 991px) {
+  .table-overflow {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%; }
+    .table-overflow table {
+      min-width: 1024px; } }
+
 .input-field {
   height: 28px;
   margin: 11px 0; }
@@ -1575,14 +1583,6 @@ nav {
           text-decoration: none;
           padding-bottom: 7px;
           border-bottom: 3px solid #d4d4d4; }
-
-@media (max-width: 991px) {
-  #my-watchlist .container .watchlist .table-overflow {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    width: 100%; }
-    #my-watchlist .container .watchlist .table-overflow table {
-      min-width: 1024px; } }
 
 /*
 *
