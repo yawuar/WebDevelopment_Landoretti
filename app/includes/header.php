@@ -63,7 +63,7 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Css files -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/screen.css">
 </head>
