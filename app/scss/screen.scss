@@ -98,6 +98,12 @@ h5 {
 	color: $blue;
 }
 
+p {
+	@media (max-width: 767px) {
+		font-size: 1.4em !important;
+	}
+}
+
 ul {
 	list-style: none;
 }
@@ -775,8 +781,8 @@ nav {
 								padding: 0 25px;
 								text-align: center;
 								li {
-									height: 50px;
-									width: 50px;
+									// height: 50px;
+									// width: 50px;
 									float: left;
 
 									&:hover {
@@ -785,11 +791,23 @@ nav {
 								}
 							}
 
+							// @media (max-width: 991px) {
+							// 	padding-left: 0;
+							// 	padding-right: 15px;
+							// }
+
 							li {
-								margin-right: 15px;
+								//margin-right: calc(100%/1024*15);
+								// @media (max-width: 991px) {
+								// 	padding-left: 0;
+								// 	padding-right: 15px;
+								// }
+								margin-right: 0;
 								a {
 									font-weight: normal;
+									line-height: 20px;
 									color: $blue;
+									padding: 15px;
 								}
 
 								&.active {
@@ -1551,8 +1569,11 @@ nav {
 	.container {
 		.row {
 			@media (max-width: 991px) {
-				padding: 0 15px;
+				padding: 0;
 			}
+
+			margin-right: 0;
+			margin-left: 0;
 
 			div {
 				padding: 0;
@@ -3367,7 +3388,7 @@ nav {
 	}
 	.container {
 		padding-top: 40px;
-		@media (max-width: 767px) {
+		@media (max-width: 991px) {
 			padding-left: 0;
 			padding-right: 0;
 		}
@@ -3560,6 +3581,10 @@ nav {
 				color: rgb(119, 119, 119);
 				line-height: 1.5;
 				margin: 0;
+
+				@media (min-width: 768px) {
+					text-align: left;
+				}
 			}
 		}
 	}
@@ -3601,12 +3626,20 @@ footer {
 				padding-left: 170px;
 
 				@media (max-width: 767px) {
-					padding-left: 0;
+					padding-left: 0 !important;
+				}
+
+				@media (max-width: 991px) {
+					padding-left: 120px;
 				}
 
 				&.language {
 					padding-left: 0;
 					font-size: 1.3em;
+
+					@media (max-width: 991px) {
+						font-size: 1.2em;
+					}
 
 					@media (max-width: 767px) {
 						text-align: center;
@@ -3632,7 +3665,6 @@ footer {
 						a {
 							font-weight: normal;
 							color: $blue;
-							//line-height: 50px;
 						}
 					}
 				}
@@ -3641,8 +3673,14 @@ footer {
 					li {
 						font-weight: bold;
 						margin-right: 30px;
+						@media (max-width: 991px) {
+							margin-right: 25px;
+						}
 						a {
 							font-size: 1.5em;
+							@media (max-width: 991px) {
+								font-size: 1.2em;
+							}
 							color: $darkgrey;
 							padding: 0;
 							line-height: 50px;
