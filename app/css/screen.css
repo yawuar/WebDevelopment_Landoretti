@@ -178,6 +178,8 @@ label {
 .breadcrumbs {
   font-size: 1.5em;
   margin-top: 36px; }
+  .breadcrumbs.under {
+    margin: 0 !important; }
   .breadcrumbs ul {
     margin: 0;
     display: inline-block; }
@@ -185,6 +187,21 @@ label {
       display: inline-block; }
       .breadcrumbs ul li a {
         color: #01a6a0; }
+    .breadcrumbs ul.numbers {
+      color: #5c5c5c; }
+      .breadcrumbs ul.numbers li {
+        margin-right: 4px; }
+        .breadcrumbs ul.numbers li:nth-child(5) {
+          margin-right: 0; }
+        .breadcrumbs ul.numbers li:last-child {
+          margin-left: 12px; }
+        .breadcrumbs ul.numbers li:first-child {
+          margin-right: 12px; }
+        .breadcrumbs ul.numbers li a {
+          color: #5c5c5c; }
+          .breadcrumbs ul.numbers li a:hover {
+            text-decoration: none;
+            color: #030303; }
   .breadcrumbs p {
     color: #5c5b5b;
     margin-bottom: 0; }
@@ -709,6 +726,31 @@ nav {
         margin-bottom: 60px; } }
     #overview .container .head .big-image .image {
       height: 100%; }
+      #overview .container .head .big-image .image .info {
+        padding: 0 50px 50px 60px;
+        position: absolute;
+        bottom: 0; }
+        #overview .container .head .big-image .image .info .title {
+          margin-left: -18px;
+          margin-bottom: 17px; }
+          #overview .container .head .big-image .image .info .title h1 {
+            font-size: 3.5em; }
+          #overview .container .head .big-image .image .info .title span, #overview .container .head .big-image .image .info .title h1 {
+            float: left; }
+          #overview .container .head .big-image .image .info .title span {
+            font-size: 3.8em;
+            font-weight: bold;
+            width: 18px;
+            line-height: 40px; }
+          #overview .container .head .big-image .image .info .title::after {
+            clear: both;
+            display: block;
+            content: ""; }
+        #overview .container .head .big-image .image .info .title h1, #overview .container .head .big-image .image .info p {
+          margin: 0; }
+        #overview .container .head .big-image .image .info p {
+          font-size: 1.5em;
+          line-height: 21px; }
       @media (max-width: 767px) {
         #overview .container .head .big-image .image img {
           width: 100%; } }
@@ -733,8 +775,8 @@ nav {
       #overview .container .head .col-sm-6 .col-sm-6:nth-child(odd) {
         margin-right: calc(100%/1024*16); }
       #overview .container .head .col-sm-6 .col-sm-6 .info {
-        height: 132px;
-        padding-top: 25px;
+        height: 131px;
+        padding-top: 20px;
         display: flex;
         justify-content: center; }
         #overview .container .head .col-sm-6 .col-sm-6 .info div p, #overview .container .head .col-sm-6 .col-sm-6 .info div h6 {
@@ -749,11 +791,13 @@ nav {
         #overview .container .head .col-sm-6 .col-sm-6 .info div p {
           font-size: 1.4em; }
           #overview .container .head .col-sm-6 .col-sm-6 .info div p.price {
-            font-size: 1.8em; }
+            font-family: 'Helvetica';
+            font-size: 1.8em;
+            font-weight: light; }
         #overview .container .head .col-sm-6 .col-sm-6 .info div .visit-auction {
           float: left;
           border-bottom: 1px solid #e5e5e5;
-          margin-top: -7px;
+          margin-top: -3px;
           text-align: center;
           line-height: 48px; }
           #overview .container .head .col-sm-6 .col-sm-6 .info div .visit-auction p, #overview .container .head .col-sm-6 .col-sm-6 .info div .visit-auction a {
@@ -763,7 +807,9 @@ nav {
           #overview .container .head .col-sm-6 .col-sm-6 .info div .visit-auction a {
             height: 50px;
             width: 117px;
-            border: 1px solid #e5e5e5;
+            border-left: 1px solid #e5e5e5;
+            border-top: 1px solid #e5e5e5;
+            border-right: 1px solid #e5e5e5;
             color: #0a1e75;
             font-size: 1.2em;
             font-weight: bold;

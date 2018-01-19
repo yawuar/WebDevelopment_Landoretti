@@ -253,6 +253,11 @@ label {
 .breadcrumbs {
 	font-size: 1.5em;
 	margin-top: 36px;
+
+	&.under {
+		margin: 0 !important;
+	}
+
 	ul {
 		margin: 0;
 		display: inline-block;
@@ -260,6 +265,33 @@ label {
 			display: inline-block;
 			a {
 				color: $green;
+			}
+		}
+
+		&.numbers {
+			color: #5c5c5c;
+
+			li {
+				margin-right: 4px;
+
+				&:nth-child(5) {
+					margin-right: 0;
+				}
+
+				&:last-child {
+					margin-left: 12px;
+				}
+
+				&:first-child {
+					margin-right: 12px;
+				}
+				a {
+					color: #5c5c5c;
+					&:hover {
+						text-decoration: none;
+						color: #030303;
+					}
+				}
 			}
 		}
 	}
@@ -1058,6 +1090,48 @@ nav {
 
 				.image {
 					height: 100%;
+
+					.info {
+						padding: 0 50px 50px 60px;
+						position: absolute;
+						bottom: 0;
+
+						.title {
+							margin-left: -18px;
+							margin-bottom: 17px;
+							h1 {
+								font-size: 3.5em;
+							}
+
+							span, h1 {
+								float: left;
+							}
+
+							span {
+								font-size: 3.8em;
+								font-weight: bold;
+								width: 18px;
+
+								line-height: 40px;
+							}
+
+							&::after {
+								clear: both;
+								display: block;
+								content: "";
+							}
+						}
+
+						.title h1, p {
+							margin: 0;
+						}
+
+						p {
+							font-size: 1.5em;
+							line-height: 21px;
+						}
+					}
+
 					img {
 						@media (max-width: 767px) {
 							width: 100%;
@@ -1097,8 +1171,8 @@ nav {
 					}
 
 					.info {
-						height: 132px;
-						padding-top: 25px;
+						height: 131px;
+						padding-top: 20px;
 
 						display: flex;
 						// align-items: center;
@@ -1122,14 +1196,16 @@ nav {
 							p {
 								font-size: 1.4em;
 								&.price {
+									font-family: 'Helvetica';
 									font-size: 1.8em;
+									font-weight: light;
 								}
 							}
 
 							.visit-auction {
 								float: left;
 								border-bottom: 1px solid #e5e5e5;
-								margin-top: -7px;
+								margin-top: -3px;
 								p, a {
 									float: left;
 								}
@@ -1143,7 +1219,9 @@ nav {
 								a {
 									height: 50px;
 									width: 117px;
-									border: 1px solid #e5e5e5;
+									border-left: 1px solid #e5e5e5;
+									border-top: 1px solid #e5e5e5;
+									border-right: 1px solid #e5e5e5;
 									color: $blue;
 									font-size: 1.2em;
 									font-weight: bold;

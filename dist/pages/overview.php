@@ -95,14 +95,31 @@
                 <li><a href="index.php">Home &gt;</a></li>
                 <li><a href="#">Auctions</a></li>
             </ul>
+            <ul class="numbers pull-right">
+                <li>&lt;</li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li>&gt;</li>
+            </ul>
         </div>
 
         <div class="head">
             <div class="col-sm-6 big-image">
                 <div class="image">
-                    <div class="overlay">
-                        <div class="svg-icon"></div>
-                        <div class="transparent"></div>
+                    <div class="info">
+                        <div class="title">
+                            <span>&#8220;</span>
+                            <h1>Lorem Ipsum dolor</h1>
+                            <span>&#8221;</span>
+                        </div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            rem ipsum dolor sit amet, consectetur adipisicing elit,
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            rem ipsum dolor sit amet, consectetur adipisicing elit,
+                        </p>
                     </div>
                     <img src="../images/person.jpg" alt="person">
                 </div>
@@ -281,6 +298,18 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="breadcrumbs under">
+            <ul>
+            </ul>
+            <ul class="numbers pull-right">
+                <li>&lt;</li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li>&gt;</li>
+            </ul>
         </div>
     </div>
 </section>
