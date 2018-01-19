@@ -2690,6 +2690,13 @@ nav {
 			}
 		}
 
+		.lot {
+			@media (max-width: 767px) {
+				float: none !important;
+				margin-top: 15px;
+			}
+		}
+
 		.detail {
 			.row {
 				margin: 0;
@@ -3019,6 +3026,10 @@ nav {
 								text-align: center;
 								display: flex;
 								align-items: center;
+
+								@media (max-width: 767px) {
+									width: 100%;
+								}
 								
 								a {
 									display: block;
@@ -3032,6 +3043,10 @@ nav {
 									display: flex;
 									justify-content: center;
 									align-items: center;
+
+									@media (max-width: 767px) {
+										width: 100%;
+									}
 									
 									&:hover {
 										text-decoration: none;

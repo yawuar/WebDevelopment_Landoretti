@@ -1787,6 +1787,11 @@ nav {
   #detail .container .date > span {
     color: #0a1e75; }
 
+@media (max-width: 767px) {
+  #detail .container .lot {
+    float: none !important;
+    margin-top: 15px; } }
+
 #detail .container .detail .row {
   margin: 0; }
   #detail .container .detail .row .no-padding {
@@ -2012,6 +2017,9 @@ nav {
         text-align: center;
         display: flex;
         align-items: center; }
+        @media (max-width: 767px) {
+          #detail .container .detail .row .info-auction .col-sm-3 div .ask {
+            width: 100%; } }
         #detail .container .detail .row .info-auction .col-sm-3 div .ask a {
           display: block;
           color: white;
@@ -2023,6 +2031,9 @@ nav {
           display: flex;
           justify-content: center;
           align-items: center; }
+          @media (max-width: 767px) {
+            #detail .container .detail .row .info-auction .col-sm-3 div .ask a {
+              width: 100%; } }
           #detail .container .detail .row .info-auction .col-sm-3 div .ask a:hover {
             text-decoration: none; }
 

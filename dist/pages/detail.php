@@ -11,7 +11,7 @@
                 <li><a href="#">Salvador Dali &gt;</a></li>
                 <li><a href="#">Dance of Time III</a></li>
             </ul>
-            <p class="pull-right">Lot ID: 84611</p>
+            <p class="pull-right lot">Lot ID: 84611</p>
         </div>
 
         <h1>Dance of Time III</h1>
