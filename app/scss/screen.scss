@@ -863,9 +863,12 @@ nav {
 		@media (max-width: 767px) {
 			height: auto;
 		}
+	}
 
-		.filter-menu {
+	.filter-menu {
+		&.act {
 			display: block !important;
+			transition: all 2s linear;
 			margin-top: 34px;
 		}
 	}
@@ -906,6 +909,7 @@ nav {
 
 						a {
 							color: #4d4d4d;
+							margin: 0 5px;
 
 							&:hover {
 								text-decoration: none;

@@ -12,6 +12,7 @@
 		e.preventDefault();
 		$('#overview-filter').toggleClass("active");
 		$('.options a').toggleClass('rotate');
+		$('#overview-filter .filter-menu').toggleClass('act');
 	}
 
 	function carousel(e) {

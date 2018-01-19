@@ -577,9 +577,10 @@ nav {
     @media (max-width: 767px) {
       #overview-filter.active {
         height: auto; } }
-    #overview-filter.active .filter-menu {
-      display: block !important;
-      margin-top: 34px; }
+  #overview-filter .filter-menu.act {
+    display: block !important;
+    transition: all 2s linear;
+    margin-top: 34px; }
   #overview-filter .top {
     height: 100%;
     padding-bottom: 34px; }
@@ -606,7 +607,8 @@ nav {
               font-weight: bold;
               color: black; }
             #overview-filter .top .container div .list ul li a {
-              color: #4d4d4d; }
+              color: #4d4d4d;
+              margin: 0 5px; }
               #overview-filter .top .container div .list ul li a:hover {
                 text-decoration: none;
                 font-weight: bold;
