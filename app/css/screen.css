@@ -1587,6 +1587,9 @@ nav {
 
 #my-watchlist .container .btns {
   height: 50px; }
+  @media (max-width: 767px) {
+    #my-watchlist .container .btns {
+      margin-top: 46px; } }
   #my-watchlist .container .btns a {
     font-size: 1.2em;
     color: #0a1e75;
@@ -1598,6 +1601,9 @@ nav {
     line-height: 50px;
     text-align: center;
     margin-bottom: 46px; }
+    @media (max-width: 767px) {
+      #my-watchlist .container .btns a {
+        width: 49%; } }
     #my-watchlist .container .btns a.small-margin {
       margin-right: 5px; }
 
