@@ -227,12 +227,12 @@
 			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			//var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 			// Display the result in the element with id="demo"
 			for (var i = 0; i < document.getElementsByClassName("countdown").length; i++) {
-				document.getElementsByClassName("countdown")[i].innerHTML = days + "d " + hours + "h "
-					+ minutes + "m " + seconds + "s ";
+				document.getElementsByClassName("countdown")[i].innerHTML = days + "d " + hours + "u "
+					+ minutes + "m ";
 			}
 			// document.getElementsByClassName("countdown")[0].innerHTML = days + "d " + hours + "h "
 			// 	+ minutes + "m " + seconds + "s ";
