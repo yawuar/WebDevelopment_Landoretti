@@ -224,7 +224,7 @@
                                 <h6>Dance of Time III</h6>
                                 <p class="price">€ 8.900</p>
                                 <div class="visit-auction">
-                                    <p>25d 14u 44m</p>
+                                    <p class="countdown">25d 14u 44m</p>
                                     <a href="#">visit auction &gt;</a>
                                 </div>
                             </div>
@@ -246,7 +246,7 @@
                                 <h6>Dance of Time III</h6>
                                 <p class="price">€ 8.900</p>
                                 <div class="visit-auction">
-                                    <p>25d 14u 44m</p>
+                                    <p class="countdown">25d 14u 44m</p>
                                     <a href="#">visit auction &gt;</a>
                                 </div>
                             </div>
@@ -268,7 +268,7 @@
                                 <h6>Dance of Time III</h6>
                                 <p class="price">€ 8.900</p>
                                 <div class="visit-auction">
-                                    <p>25d 14u 44m</p>
+                                    <p class="countdown">25d 14u 44m</p>
                                     <a href="#">visit auction &gt;</a>
                                 </div>
                             </div>
@@ -290,7 +290,7 @@
                                 <h6>Dance of Time III</h6>
                                 <p class="price">€ 8.900</p>
                                 <div class="visit-auction">
-                                    <p>25d 14u 44m</p>
+                                    <p class="countdown">25d 14u 44m</p>
                                     <a href="#">visit auction &gt;</a>
                                 </div>
                             </div>
