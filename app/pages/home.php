@@ -51,7 +51,7 @@
 
 	<div class="container">
 
-		<h2>How does it work?</h2>
+		<h1>How does it work?</h1>
 
 		<div class="row">
 			
@@ -94,7 +94,7 @@
 <!-- Content of popular -->
 <section class="popular">
 
-	<h2>Most popular this week</h2>
+	<h1>Most popular this week</h1>
 
 	<div class="container">
 

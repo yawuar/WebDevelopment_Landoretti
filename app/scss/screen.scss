@@ -14,13 +14,9 @@ $lightgrey: #ededed;
 $grey: #eaeaea;
 $darkgrey: #4e4e4e;
 $darkestgrey: #1d1d1b;
-
 $darkerGrey: #757575;
-
 $footerGrey: #5c5c5c;
-
 $hoverGrey: #565656;
-
 $blue: #0a1e75;
 $lightBlue: #0120a6;
 $lighterBlue: #2b45b5;
@@ -62,11 +58,13 @@ body {
 }
 
 h1 {
-	font-family: 'Helvetica', sans-serif;
-	font-size: 4.5em;
+	font-family: 'Helvetica';
+	font-size: 4em;
+	color: $blue;
 	font-weight: lighter;
-	margin: 55px 0;
-	color: #545353;
+	margin: 0 0 50px 0;
+
+	text-align: center;
 }
 
 h2 {
@@ -1786,6 +1784,13 @@ nav {
 
 #isearch-content {
 	.container {
+
+		h1 {
+			font-size: 4.5em;
+			text-align: left;
+			margin-top: 55px;
+			margin-bottom: 55px;
+		}
 
 		h3 {
 			font-family: 'Helvetica', sans-serif;

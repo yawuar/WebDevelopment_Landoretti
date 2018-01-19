@@ -26,3 +26,5 @@ Na de aanpassingen aan de website is het enorm belangrijk dat heel de website ge
         gulp build
 
 Eens dat heel het project gebuild is, is het belangrijk dat ENKEL de dist folder op de server/host komt te staan. Daar staan mappen zoals images, includes, js die de website allemaal nodig heeft.
+
+# Frontend Guideline

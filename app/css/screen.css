@@ -24,11 +24,12 @@ body {
   /* 2 */ }
 
 h1 {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 4.5em;
+  font-family: 'Helvetica';
+  font-size: 4em;
+  color: #0a1e75;
   font-weight: lighter;
-  margin: 55px 0;
-  color: #545353; }
+  margin: 0 0 50px 0;
+  text-align: center; }
 
 h2 {
   font-family: 'Helvetica';
@@ -1181,6 +1182,12 @@ nav {
           margin-left: 20px; }
         .isearch-bg .container .info .bottom:hover {
           text-decoration: none; }
+
+#isearch-content .container h1 {
+  font-size: 4.5em;
+  text-align: left;
+  margin-top: 55px;
+  margin-bottom: 55px; }
 
 #isearch-content .container h3 {
   font-family: 'Helvetica', sans-serif;
