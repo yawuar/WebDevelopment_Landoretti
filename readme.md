@@ -71,3 +71,24 @@ Voorbeeld:
 Er zijn nog 2 klasses die niet besproken zijn. Dit zijn svg-icon en transparent.
 svg-icon kan worden ingestoken als je het vergrootglas wilt en transparent wordt gebruikt om grijze doorschijnende achtergrond te geven.
 
+## custom input
+
+Ook zijn er veel text inputs die dezelfde hoogte hebben, kleur, border enzo. Dus als er nog eens ongeveer dezelfde input moet worden gecreerd maak dan gebruik van de volgende klasse.
+
+        custom-input
+
+Voorbeeld:
+
+        <input type="text" class="form-control custom-input" name="company" id="company" placeholder="Studio 6">
+
+## input error 
+
+Error output is natuurlijk ook herbruikbaar gemaakt. De volgende klasse zorgt voor de error css
+
+        error
+
+Voorbeeld:
+
+        <input type="text" class="form-control custom-input error" name="company" id="company" placeholder="Studio 6">
+
+
