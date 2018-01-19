@@ -1714,6 +1714,10 @@ nav {
 			margin: 50px 0;
 			width: 314px;
 
+			@media (max-width: 767px) {
+				margin: 75px 0 25px 0;
+			}
+
 			color: white;
 
 			.top {
