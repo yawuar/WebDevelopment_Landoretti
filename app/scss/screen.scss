@@ -1199,6 +1199,9 @@ nav {
 						display: flex;
 						// align-items: center;
 						justify-content: center;
+						@media (max-width: 767px) {
+							justify-content: baseline;
+						}
 						div {
 							p, h6 {
 								margin: 0;
@@ -3130,6 +3133,9 @@ nav {
 						display: flex;
 						// align-items: center;
 						justify-content: center;
+						@media (max-width: 767px) {
+							justify-content: baseline;
+						}
 						div {
 							p, h6 {
 								margin: 0;
@@ -3349,6 +3355,9 @@ nav {
 							display: flex;
 							// align-items: center;
 							justify-content: center;
+							@media (max-width: 767px) {
+								justify-content: baseline;
+							}
 							div {
 								p, h6 {
 									margin: 0;

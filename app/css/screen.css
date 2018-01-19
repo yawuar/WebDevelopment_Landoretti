@@ -788,6 +788,9 @@ nav {
         padding-top: 20px;
         display: flex;
         justify-content: center; }
+        @media (max-width: 767px) {
+          #overview .container .head .col-sm-6 .col-sm-6 .info {
+            justify-content: baseline; } }
         #overview .container .head .col-sm-6 .col-sm-6 .info div p, #overview .container .head .col-sm-6 .col-sm-6 .info div h6 {
           margin: 0; }
         #overview .container .head .col-sm-6 .col-sm-6 .info div > a {
@@ -2086,6 +2089,9 @@ nav {
           padding-top: 25px;
           display: flex;
           justify-content: center; }
+          @media (max-width: 767px) {
+            #detail .related-items .container .col-sm-3 .item .info {
+              justify-content: baseline; } }
           #detail .related-items .container .col-sm-3 .item .info div p, #detail .related-items .container .col-sm-3 .item .info div h6 {
             margin: 0; }
           #detail .related-items .container .col-sm-3 .item .info div > a {
@@ -2230,6 +2236,9 @@ nav {
           padding-top: 25px;
           display: flex;
           justify-content: center; }
+          @media (max-width: 767px) {
+            #profile .container .items .container .col-md-3 .item .info {
+              justify-content: baseline; } }
           #profile .container .items .container .col-md-3 .item .info div p, #profile .container .items .container .col-md-3 .item .info div h6 {
             margin: 0; }
           #profile .container .items .container .col-md-3 .item .info div > a {
