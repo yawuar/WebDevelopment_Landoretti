@@ -150,7 +150,7 @@
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">CONTACT <b class="caret"></b></a>
-                            <ul class="dropdown-menu">                            
+                            <ul class="dropdown-menu item">                            
                                 <li>Landoretti ART</li>
                                 <li>Straatnaam xxx</li>
                                 <li>xxxx, Oostende</li>

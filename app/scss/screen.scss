@@ -3213,6 +3213,41 @@ nav {
 					&.contact {
 						.dropdown-menu {
 							width: 100%;
+
+							&.item {
+								li {
+									&:nth-child(4), &:nth-child(5) {
+										&::before {
+											background-repeat: no-repeat;
+											background-position-y: center;
+											background-size: contain;
+											float: left;
+											width: 21px;
+											height: 12px;
+											margin: 4.5px 0;
+											content: "";
+										}
+									}
+
+									&:nth-child(4) {
+										&::before {
+											background-image: url('/images/icons/telephone.png');
+										}
+									}
+
+									&:nth-child(5) {
+										&::before {
+											background-image: url('/images/icons/mail.png');
+											height: 9px;
+											margin: 6px 0;
+										}
+
+										a {
+											display: inline-block;
+										}
+									}
+								}
+							}
 							li {
 								color: $footerGrey;
 								font-size: 1.05em;
@@ -3220,37 +3255,6 @@ nav {
 
 								&:nth-child(3) {
 									margin-bottom: 30px;
-								}
-
-								&:nth-child(4), &:nth-child(5) {
-									&::before {
-										background-repeat: no-repeat;
-										background-position-y: center;
-										background-size: contain;
-										float: left;
-										width: 21px;
-										height: 12px;
-										margin: 4.5px 0;
-										content: "";
-									}
-								}
-
-								&:nth-child(4) {
-									&::before {
-										background-image: url('/images/icons/telephone.png');
-									}
-								}
-
-								&:nth-child(5) {
-									&::before {
-										background-image: url('/images/icons/mail.png');
-										height: 9px;
-										margin: 6px 0;
-									}
-
-									a {
-										display: inline-block;
-									}
 								}
 
 								a {
