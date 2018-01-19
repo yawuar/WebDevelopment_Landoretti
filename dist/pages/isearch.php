@@ -75,7 +75,17 @@
 <!-- Content of Isearch -->
 <section id="isearch-overview">
     <div class="container">
-        <h3>Overview</h3>
+        <div class="breadcrumbs">
+            <h3>Overview</h3>
+            <ul class="numbers pull-right">
+                <li>&lt;</li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li>&gt;</li>
+            </ul>
+        </div>
         <div class="articles">
             <article class="col-sm-12">
                 <div class="info col-sm-9">
@@ -157,6 +167,18 @@
                     <a href="#">I OWN THIS ARTWORK ></a>
                 </div>
             </article>
+        </div>
+        <div class="breadcrumbs under">
+            <ul>
+            </ul>
+            <ul class="numbers pull-right">
+                <li>&lt;</li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li>&gt;</li>
+            </ul>
         </div>
     </div>
 </section>
