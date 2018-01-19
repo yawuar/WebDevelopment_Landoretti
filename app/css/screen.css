@@ -123,6 +123,9 @@ ul {
       border: 1px solid #ededed;
       border-radius: 4px;
       color: #1d1d1b; }
+      @media (max-width: 991px) {
+        .input-field input[type="text"] {
+          width: 125px !important; } }
     .input-field input[type="submit"] {
       background-color: transparent;
       border: none;
