@@ -2444,6 +2444,10 @@ nav {
 
 			.filter {
 				padding-left: calc(100%/1024*30);
+
+				@media (max-width: 767px) {
+					padding-left: calc(100%/1024*60);
+				}
 				ul {
 					display: inline-block;
 					li {

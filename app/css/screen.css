@@ -1628,6 +1628,9 @@ nav {
 
 #my-watchlist .container .watchlist .filter {
   padding-left: calc(100%/1024*30); }
+  @media (max-width: 767px) {
+    #my-watchlist .container .watchlist .filter {
+      padding-left: calc(100%/1024*60); } }
   #my-watchlist .container .watchlist .filter ul {
     display: inline-block; }
     #my-watchlist .container .watchlist .filter ul li {
