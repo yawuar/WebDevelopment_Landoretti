@@ -2142,6 +2142,16 @@ nav {
           clear: both;
           display: block;
           content: ""; }
+        .footer .container .row div nav form input {
+          font-size: 1.05em; }
+          .footer .container .row div nav form input::-webkit-input-placeholder {
+            font-size: 1em; }
+          .footer .container .row div nav form input:-moz-placeholder {
+            font-size: 1em; }
+          .footer .container .row div nav form input::-moz-placeholder {
+            font-size: 1em; }
+          .footer .container .row div nav form input:-ms-input-placeholder {
+            font-size: 1em; }
         .footer .container .row div nav.contact .dropdown-menu {
           width: 100%; }
           .footer .container .row div nav.contact .dropdown-menu.item li:nth-child(4)::before, .footer .container .row div nav.contact .dropdown-menu.item li:nth-child(5)::before {

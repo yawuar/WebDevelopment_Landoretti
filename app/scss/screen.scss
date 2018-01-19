@@ -3210,6 +3210,15 @@ nav {
 				}
 				nav {
 
+					form {
+						input {
+							font-size: 1.05em;
+							@include placeholder {
+								font-size: 1em;
+							}
+						}
+					}
+
 					&.contact {
 						.dropdown-menu {
 							width: 100%;
