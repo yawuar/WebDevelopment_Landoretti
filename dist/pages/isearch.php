@@ -39,21 +39,24 @@
                 </ul>
             </div>
         <?php } ?>
-        <form method="POST" action="index.php?page=isearch">
+        <form method="POST" action="index.php?page=isearch" id="form">
             <div class="row">
-                <div class="col-sm-6 form-group right-marg">
+                <div class="col-sm-6 form-group has-feedback right-marg">
                     <label for="what">What are you looking for?</label>
                     <input type="text" class="form-control <?php echo ($errors['what']) ? 'error' : '' ?>" name="what" id="what" placeholder="Mona Lisa">
+                    <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                 </div>
-                <div class="col-sm-6 form-group">
+                <div class="col-sm-6 form-group has-feedback">
                     <label for="artist">Artist</label>
                     <input type="text" class="form-control <?php echo ($errors['artist']) ? 'error' : '' ?>" name="artist" id="artist" placeholder="Leonardo Da Vinci">
+                    <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-9 form-group right-marg">
+                <div class="col-sm-9 form-group has-feedback right-marg">
                     <label for="info">Information about the artwork</label>
                     <input type="text" class="form-control <?php echo ($errors['info']) ? 'error' : '' ?>" name="info" id="info" placeholder="Lorem ipsum, dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore">
+                    <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                 </div>
                 <div class="col-sm-3 form-group button">
                     <label for="submit">submit</label>

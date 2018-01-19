@@ -4,6 +4,7 @@
     $errors = [];
 
     // check if form is submitted
+
     if(isset($_POST['submit']) && strtolower($_POST['submit']) === strtolower('ADD AUCTION')) {
         if(empty($_POST['title'])) {
             $errors['title'] = 'Please enter a value for what you are looking for?';
@@ -78,7 +79,7 @@
             </div>
         <?php } ?>
 
-        <form method="POST" action="index.php?page=addauction">
+        <form method="POST" action="index.php?page=addauction" id="add_form">
             <div class="row">
                 <div class="col-sm-6 form-group right-marg select">
                     <select id="style">
@@ -103,36 +104,43 @@
                 <div class="col-sm-6 form-group right-marg title">
                     <label for="title">Auction title</label>
                     <input type="text" class="form-control custom-input <?php echo ($errors['title']) ? 'error' : '' ?>" name="title" id="title" placeholder="Auction title">
+                    <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                 </div>
                 <div class="col-sm-6 form-group right-marg small-input">
                     <label for="year">Year</label>
                     <input type="text" class="form-control custom-input <?php echo ($errors['year']) ? 'error' : '' ?>" name="year" id="year" placeholder="X X X X">
+                    <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 form-group small-input">
                     <label for="width">Width</label>
                     <input type="text" class="form-control custom-input <?php echo ($errors['width']) ? 'error' : '' ?>" name="width" id="width" placeholder="X X X X">
+                    <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                 </div>
                 <div class="col-sm-4 form-group small-input">
                     <label for="height">Height</label>
                     <input type="text" class="form-control custom-input <?php echo ($errors['height']) ? 'error' : '' ?>" name="height" id="height" placeholder="X X X X">
+                    <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                 </div>
                 <div class="col-sm-4 form-group small-input">
                     <label for="depth">Depth <span>(optional)</span></label>
                     <input type="text" class="form-control custom-input <?php echo ($errors['depth']) ? 'error' : '' ?>" name="depth" id="depth" placeholder="X X X X">
+                    <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 form-group big-textarea">
                     <label for="description">Description</label>
-                    <textarea name="description" id="description" class="<?php echo ($errors['description']) ? 'error' : '' ?>">What's the condition of the artwork?</textarea>
+                    <textarea name="description" id="description" class="<?php echo ($errors['description']) ? 'error' : '' ?>" placeholder="What's the condition of the artwork?"></textarea>
+                    <span class="form-control-feedback textarea glyphicon glyphicon-ok"></span>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-4 form-group big-textarea">
                     <label for="origin">Origin</label>
-                    <textarea name="origin" id="origin" class="<?php echo ($errors['origin']) ? 'error' : '' ?>">What's the origin of the artwork?</textarea>
+                    <input type="text" name="origin" id="origin" class="form-control custom-input <?php echo ($errors['origin']) ? 'error' : '' ?>" placeholder="What's the origin of the artwork?" />
+                    <span class="form-control-feedback glyphicon glyphicon-ok"></span>
                 </div>
             </div>
             <div class="row">
@@ -143,14 +151,17 @@
                     <div class="col-sm-4 file-button">
                         <p>upload image <span>of the artwork</span></p>
                         <input type="file" name="image" id="image">
+                        <span class="form-control-feedback upload glyphicon-white glyphicon glyphicon-ok"></span>
                     </div>
                     <div class="col-sm-4 file-button">
                         <p>upload image <span>of the signature</span></p>
                         <input type="file" name="signature" id="signature">
+                        <span class="form-control-feedback upload glyphicon-white glyphicon glyphicon-ok"></span>
                     </div>
                     <div class="col-sm-4 file-button">
                         <p>optional image</p>
                         <input type="file" name="optional" id="optional">
+                        <span class="form-control-feedback upload glyphicon-white glyphicon glyphicon-ok"></span>
                     </div>
                 </div>
             </div>
@@ -188,8 +199,8 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 check">
-                    <input type="checkbox" name="check" id="check">
-                    <p>I agree to <span>The Terms & Conditions</span></p>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="1">
+                    <p>I agree to <span>The Terms &amp; Conditions</span></p>
                 </div>
             </div>
             <div class="row">

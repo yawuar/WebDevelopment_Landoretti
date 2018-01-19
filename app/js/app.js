@@ -74,6 +74,145 @@
 		return false;
 	}
 
+	function validateForm() {
+		$('form#form').validate({
+			rules: {
+				what: {
+					required: true,
+				},
+				artist: {
+					required: true,
+				},
+				info: {
+					required: true,
+				},
+			},
+			highlight: function (element, errorClass, validClass) {
+				//$(element).nextAll('.form-control-feedback').show().removeClass('glyphicon-ok').addClass('glyphicon-remove');
+				$(element).addClass(errorClass).removeClass(validClass);
+				$(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+				console.log(validClass);
+			},
+			success: function (element) {
+				$(element).nextAll('.form-control-feedback').show().removeClass('glyphicon-remove').addClass('glyphicon-ok');
+				element.closest('.form-group').removeClass('has-error').addClass('has-success');
+				$(element).remove();
+			}
+		});
+		$('form#add_form').validate({
+			rules: {
+				title: {
+					required: true,
+				},
+				year: {
+					required: true,
+				},
+				width: {
+					required: true,
+				},
+				height: {
+					required: true,
+				},
+				depth: {
+					required: true,
+				},
+				description: {
+					required: true,
+				},
+				origin: {
+					required: true,
+				},
+				image: {
+					required: true,
+				},
+				signature: {
+					required: true,
+				},
+				optional: {
+					required: true,
+				},
+				minimum: {
+					required: true,
+				},
+				maximum: {
+					required: true,
+				},
+				price: {
+					required: true,
+				},
+				end: {
+					required: true,
+				},
+			},
+			highlight: function (element, errorClass, validClass) {
+				//$(element).nextAll('.form-control-feedback').show().removeClass('glyphicon-ok').addClass('glyphicon-remove');
+				$(element).addClass(errorClass).removeClass(validClass);
+				$(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+				console.log(validClass);
+			},
+			success: function (element) {
+				$(element).nextAll('.form-control-feedback').show().removeClass('glyphicon-remove').addClass('glyphicon-ok');
+				element.closest('.form-group').removeClass('has-error').addClass('has-success');
+				$(element).remove();
+			}
+		});
+		$('form#register_form').validate({
+			rules: {
+				company: {
+					required: true,
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				password: {
+					required: true,
+				},
+				password_confirmation: {
+					required: true,
+				},
+				country: {
+					required: true,
+				},
+				zipcode: {
+					required: true,
+				},
+				city: {
+					required: true,
+				},
+				address: {
+					required: true,
+				},
+				'phone-code': {
+					required: true,
+				},
+				'phone-number': {
+					required: true,
+				},
+				'account_number': {
+					required: true,
+				},
+				'vat-number': {
+					required: true,
+				},
+				payment: {
+					required: true,
+				},
+			},
+			highlight: function (element, errorClass, validClass) {
+				//$(element).nextAll('.form-control-feedback').show().removeClass('glyphicon-ok').addClass('glyphicon-remove');
+				$(element).addClass(errorClass).removeClass(validClass);
+				$(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+				console.log(validClass);
+			},
+			success: function (element) {
+				$(element).nextAll('.form-control-feedback').show().removeClass('glyphicon-remove').addClass('glyphicon-ok');
+				element.closest('.form-group').removeClass('has-error').addClass('has-success');
+				$(element).remove();
+			}
+		});
+	}
+
 	function bindEvents() {
 		$('ul.language li').click(activateLanguage);
 		$('#style').niceSelect();
@@ -90,6 +229,8 @@
 		$('.login-btn').click(showForm);
 
 		$('.login-form').submit(login);
+
+		validateForm();
 	}
 
 	showImage(imageIndex);
