@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <div class="link">
-                            <a href="">add to my watchlist</a>
+                            <a href="#"><span>add to my watchlist</span></a>
                         </div>
                     </div>
                 </div>

@@ -2878,13 +2878,34 @@ nav {
 						}
 
 						.link {
-							text-align: center;
 							font-size: 1.4em;
 							height: 37px;
 							line-height: 37px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
 							a {
+								display: inline-block;
 								color: $blue;
-								border-bottom: 1px solid $blue;
+								font-weight: bold;
+								line-height: 20px;
+
+								span {
+									float: left;
+									border-bottom: 1px solid $blue;
+								}
+
+								&::before {
+									background-image: url('/images/icons/watchlist.png');
+									background-repeat: no-repeat;
+									background-position-y: center;
+									background-size: contain;
+									float: left;
+									width: 25px;
+									height: 12px;
+									margin: 4.5px 0;
+									content: "";
+								}
 							}
 						}
 					}

@@ -1912,13 +1912,30 @@ nav {
             font-weight: bold;
             margin-left: 14px; }
       #detail .container .detail .row .col-sm-4 .bid .link {
-        text-align: center;
         font-size: 1.4em;
         height: 37px;
-        line-height: 37px; }
+        line-height: 37px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
         #detail .container .detail .row .col-sm-4 .bid .link a {
+          display: inline-block;
           color: #0a1e75;
-          border-bottom: 1px solid #0a1e75; }
+          font-weight: bold;
+          line-height: 20px; }
+          #detail .container .detail .row .col-sm-4 .bid .link a span {
+            float: left;
+            border-bottom: 1px solid #0a1e75; }
+          #detail .container .detail .row .col-sm-4 .bid .link a::before {
+            background-image: url("/images/icons/watchlist.png");
+            background-repeat: no-repeat;
+            background-position-y: center;
+            background-size: contain;
+            float: left;
+            width: 25px;
+            height: 12px;
+            margin: 4.5px 0;
+            content: ""; }
   #detail .container .detail .row .info-auction {
     height: 383px;
     background-color: #f4f4f4;
