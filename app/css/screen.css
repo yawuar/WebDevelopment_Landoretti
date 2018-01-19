@@ -2114,10 +2114,27 @@ nav {
       margin-bottom: 29px; }
     #profile .container .profile-info .col-sm-3 .personal-information {
       margin-bottom: 29px; }
-      #profile .container .profile-info .col-sm-3 .personal-information p:first-child {
+      #profile .container .profile-info .col-sm-3 .personal-information p span {
         display: inline-block;
         color: #01a6a0;
-        border-bottom: 1px solid #01a6a0; }
+        border-bottom: 2px solid #01a6a0; }
+      #profile .container .profile-info .col-sm-3 .personal-information p:nth-child(1)::before, #profile .container .profile-info .col-sm-3 .personal-information p:nth-child(2)::before {
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: contain;
+        float: left;
+        width: 21px;
+        height: 12px;
+        margin: 4.5px 0;
+        content: ""; }
+      #profile .container .profile-info .col-sm-3 .personal-information p:nth-child(2)::before {
+        background-image: url("/images/icons/telephone.png"); }
+      #profile .container .profile-info .col-sm-3 .personal-information p:nth-child(1)::before {
+        background-image: url("/images/icons/mail.png");
+        height: 9px;
+        margin: 6px 0; }
+      #profile .container .profile-info .col-sm-3 .personal-information p:nth-child(1) a {
+        display: inline-block; }
 
 #profile .container .items {
   margin-top: 55px; }

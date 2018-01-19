@@ -17,7 +17,7 @@
             <h5>Jasper Poppe</h5>
             <div class="col-sm-3 border-right">
                 <div class="personal-information">
-                    <p>name@domain.com</p>
+                    <p><span>name@domain.com</span></p>
                     <p>+xx (0)x xxx xx xx</p>
                 </div>
                 <div class="address">

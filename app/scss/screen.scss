@@ -3175,10 +3175,41 @@ nav {
 				.personal-information {
 					margin-bottom: 29px;
 					p {
-						&:first-child {
+						span {
 							display: inline-block;
 							color: $green;
-							border-bottom: 1px solid $green;
+							border-bottom: 2px solid $green;
+						}
+
+						&:nth-child(1), &:nth-child(2) {
+							&::before {
+								background-repeat: no-repeat;
+								background-position-y: center;
+								background-size: contain;
+								float: left;
+								width: 21px;
+								height: 12px;
+								margin: 4.5px 0;
+								content: "";
+							}
+						}
+
+						&:nth-child(2) {
+							&::before {
+								background-image: url('/images/icons/telephone.png');
+							}
+						}
+
+						&:nth-child(1) {
+							&::before {
+								background-image: url('/images/icons/mail.png');
+								height: 9px;
+								margin: 6px 0;
+							}
+
+							a {
+								display: inline-block;
+							}
 						}
 					}
 				}
