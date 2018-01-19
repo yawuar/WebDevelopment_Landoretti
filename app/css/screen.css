@@ -1604,6 +1604,10 @@ nav {
   height: 50px;
   line-height: 50px;
   text-align: center; }
+  @media (max-width: 767px) {
+    #my-auctions .container > a {
+      width: 100%;
+      margin: 25px 0; } }
 
 #my-auctions .container .pending, #my-auctions .container .refused, #my-auctions .container .active, #my-auctions .container .expired, #my-auctions .container .sold {
   margin-bottom: 55px; }
