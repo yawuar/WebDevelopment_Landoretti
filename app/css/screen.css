@@ -1352,6 +1352,9 @@ nav {
 
 #faq-filter .container .button {
   float: right; }
+  @media (max-width: 767px) {
+    #faq-filter .container .button {
+      width: 100%; } }
   #faq-filter .container .button a {
     display: inline-block;
     text-align: center;
@@ -1365,6 +1368,9 @@ nav {
     color: #0a1e75;
     font-size: 1.2em;
     text-decoration: none; }
+    @media (max-width: 767px) {
+      #faq-filter .container .button a {
+        width: 100%; } }
     #faq-filter .container .button a:hover {
       background-color: #e1e1e1; }
 
@@ -1397,6 +1403,9 @@ nav {
         color: #4e4e4e;
         margin-top: 23px;
         margin-bottom: 0; }
+        @media (max-width: 767px) {
+          #faq-list .container .articles article .info p {
+            margin-bottom: 15px; } }
         #faq-list .container .articles article .info p span {
           font-weight: bold; }
           #faq-list .container .articles article .info p span:last-child {

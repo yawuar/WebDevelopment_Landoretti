@@ -2028,6 +2028,11 @@ nav {
 
 		.button {
 			float: right;
+
+			@media (max-width: 767px) {
+				width: 100%;
+			}
+			
 			a {
 				display: inline-block;
 				text-align: center;
@@ -2041,6 +2046,10 @@ nav {
 				color: $blue;
 				font-size: 1.2em;
 				text-decoration: none;
+
+				@media (max-width: 767px) {
+					width: 100%;
+				}
 
 				&:hover {
 					background-color: $hoverGreyBtn;
@@ -2093,6 +2102,10 @@ nav {
 						color: $darkgrey;
 						margin-top: 23px;
 						margin-bottom: 0;
+
+						@media (max-width: 767px) {
+							margin-bottom: 15px;
+						}
 
 						span {
 							font-weight: bold;
