@@ -739,6 +739,9 @@ nav {
         padding: 0 50px 50px 60px;
         position: absolute;
         bottom: 0; }
+        @media (max-width: 767px) {
+          #overview .container .head .big-image .image .info {
+            padding: 0 15px 25px 30px; } }
         #overview .container .head .big-image .image .info .title {
           margin-left: -18px;
           margin-bottom: 17px; }
