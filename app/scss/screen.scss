@@ -3586,7 +3586,7 @@ nav {
 				line-height: 1.5;
 				margin: 0;
 
-				@media (min-width: 768px) {
+				@media (max-width: 767px) {
 					text-align: left;
 				}
 			}

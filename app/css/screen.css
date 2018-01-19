@@ -2375,7 +2375,7 @@ nav {
         color: #777777;
         line-height: 1.5;
         margin: 0; }
-        @media (min-width: 768px) {
+        @media (max-width: 767px) {
           .footer .container.copy p {
             text-align: left; } }
 
