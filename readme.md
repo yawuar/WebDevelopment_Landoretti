@@ -91,4 +91,60 @@ Voorbeeld:
 
         <input type="text" class="form-control custom-input error" name="company" id="company" placeholder="Studio 6">
 
+## Grootte van een input field
+
+De meeste input fields doorheen de website is ofwel de helft van de container, of wel de helft van de helft van een container.
+Hiervoor heb ik 2 aparte klasses ontwikkeld.
+
+        big-form en small-form
+
+Voorbeeld:
+
+        <div class="col-sm-6 form-group big-form">
+                <label for="country">Country</label>
+                <input type="text" class="form-control custom-input " name="country" id="country" placeholder="Password">
+        </div>
+        <div class="col-sm-3 form-group small-form">
+                <label for="zipcode">Zip code</label>
+                <input type="text" class="form-control custom-input " name="zipcode" id="zipcode" placeholder="8400">
+        </div>
+
+## table
+
+De table komt ook meerdere keren voor op de website. Hiervoor heb ik mogelijk gemaakt dat enkel 1 klasse opgroepd hoeft te worden om de klasse te maken. Deze klasse is 
+
+        table-overflow
+
+Voorbeeld:
+
+        <div class="table-overflow">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Auction details</th>
+                            <th>Estimated price</th>
+                            <th>End date</th>
+                            <th>Remaining time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="image">
+                                    <img src="../images/myauctions/lady.jpg" alt="Radio">
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <h3>Dance of Time III</h3>
+                                        <a href="#">1979, Salvador Dali</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>&euro; 8.900</td>
+                            <td>September 09, 2013 13:00 p.m. (EST)</td>
+                            <td>x</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
