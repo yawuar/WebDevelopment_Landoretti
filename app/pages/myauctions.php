@@ -19,7 +19,7 @@
         <div class="pending">
             <h3>Pending</h3>
             <div class="table-overflow">
-                <table>
+                <table class="custom-table">
                     <thead>
                         <tr>
                             <th class="details">Auction details</th>
@@ -68,7 +68,7 @@
         <div class="refused">
             <h3>Refused</h3>
             <div class="table-overflow">
-                <table>
+                <table class="custom-table">
                     <thead>
                         <tr>
                             <th>Auction details</th>
@@ -105,7 +105,7 @@
         <div class="expired">
             <h3>Expired</h3>
             <div class="table-overflow">
-                <table>
+                <table class="custom-table">
                     <thead>
                         <tr>
                             <th>Auction details</th>
@@ -138,7 +138,7 @@
         <div class="sold">
             <h3>Sold</h3>
             <div class="table-overflow">
-                <table>
+                <table class="custom-table">
                     <thead>
                         <tr>
                             <th>Auction details</th>

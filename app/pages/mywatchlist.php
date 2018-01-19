@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="col-md-11">
-                        <table>
+                        <table class="custom-table">
                             <thead>
                                 <tr>
                                     <th class="details">Auction details</th>

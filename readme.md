@@ -91,6 +91,24 @@ Voorbeeld:
 
         <input type="text" class="form-control custom-input error" name="company" id="company" placeholder="Studio 6">
 
+## Feedback
+
+Bij elke form wordt er ook een check validatie voorzien. Als er veld goed is ingevuld dan ga je een check icoon te zien krijgen. Dit is gemmakelijk te verkrijgen door de volgende klasses te gebruiken.
+
+        form-control-feedback - glyphicon glyphicon-ok
+
+Voorbeeld:
+
+        <div class="col-sm-12 form-group">
+                <label for="payment">Alternative payment methods</label>
+                <input type="text" class="form-control custom-input " name="payment" id="payment" placeholder="Lorem ipsum, dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim">
+                <span class="form-control-feedback glyphicon glyphicon-ok"></span>
+        </div>
+
+Ook is er een witte versie van het icoon:
+
+        glyphicon-white
+
 ## Grootte van een input field
 
 De meeste input fields doorheen de website is ofwel de helft van de container, of wel de helft van de helft van een container.
@@ -112,6 +130,42 @@ Voorbeeld:
 ## table
 
 De table komt ook meerdere keren voor op de website. Hiervoor heb ik mogelijk gemaakt dat enkel 1 klasse opgroepd hoeft te worden om de klasse te maken. Deze klasse is 
+
+        custom-table
+
+Voorbeeld:
+
+        <table class="custom-table">
+                    <thead>
+                        <tr>
+                                <th>Auction details</th>
+                                <th>Estimated price</th>
+                                <th>End date</th>
+                                <th>Remaining time</th>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>
+                                <div class="image">
+                                        <img src="../images/myauctions/lady.jpg" alt="Radio">
+                                </div>
+                                <div class="info">
+                                    <div>
+                                        <h3>Dance of Time III</h3>
+                                        <a href="#">1979, Salvador Dali</a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>&euro; 8.900</td>
+                            <td>September 09, 2013 13:00 p.m. (EST)</td>
+                            <td>x</td>
+                        </tr>
+                </tbody>
+        </table>
+
+
+Ook kan je volgende klasse gebruiken om ervoor te zorgen dat de table responsive is.
 
         table-overflow
 

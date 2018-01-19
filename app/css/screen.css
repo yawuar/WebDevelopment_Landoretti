@@ -218,57 +218,57 @@ label {
 * Css of table
 *
 */
-table {
+.custom-table {
   width: 100%; }
-  table thead tr {
+  .custom-table thead tr {
     border: 1px solid #cacaca; }
-    table thead tr th {
+    .custom-table thead tr th {
       background-color: #f8f8f8;
       text-align: center;
       height: 35px;
       color: #545353;
       font-size: .95em;
       font-weight: normal; }
-      table thead tr th.checkbox {
+      .custom-table thead tr th.checkbox {
         width: calc(100%/1024*30); }
-      table thead tr th.details {
+      .custom-table thead tr th.details {
         width: calc(100%/1024*505); }
-      table thead tr th.price, table thead tr th.date {
+      .custom-table thead tr th.price, .custom-table thead tr th.date {
         width: calc(100%/1024*162); }
-      table thead tr th.time {
+      .custom-table thead tr th.time {
         width: calc(100%/1024*165); }
-  table tbody tr td {
+  .custom-table tbody tr td {
     height: 135px;
     border: 1px solid #cacaca;
     text-align: center;
     color: #545353; }
-    table tbody tr td .image {
+    .custom-table tbody tr td .image {
       background-color: red;
       display: block;
       height: 100%;
       width: 135px;
       float: left; }
-    table tbody tr td:nth-child(2) {
+    .custom-table tbody tr td:nth-child(2) {
       font-size: 2.2em; }
-    table tbody tr td:nth-child(3) {
+    .custom-table tbody tr td:nth-child(3) {
       font-size: 1.4em;
       line-height: 20px; }
-    table tbody tr td:nth-child(4) {
+    .custom-table tbody tr td:nth-child(4) {
       font-size: 1.6em; }
-    table tbody tr td .info {
+    .custom-table tbody tr td .info {
       float: left;
       height: 100%;
       margin-left: 47px;
       text-align: left;
       display: flex;
       align-items: center; }
-      table tbody tr td .info h3, table tbody tr td .info a {
+      .custom-table tbody tr td .info h3, .custom-table tbody tr td .info a {
         font-family: 'Helvetica';
         font-weight: normal; }
-      table tbody tr td .info h3 {
+      .custom-table tbody tr td .info h3 {
         font-size: 2.3em;
         margin: 0 !important; }
-      table tbody tr td .info a {
+      .custom-table tbody tr td .info a {
         font-size: 1.7em;
         color: #0a1e75; }
 
